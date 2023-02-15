@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerStateEvent : MonoBehaviour
+{
+    public delegate void PlayerDeath();
+
+    public static event PlayerDeath PlayerDeathEvent;
+
+    public static void OnPlayerDeath()
+    {
+        PlayerDeathEvent?.Invoke();
+    }
+}
