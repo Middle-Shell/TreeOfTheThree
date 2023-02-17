@@ -8,8 +8,21 @@ public class CollisionPlayer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            PlayerStateEvent.OnPlayerDeath();
             print("Hit!");
+            PlayerStateEvent.OnPlayerDeath();
+        }
+
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(("Swamp")))
+        {
+            if (TransformToWolfPlayer.IsWolf)
+            {
+                print("Swamp");
+                PlayerStateEvent.OnPlayerDeath();
+            }
         }
     }
 }

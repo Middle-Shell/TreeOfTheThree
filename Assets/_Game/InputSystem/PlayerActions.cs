@@ -35,6 +35,24 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""e5665a57-c2c5-420c-8c2f-83b025edabfb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Transformation"",
+                    ""type"": ""Button"",
+                    ""id"": ""3db59690-6057-4f5c-8b31-da713bfa8360"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -92,6 +110,28 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f60e9f5d-1d57-4bed-a637-f753c52e61cc"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2b528858-1e31-4038-b119-0ad2aa400142"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Transformation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -101,6 +141,8 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         // Player_Map
         m_Player_Map = asset.FindActionMap("Player_Map", throwIfNotFound: true);
         m_Player_Map_Movement = m_Player_Map.FindAction("Movement", throwIfNotFound: true);
+        m_Player_Map_Jump = m_Player_Map.FindAction("Jump", throwIfNotFound: true);
+        m_Player_Map_Transformation = m_Player_Map.FindAction("Transformation", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -161,11 +203,15 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player_Map;
     private IPlayer_MapActions m_Player_MapActionsCallbackInterface;
     private readonly InputAction m_Player_Map_Movement;
+    private readonly InputAction m_Player_Map_Jump;
+    private readonly InputAction m_Player_Map_Transformation;
     public struct Player_MapActions
     {
         private @PlayerActions m_Wrapper;
         public Player_MapActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Map_Movement;
+        public InputAction @Jump => m_Wrapper.m_Player_Map_Jump;
+        public InputAction @Transformation => m_Wrapper.m_Player_Map_Transformation;
         public InputActionMap Get() { return m_Wrapper.m_Player_Map; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -178,6 +224,12 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @Movement.started -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnMovement;
+                @Jump.started -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnJump;
+                @Transformation.started -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnTransformation;
+                @Transformation.performed -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnTransformation;
+                @Transformation.canceled -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnTransformation;
             }
             m_Wrapper.m_Player_MapActionsCallbackInterface = instance;
             if (instance != null)
@@ -185,6 +237,12 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Transformation.started += instance.OnTransformation;
+                @Transformation.performed += instance.OnTransformation;
+                @Transformation.canceled += instance.OnTransformation;
             }
         }
     }
@@ -192,5 +250,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     public interface IPlayer_MapActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnTransformation(InputAction.CallbackContext context);
     }
 }
