@@ -903,6 +903,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: jumpForce
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: FallWeight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: JumpWeight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: _jumpForce
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: jumpWeight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: _groundLayers.m_Bits
       value: 320
       objectReference: {fileID: 0}
@@ -927,7 +947,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 20
-  _gravity: 0
 --- !u!114 &1126786107
 MonoBehaviour:
   m_ObjectHideFlags: 0
