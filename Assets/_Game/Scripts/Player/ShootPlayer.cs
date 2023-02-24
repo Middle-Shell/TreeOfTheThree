@@ -8,6 +8,7 @@ public class ShootPlayer : MonoBehaviour
     [SerializeField] private float _powerMax = 20f;
 
     [SerializeField] private GameObject _prefab;
+    [SerializeField] private Transform _pointPosition;
     [SerializeField] private Transform _firePosition;
     private Vector2 _direction;
 
@@ -37,12 +38,12 @@ public class ShootPlayer : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         _bowPosition = transform.position;
         _mousePosition = _cam.ScreenToWorldPoint(Input.mousePosition);
         _direction = _mousePosition - _bowPosition;
-        transform.right = _direction;
+        _pointPosition.transform.right = _direction;
         if (Input.GetMouseButtonDown(0))
         {
             _isCharging = true;
@@ -52,7 +53,7 @@ public class ShootPlayer : MonoBehaviour
         {
             _isCharging = false;
             GameObject newArrow = Instantiate(_prefab, _firePosition.position, _firePosition.rotation);
-            newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * _currentPower;
+            newArrow.GetComponent<Rigidbody2D>().velocity = _pointPosition.transform.right * _currentPower;
             for (int i = 0; i < _numOfPoints; i++)
             {
                 _points[i].transform.position = PointPosition(-500);

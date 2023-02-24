@@ -39,15 +39,15 @@ public class TransformToWolfPlayer : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.2f);
             if (_playerActions.Player_Map.Transformation.IsPressed())
             {
-                print("Press");
+                print(IsWolf);
                 
                 IsWolf = !IsWolf;
 
                 _spriteRenderer.color =
-                    _isWolf ? Color.red : Color.green; //когда будут арты и т.п. поменять на что то вразумительное
+                    _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное
             }
         }
     }

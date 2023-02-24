@@ -31,7 +31,7 @@ public class JumpPlayer : MonoBehaviour
             Debug.LogError("Rigidbody is NULL");
     }
 
-    void FixedUpdate()
+    void Update()
     {
         //проверяем падает ли игрок
         _isFalling = _rbody.velocity.y <= 0;
