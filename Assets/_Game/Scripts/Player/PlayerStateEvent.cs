@@ -12,4 +12,13 @@ public class PlayerStateEvent : MonoBehaviour
     {
         PlayerDeathEvent?.Invoke();
     }
+    
+    public delegate void PlayerCollectPot();
+
+    public static event PlayerCollectPot PlayerCollectPotEvent;
+
+    public static void OnPlayerCollectPot()
+    {
+        PlayerCollectPotEvent?.Invoke();
+    }
 }
