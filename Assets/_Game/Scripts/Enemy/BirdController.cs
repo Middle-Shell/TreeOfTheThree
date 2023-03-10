@@ -21,6 +21,7 @@ public class BirdController : MonoBehaviour
 
     private void Start()
     {
+        
         _rb = GetComponent<Rigidbody2D>();
         _moveDirection = Vector2.right;
     }

@@ -6,18 +6,23 @@ public class Arrow : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        print(collision2D.gameObject.tag);
-        if (collision2D.gameObject.tag == "Eagle")
+        switch (collision2D.gameObject.tag)
         {
+            case "Eagle":
+                PlayerStateEvent.OnPlayerDeath();
+                Destroy(collision2D.gameObject, .2f);
+                return;
             
-            Destroy(collision2D.gameObject, .2f);
-            PlayerStateEvent.OnPlayerDeath();
-        }
+            case "Enemy":
+                Destroy(collision2D.gameObject, .2f);
+                return;
+            
+            case "Player":
+                PlayerStateEvent.OnPlayerDeath();
+                Destroy(collision2D.gameObject, .2f);
+                return;
 
-        if (collision2D.gameObject.tag == "Enemy")
-        {
-            Destroy(collision2D.gameObject, .2f);
         }
-        Destroy(this.gameObject, 1f);
+        Destroy(this.gameObject, .2f);
     }
 }

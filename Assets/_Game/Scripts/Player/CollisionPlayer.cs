@@ -18,11 +18,8 @@ public class CollisionPlayer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(("Swamp")))
         {
-            if (TransformToWolfPlayer.IsWolf)
-            {
-                print("Swamp");
-                PlayerStateEvent.OnPlayerDeath();
-            }
+            print("Swamp");
+            PlayerStateEvent.OnPlayerDeath();
         }
     }
 }

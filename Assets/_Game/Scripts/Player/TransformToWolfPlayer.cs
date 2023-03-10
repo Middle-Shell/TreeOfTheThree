@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class TransformToWolfPlayer : MonoBehaviour
 {
     
     private static bool _isWolf;
     private PlayerActions _playerActions;
+    private JumpPlayer _jumpController;
     
     [SerializeField] private SpriteRenderer _spriteRenderer;
     
@@ -22,6 +24,7 @@ public class TransformToWolfPlayer : MonoBehaviour
         _playerActions = new PlayerActions();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         StartCoroutine("Transformation");
+        _jumpController = GetComponent<JumpPlayer>();
     }
     
     private void OnEnable()
@@ -39,12 +42,14 @@ public class TransformToWolfPlayer : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(.2f);
+            yield return new WaitForSeconds(.1f);
             if (_playerActions.Player_Map.Transformation.IsPressed())
             {
                 print(IsWolf);
                 
                 IsWolf = !IsWolf;
+                print(_jumpController.IsStop);
+                _jumpController.IsStop = !_jumpController.IsStop;
 
                 _spriteRenderer.color =
                     _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное

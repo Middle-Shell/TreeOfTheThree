@@ -9,6 +9,7 @@ public class JumpPlayer : MonoBehaviour
     
     private bool _isGrounded;
     private float _gravity;
+    private bool _isStop = true;
     
     [SerializeField] [Range(0f, 10f)] private float  FallWeight = 5.0f;
     [SerializeField] [Range(0f, 10f)] private float JumpWeight = 0.5f;
@@ -21,6 +22,11 @@ public class JumpPlayer : MonoBehaviour
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _groundCheckRadius = 0.1f;
 
+    public bool IsStop
+    {
+        get => _isStop;
+        set => _isStop = value;
+    }
     void Awake()
     {
         _playerActions = new PlayerActions();
@@ -33,18 +39,21 @@ public class JumpPlayer : MonoBehaviour
 
     void Update()
     {
-        //проверяем падает ли игрок
-        _isFalling = _rbody.velocity.y <= 0;
-        _weight = _isFalling ? FallWeight : JumpWeight;
-        
-        // Проверяем, коснулся ли игрок земли
-        _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayers);
-        
-        _rbody.velocity += Vector2.up * _gravity * _weight * Time.deltaTime;
-        
-        if (_isGrounded && _playerActions.Player_Map.Jump.IsPressed())
+        if (_isStop)
         {
-            _rbody.velocity = Vector2.up * _jumpForce;
+            //проверяем падает ли игрок
+            _isFalling = _rbody.velocity.y <= 0;
+            _weight = _isFalling ? FallWeight : JumpWeight;
+
+            // Проверяем, коснулся ли игрок земли
+            _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayers);
+
+            _rbody.velocity += Vector2.up * _gravity * _weight * Time.deltaTime;
+
+            if (_isGrounded && _playerActions.Player_Map.Jump.IsPressed())
+            {
+                _rbody.velocity = Vector2.up * _jumpForce;
+            }
         }
     }
     

@@ -23,6 +23,8 @@ public class ShootPlayer : MonoBehaviour
     [SerializeField] private float _spaceBetweenPoints;
     private Vector2 _bowPosition;
     private Vector2 _mousePosition;
+    private bool _isAllowFire;
+    private float _angle;
 
     private void Awake()
     {
@@ -40,24 +42,28 @@ public class ShootPlayer : MonoBehaviour
 
     private void Update()
     {
+        _isAllowFire = true;
         _bowPosition = transform.position;
         _mousePosition = _cam.ScreenToWorldPoint(Input.mousePosition);
         _direction = _mousePosition - _bowPosition;
+        _angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+        if (_angle > 80f || _angle < -20f)
+        {
+            _isCharging = false;
+            _isAllowFire = false;
+            //_direction = new Vector2(Mathf.Sign(_direction.x), Mathf.Sign(_direction.y));
+            ThrowOutPoints();
+        }
         _pointPosition.transform.right = _direction;
-        if (Input.GetMouseButtonDown(0))
+        
+        if (Input.GetMouseButtonDown(0) && _isAllowFire)
         {
             _isCharging = true;
             _currentPower = _powerMin;
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (Input.GetMouseButtonUp(0) && _isCharging)
         {
-            _isCharging = false;
-            GameObject newArrow = Instantiate(_prefab, _firePosition.position, _firePosition.rotation);
-            newArrow.GetComponent<Rigidbody2D>().velocity = _pointPosition.transform.right * _currentPower;
-            for (int i = 0; i < _numOfPoints; i++)
-            {
-                _points[i].transform.position = PointPosition(-500);
-            }
+            Fire();
         }
 
         if (_isCharging)
@@ -67,6 +73,22 @@ public class ShootPlayer : MonoBehaviour
             {
                 _points[i].transform.position = PointPosition(i * _spaceBetweenPoints);
             }
+        }
+    }
+
+    private void Fire()
+    {
+        _isCharging = false;
+        GameObject newArrow = Instantiate(_prefab, _firePosition.position, _firePosition.rotation);
+        newArrow.GetComponent<Rigidbody2D>().velocity = _pointPosition.transform.right * _currentPower;
+        ThrowOutPoints();
+    }
+
+    private void ThrowOutPoints()
+    {
+        for (int i = 0; i < _numOfPoints; i++)
+        {
+            _points[i].transform.position = PointPosition(-500);
         }
     }
     private Vector2 PointPosition(float t)
