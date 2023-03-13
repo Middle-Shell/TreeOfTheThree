@@ -12,6 +12,11 @@ public class CollisionPlayer : MonoBehaviour
             PlayerStateEvent.OnPlayerDeath();
         }
 
+        if (collision.gameObject.CompareTag("Waystone"))
+        {
+            GameManager.SingletoneGameManager.GenerateLevel(GameManager.SingletoneGameManager.CurrentLevel + 1, transform);
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)

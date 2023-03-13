@@ -6,10 +6,10 @@ public class CameraController : MonoBehaviour
 {
     [Header("Parameters")]
     [SerializeField] private GameObject _player;
-    [SerializeField] [Range(0.5f, 10f)] private float movingSpeed = 5f;
-    [SerializeField] private Vector3 _offsetXYZ = new (4f, 0f, -500f);//-500 по Z что бы не было спрайтов уходящих за камеру
+    [SerializeField] [Range(0.5f, 10f)] private readonly float movingSpeed = 5f;
+    [SerializeField] private readonly Vector3 _offsetXYZ = new (4f, 0f, -500f);//-500 по Z что бы не было спрайтов уходящих за камеру
 
-    void Awake()
+    void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
     }

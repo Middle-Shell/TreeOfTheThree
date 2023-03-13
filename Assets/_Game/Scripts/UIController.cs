@@ -33,7 +33,7 @@ public class UIController : MonoBehaviour
     }
     void ReloadScene()//для тестов, потом удалить
     {
-        GameManager.SingletoneGameManager.GenerateLevel(1);
+        GameManager.SingletoneGameManager.GenerateLevel(GameManager.SingletoneGameManager.CurrentLevel);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

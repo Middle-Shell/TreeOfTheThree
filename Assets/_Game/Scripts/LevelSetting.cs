@@ -51,7 +51,7 @@ public class LevelSetting : MonoBehaviour
         _background.size = new Vector2(_levelDistance, _background.size.y);
         _background.transform.position = new Vector2(_levelDistance / 2, _background.transform.position.y);
 
-        _waystone.transform.position = new Vector2(_levelDistance, _roof.transform.position.y);
+        _waystone.transform.position = new Vector2(_levelDistance, _floor.transform.position.y);
         _player.transform.position = Vector2.zero;
 
         GenerateObstacles();
@@ -125,7 +125,7 @@ public class LevelSetting : MonoBehaviour
 
             if (possibleCount == 0)
             {
-                Debug.LogWarning("Количество препятствий превысило максимальное возможное значение! Генерация остановлена. Количество препятствий: " + i);
+                Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + i);
                 break;
             }
 
@@ -199,7 +199,7 @@ public class LevelSetting : MonoBehaviour
 
             if (possibleCount == 0)
             {
-                Debug.LogWarning("Количество врагов превысило максимальное возможное значение! Генерация остановлена. Количество врагов: " + i);
+                Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: " + i);
                 break;
             }
 

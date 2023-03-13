@@ -7,15 +7,19 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<GameObject> _levels;
     private GameObject _currentLevel;
+    private int _currentIndexLevel;
 
+    public int CurrentLevel
+    {
+        get => _currentIndexLevel;
+        set => _currentIndexLevel = value;
+    }
     private void Awake()
     {
         if (!SingletoneGameManager)
         {
             SingletoneGameManager = this;
             DontDestroyOnLoad(this);
-            
-            GenerateLevel(1);//тестовое
         }
         else
         {
@@ -24,8 +28,15 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void GenerateLevel(int levelNumber)
+    void Start()
     {
+        GenerateLevel(0);
+    }
+
+    public void GenerateLevel(int levelNumber, Transform startPosition = null)
+    {
+        CurrentLevel = levelNumber;
+        print(CurrentLevel);
         if (levelNumber > _levels.Count)
         {
             Debug.LogWarning("Out of range! Num > count of levels");
@@ -39,9 +50,11 @@ public class GameManager : MonoBehaviour
             if (_currentLevel != null)
             {
                 GameObject.Destroy(_currentLevel);
+                print("destroy");
             }
 
-            _currentLevel = Instantiate(_levels[levelNumber], transform);
+            _currentLevel = Instantiate(_levels[levelNumber]);//, (startPosition == null ? transform : startPosition));
+            print(_currentLevel);
         }   
     }
 }
