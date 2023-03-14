@@ -7,7 +7,7 @@ public class CloudController : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _whiteCloud;
     [SerializeField] private SpriteRenderer _blackCloud;
-    public float duration = 5.0f;
+    [SerializeField] private float _duration = 5.0f;
     
     [SerializeField] private bool _isAttack; //будет ли атаковать
     
@@ -68,7 +68,7 @@ public class CloudController : MonoBehaviour
             _blackCloud.color = blackColor - whiteColor;
 
             // Увеличиваем время на delta time, чтобы достичь нужного промежуточного спрайта через duration секунд
-            t += Time.deltaTime / duration;
+            t += Time.deltaTime / _duration;
 
             // Если достигли конца, то выходим из цикла
             if (t >= 1.0f)

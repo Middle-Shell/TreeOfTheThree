@@ -116,6 +116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _deathScreen: {fileID: 5869593750929985980}
+  _blackoutScreen: {fileID: 0}
+  _duration: 5
   _numberPotScreen: {fileID: 7165587649293368109}
 --- !u!1 &4385324332924131598
 GameObject:
@@ -215,8 +217,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 1967385782450816796}
-  movingSpeed: 5
-  _offsetXYZ: {x: 4, y: 5, z: -500}
 --- !u!1 &5869593750929985980
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 898112531952024058, guid: 47c6d34c404e692418ad0721ccac91e5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031712883866642134, guid: 47c6d34c404e692418ad0721ccac91e5, type: 3}
       propertyPath: m_RootOrder
@@ -976,7 +976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031712883866642134, guid: 47c6d34c404e692418ad0721ccac91e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.91
+      value: 14.8
       objectReference: {fileID: 0}
     - target: {fileID: 1031712883866642134, guid: 47c6d34c404e692418ad0721ccac91e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1323,7 +1323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 515054337910420595, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1816650082969333940, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled

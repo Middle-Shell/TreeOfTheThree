@@ -49,7 +49,7 @@ public class TransformToWolfPlayer : MonoBehaviour
                 
                 IsWolf = !IsWolf;
                 print(_jumpController.IsStop);
-                _jumpController.IsStop = !_jumpController.IsStop;
+                _jumpController.IsStop = !IsWolf;
 
                 _spriteRenderer.color =
                     _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное

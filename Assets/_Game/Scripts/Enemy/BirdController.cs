@@ -42,11 +42,11 @@ public class BirdController : MonoBehaviour
     private void FixedUpdate()
     {
         //перемещаемся туда-сюда
-        if (Time.time - _timeSinceDirectionChange >= _timeToChangeDirection)
+        /*if (Time.time - _timeSinceDirectionChange >= _timeToChangeDirection)
         {
             _moveDirection *= -1;
             _timeSinceDirectionChange = Time.time;
-        }
+        }*/
 
         _rb.velocity = _moveDirection * _moveSpeed;
     }

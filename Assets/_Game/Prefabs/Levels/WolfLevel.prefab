@@ -885,6 +885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _deathScreen: {fileID: 3438435569062294589}
+  _blackoutScreen: {fileID: 0}
+  _duration: 5
   _numberPotScreen: {fileID: 9146151148296547590}
 --- !u!1 &9146151148296547590
 GameObject:

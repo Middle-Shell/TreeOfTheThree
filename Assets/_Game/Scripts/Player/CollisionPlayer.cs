@@ -14,6 +14,7 @@ public class CollisionPlayer : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Waystone"))
         {
+            PlayerStateEvent.OnFinishMilestone();
             GameManager.SingletoneGameManager.GenerateLevel(GameManager.SingletoneGameManager.CurrentLevel + 1, transform);
         }
 

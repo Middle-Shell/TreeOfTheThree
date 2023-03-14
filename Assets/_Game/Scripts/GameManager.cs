@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        GenerateLevel(0);
+        GenerateLevel(1);
     }
 
     public void GenerateLevel(int levelNumber, Transform startPosition = null)
@@ -53,8 +54,14 @@ public class GameManager : MonoBehaviour
                 print("destroy");
             }
 
-            _currentLevel = Instantiate(_levels[levelNumber]);//, (startPosition == null ? transform : startPosition));
+            _currentLevel = Instantiate(_levels[levelNumber], (startPosition == null ? transform : startPosition));
             print(_currentLevel);
         }   
+    }
+    
+    public void ReloadScene()//для тестов, потом удалить
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GenerateLevel(CurrentLevel);
     }
 }
