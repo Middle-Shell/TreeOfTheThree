@@ -218,6 +218,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8510986804112615063}
     m_Modifications:
+    - target: {fileID: 2273664025607884793, guid: 41f6842be9e362145857692806b78bec, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273664025607884793, guid: 41f6842be9e362145857692806b78bec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273664025607884793, guid: 41f6842be9e362145857692806b78bec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.44
+      objectReference: {fileID: 0}
     - target: {fileID: 3595283347229825324, guid: 41f6842be9e362145857692806b78bec, type: 3}
       propertyPath: m_Name
       value: cloud_light_1 (1)

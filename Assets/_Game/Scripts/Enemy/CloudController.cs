@@ -56,6 +56,7 @@ public class CloudController : MonoBehaviour
 
     private IEnumerator  ChangeCloudToWhite()
     {
+        _isAttack = false;
         float t = 0.0f;
         Color whiteColor = _whiteCloud.color;
         Color blackColor = _blackCloud.color;
@@ -73,7 +74,6 @@ public class CloudController : MonoBehaviour
             // Если достигли конца, то выходим из цикла
             if (t >= 1.0f)
             {
-                _isAttack = false;
                 break;
             }
 

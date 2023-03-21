@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        GenerateLevel(1);
+        GenerateLevel(2);
     }
 
     public void GenerateLevel(int levelNumber, Transform startPosition = null)

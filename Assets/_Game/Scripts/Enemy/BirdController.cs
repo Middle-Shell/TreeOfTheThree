@@ -6,7 +6,7 @@ public class BirdController : MonoBehaviour
 {
     [SerializeField] private bool _isAttack; //будет ли атаковать
     
-    [SerializeField] private float _moveSpeed = 3.0f; // Скорость перемещения врага
+    [SerializeField] private float _moveSpeed = -3.0f; // Скорость перемещения врага
     [SerializeField] private float _timeToChangeDirection = 2.0f; // Время до изменения направления движения
     [SerializeField] private float _fireRate = 1.0f; // Частота стрельбы
     [SerializeField] private GameObject _bulletPrefab; // Префаб пули

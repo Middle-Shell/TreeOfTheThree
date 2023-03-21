@@ -99,13 +99,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isAttack: 0
-  _moveSpeed: 3
+  _moveSpeed: -3
   _timeToChangeDirection: 2
   _fireRate: 1
   _bulletPrefab: {fileID: 0}
   _firePoint: {fileID: 0}
   _bulletForce: 10
-  _IsRandomTimeChangeDirection: 0
 --- !u!50 &-565542665048839316
 Rigidbody2D:
   serializedVersion: 4

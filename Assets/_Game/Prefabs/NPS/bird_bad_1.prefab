@@ -133,13 +133,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isAttack: 1
-  _moveSpeed: 5
+  _moveSpeed: -5
   _timeToChangeDirection: 5
   _fireRate: 1
   _bulletPrefab: {fileID: 5978098513130072357, guid: e277737f71a98f74ea4c6bb745597996, type: 3}
   _firePoint: {fileID: 2897920381610264607}
   _bulletForce: 15
-  _IsRandomTimeChangeDirection: 0
 --- !u!50 &2897920382091765786
 Rigidbody2D:
   serializedVersion: 4
