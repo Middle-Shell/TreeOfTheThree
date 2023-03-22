@@ -9,6 +9,9 @@ public class TransformToWolfPlayer : MonoBehaviour
     private static bool _isWolf;
     private PlayerActions _playerActions;
     private JumpPlayer _jumpController;
+
+    [SerializeField] private Sprite _humanSprite;
+    [SerializeField] private Sprite _wolfSprite;
     
     [SerializeField] private SpriteRenderer _spriteRenderer;
     
@@ -23,7 +26,7 @@ public class TransformToWolfPlayer : MonoBehaviour
     {
         _playerActions = new PlayerActions();
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        StartCoroutine("Transformation");
+        StartCoroutine(Transformation());
         _jumpController = GetComponent<JumpPlayer>();
     }
     
@@ -51,8 +54,9 @@ public class TransformToWolfPlayer : MonoBehaviour
                 print(_jumpController.IsStop);
                 _jumpController.IsStop = !IsWolf;
 
-                _spriteRenderer.color =
-                    _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное
+                _spriteRenderer.sprite = _isWolf ? _wolfSprite : _humanSprite;
+                /*_spriteRenderer.color =
+                    _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное*/
             }
         }
     }

@@ -22,7 +22,7 @@ public class PlayerStateEvent : MonoBehaviour
         PlayerCollectPotEvent?.Invoke();
     }
 
-    public delegate IEnumerator FinishMilestone();
+    public delegate void FinishMilestone();
 
     public static event FinishMilestone FinishMilestoneEvent;
 

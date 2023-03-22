@@ -17,7 +17,7 @@ public class UIController : MonoBehaviour
     {
         PlayerStateEvent.PlayerDeathEvent += PlayerDeathScreen;
         PlayerStateEvent.PlayerCollectPotEvent += NumberPot;
-        PlayerStateEvent.FinishMilestoneEvent += BlackOut;
+        PlayerStateEvent.FinishMilestoneEvent += BlackOutVoid;
     }
 
     void PlayerDeathScreen()
@@ -33,7 +33,11 @@ public class UIController : MonoBehaviour
         _numberPot += 1;
         _numberPotScreen.GetComponent<TextMeshProUGUI>().text = _numberPot.ToString();
     }
-    
+
+    void BlackOutVoid()
+    {
+        StartCoroutine(BlackOut());
+    }
     private IEnumerator BlackOut()
     {
         bool isBlack = true;
@@ -41,6 +45,7 @@ public class UIController : MonoBehaviour
         Color blackoutScreen = _blackoutScreen.color;
         while (true)
         {
+            print("enter");
             //Постепенно меняем альфа канал спрайтов
             var a = Mathf.Lerp(_blackoutScreen.color.a, (isBlack?1:0), t);
             blackoutScreen.a = a;
@@ -50,13 +55,14 @@ public class UIController : MonoBehaviour
             t += Time.deltaTime / _duration;
 
             // Если достигли конца, то выходим из цикла
-            if (t >= 1.0f)
+            if (t >= _duration)
             {
                 if (!isBlack)
                 {
+                    print("out");
                     break;
                 }
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(.3f);
                 isBlack = false;
                 t = 0.0f;
             }

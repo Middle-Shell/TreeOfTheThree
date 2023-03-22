@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
@@ -10,7 +11,7 @@ public class GameManager : MonoBehaviour
     private GameObject _currentLevel;
     private int _currentIndexLevel;
 
-    public int CurrentLevel
+    public int CurrentLevelIndex
     {
         get => _currentIndexLevel;
         set => _currentIndexLevel = value;
@@ -36,8 +37,8 @@ public class GameManager : MonoBehaviour
 
     public void GenerateLevel(int levelNumber, Transform startPosition = null)
     {
-        CurrentLevel = levelNumber;
-        print(CurrentLevel);
+        CurrentLevelIndex = levelNumber;
+        print(CurrentLevelIndex);
         if (levelNumber > _levels.Count)
         {
             Debug.LogWarning("Out of range! Num > count of levels");
@@ -50,18 +51,27 @@ public class GameManager : MonoBehaviour
         {
             if (_currentLevel != null)
             {
-                GameObject.Destroy(_currentLevel);
+                Destroy(_currentLevel);
                 print("destroy");
             }
 
-            _currentLevel = Instantiate(_levels[levelNumber], (startPosition == null ? transform : startPosition));
+            _currentLevel = Instantiate(_levels[levelNumber]);
+            StartCoroutine(ShiftTransform(startPosition.position.x));
             print(_currentLevel);
+            
         }   
+    }
+
+    IEnumerator ShiftTransform(float shift)
+    {
+        yield return new WaitForSeconds(.01f);
+        _currentLevel.transform.position =
+            new Vector3(_currentLevel.transform.position.x + shift, 0f);
     }
     
     public void ReloadScene()//для тестов, потом удалить
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        GenerateLevel(CurrentLevel);
+        GenerateLevel(CurrentLevelIndex);
     }
 }

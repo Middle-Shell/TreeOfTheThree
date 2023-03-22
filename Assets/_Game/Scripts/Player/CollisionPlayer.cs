@@ -15,7 +15,7 @@ public class CollisionPlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("Waystone"))
         {
             PlayerStateEvent.OnFinishMilestone();
-            GameManager.SingletoneGameManager.GenerateLevel(GameManager.SingletoneGameManager.CurrentLevel + 1, transform);
+            GameManager.SingletoneGameManager.GenerateLevel(GameManager.SingletoneGameManager.CurrentLevelIndex + 1, collision.transform);
         }
 
     }
@@ -24,7 +24,6 @@ public class CollisionPlayer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(("Swamp")))
         {
-            print("Swamp");
             PlayerStateEvent.OnPlayerDeath();
         }
     }

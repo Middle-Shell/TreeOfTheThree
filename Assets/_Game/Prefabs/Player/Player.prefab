@@ -206,6 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32be3d91b10b9ca418cef60ab34b493a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _humanSprite: {fileID: 21300000, guid: 9e4266a60d343fc4ab10060f85bb8284, type: 3}
+  _wolfSprite: {fileID: 21300000, guid: 808cfcf22fb08094a8e2cbfc6c41f237, type: 3}
   _spriteRenderer: {fileID: 0}
 --- !u!70 &6935127711679524566
 CapsuleCollider2D:
