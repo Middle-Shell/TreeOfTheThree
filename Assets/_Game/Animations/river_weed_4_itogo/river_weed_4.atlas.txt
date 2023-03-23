@@ -1,0 +1,118 @@
+
+river_weed_4.png
+size: 2993,2993
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+leaf_bot_left
+  rotate: true
+  xy: 2493, 2713
+  size: 207, 168
+  orig: 207, 168
+  offset: 0, 0
+  index: -1
+leaf_bot_right
+  rotate: true
+  xy: 2842, 2743
+  size: 206, 150
+  orig: 206, 150
+  offset: 0, 0
+  index: -1
+leaf_top_left
+  rotate: true
+  xy: 2137, 2692
+  size: 211, 172
+  orig: 211, 172
+  offset: 0, 0
+  index: -1
+leaf_top_right
+  rotate: true
+  xy: 2663, 2767
+  size: 181, 177
+  orig: 181, 177
+  offset: 0, 0
+  index: -1
+petal_bot_1
+  rotate: false
+  xy: 1340, 2744
+  size: 194, 249
+  orig: 194, 249
+  offset: 0, 0
+  index: -1
+petal_bot_2
+  rotate: false
+  xy: 2311, 2757
+  size: 180, 236
+  orig: 180, 236
+  offset: 0, 0
+  index: -1
+petal_mid_1
+  rotate: false
+  xy: 909, 2748
+  size: 237, 245
+  orig: 237, 245
+  offset: 0, 0
+  index: -1
+petal_mid_2
+  rotate: false
+  xy: 1720, 2758
+  size: 226, 236
+  orig: 226, 236
+  offset: 0, 0
+  index: -1
+petal_mid_3
+  rotate: false
+  xy: 1148, 2723
+  size: 190, 270
+  orig: 190, 270
+  offset: 0, 0
+  index: -1
+petal_mid_4
+  rotate: false
+  xy: 1536, 2731
+  size: 182, 262
+  orig: 182, 262
+  offset: 0, 0
+  index: -1
+petal_top_1
+  rotate: true
+  xy: 283, 2725
+  size: 268, 245
+  orig: 268, 245
+  offset: 0, 0
+  index: -1
+petal_top_2
+  rotate: false
+  xy: 1, 2730
+  size: 280, 263
+  orig: 280, 263
+  offset: 0, 0
+  index: -1
+petal_top_3
+  rotate: false
+  xy: 530, 2694
+  size: 203, 299
+  orig: 203, 299
+  offset: 0, 0
+  index: -1
+petal_top_4
+  rotate: 180
+  xy: 1939, 2713
+  size: 197, 281
+  orig: 203, 326
+  offset: 3, 45
+  index: -1
+petal_top_5
+  rotate: false
+  xy: 735, 2654
+  size: 172, 339
+  orig: 172, 339
+  offset: 0, 0
+  index: -1
+stem
+  rotate: true
+  xy: 1, 2654
+  size: 38, 724
+  orig: 38, 724
+  offset: 0, 0
+  index: -1

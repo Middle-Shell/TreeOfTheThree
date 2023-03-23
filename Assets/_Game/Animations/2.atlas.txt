@@ -1,0 +1,76 @@
+
+2.png
+size: 455,519
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BODY
+  rotate: true
+  xy: 2, 34
+  size: 483, 203
+  orig: 483, 203
+  offset: 0, 0
+  index: -1
+LEFT EYEBALL
+  rotate: false
+  xy: 32, 3
+  size: 21, 29
+  orig: 21, 29
+  offset: 0, 0
+  index: -1
+MOUTH
+  rotate: false
+  xy: 207, 16
+  size: 133, 134
+  orig: 133, 134
+  offset: 0, 0
+  index: -1
+RIGHT ARM
+  rotate: false
+  xy: 342, 113
+  size: 79, 80
+  orig: 79, 80
+  offset: 0, 0
+  index: -1
+RIGHT LEG
+  rotate: true
+  xy: 340, 380
+  size: 137, 113
+  orig: 137, 113
+  offset: 0, 0
+  index: -1
+RUGHT EYEBALL
+  rotate: false
+  xy: 2, 2
+  size: 28, 30
+  orig: 28, 30
+  offset: 0, 0
+  index: -1
+TAIL
+  rotate: true
+  xy: 207, 152
+  size: 182, 119
+  orig: 182, 119
+  offset: 0, 0
+  index: -1
+TONGUE
+  rotate: true
+  xy: 342, 3
+  size: 108, 54
+  orig: 108, 54
+  offset: 0, 0
+  index: -1
+eyes
+  rotate: true
+  xy: 207, 336
+  size: 181, 131
+  orig: 181, 131
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 328, 195
+  size: 119, 139
+  orig: 119, 139
+  offset: 0, 0
+  index: -1

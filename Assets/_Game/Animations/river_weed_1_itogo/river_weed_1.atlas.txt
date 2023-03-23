@@ -1,0 +1,27 @@
+
+river_weed_1.png
+size: 1156,1156
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_1_center
+  rotate: false
+  xy: 1, 299
+  size: 352, 857
+  orig: 352, 857
+  offset: 0, 0
+  index: -1
+river_weed_1_left
+  rotate: 270
+  xy: 317, 566
+  size: 591, 495
+  orig: 591, 499
+  offset: 0, 4
+  index: -1
+river_weed_1_right
+  rotate: true
+  xy: 210, 2
+  size: 562, 483
+  orig: 562, 490
+  offset: 0, 7
+  index: -1

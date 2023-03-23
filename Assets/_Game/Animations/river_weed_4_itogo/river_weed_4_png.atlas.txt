@@ -1,0 +1,2807 @@
+
+river_weed_4_png.png
+size: 2029,1698
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_054
+  rotate: true
+  xy: 0, 1
+  size: 424, 1011
+  orig: 570, 1054
+  offset: 58, 10
+  index: -1
+river_weed_4-river_weed_4_animation_055
+  rotate: true
+  xy: 1015, 851
+  size: 423, 1012
+  orig: 570, 1054
+  offset: 59, 10
+  index: -1
+river_weed_4-river_weed_4_animation_056
+  rotate: true
+  xy: 0, 1276
+  size: 422, 1012
+  orig: 570, 1054
+  offset: 60, 10
+  index: -1
+river_weed_4-river_weed_4_animation_057
+  rotate: true
+  xy: 1014, 1276
+  size: 422, 1013
+  orig: 570, 1054
+  offset: 60, 10
+  index: -1
+river_weed_4-river_weed_4_animation_058
+  rotate: true
+  xy: 0, 852
+  size: 422, 1013
+  orig: 570, 1054
+  offset: 60, 10
+  index: -1
+river_weed_4-river_weed_4_animation_059
+  rotate: true
+  xy: 0, 427
+  size: 423, 1013
+  orig: 570, 1054
+  offset: 59, 10
+  index: -1
+river_weed_4-river_weed_4_animation_060
+  rotate: true
+  xy: 1015, 426
+  size: 423, 1014
+  orig: 570, 1054
+  offset: 59, 10
+  index: -1
+river_weed_4-river_weed_4_animation_061
+  rotate: true
+  xy: 1013, 0
+  size: 424, 1014
+  orig: 570, 1054
+  offset: 58, 10
+  index: -1
+
+river_weed_4_png2.png
+size: 2030,1705
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_049
+  rotate: true
+  xy: 0, 0
+  size: 426, 1010
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_052
+  rotate: true
+  xy: 1014, 854
+  size: 425, 1011
+  orig: 570, 1054
+  offset: 57, 10
+  index: -1
+river_weed_4-river_weed_4_animation_053
+  rotate: true
+  xy: 0, 428
+  size: 425, 1011
+  orig: 570, 1054
+  offset: 57, 10
+  index: -1
+river_weed_4-river_weed_4_animation_062
+  rotate: true
+  xy: 0, 1281
+  size: 424, 1015
+  orig: 570, 1054
+  offset: 58, 10
+  index: -1
+river_weed_4-river_weed_4_animation_063
+  rotate: true
+  xy: 1013, 427
+  size: 425, 1015
+  orig: 570, 1054
+  offset: 57, 10
+  index: -1
+river_weed_4-river_weed_4_animation_064
+  rotate: true
+  xy: 1012, 0
+  size: 425, 1015
+  orig: 570, 1054
+  offset: 57, 10
+  index: -1
+river_weed_4-river_weed_4_animation_324
+  rotate: true
+  xy: 1017, 1281
+  size: 424, 1013
+  orig: 570, 1054
+  offset: 60, 10
+  index: -1
+river_weed_4-river_weed_4_animation_325
+  rotate: true
+  xy: 0, 855
+  size: 424, 1012
+  orig: 570, 1054
+  offset: 60, 10
+  index: -1
+
+river_weed_4_png3.png
+size: 2033,1709
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_050
+  rotate: true
+  xy: 0, 856
+  size: 426, 1010
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_051
+  rotate: true
+  xy: 1012, 856
+  size: 426, 1010
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_065
+  rotate: true
+  xy: 0, 428
+  size: 426, 1015
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_066
+  rotate: true
+  xy: 1017, 428
+  size: 426, 1016
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_321
+  rotate: true
+  xy: 0, 0
+  size: 426, 1015
+  orig: 570, 1054
+  offset: 58, 10
+  index: -1
+river_weed_4-river_weed_4_animation_322
+  rotate: true
+  xy: 1017, 0
+  size: 426, 1014
+  orig: 570, 1054
+  offset: 58, 10
+  index: -1
+river_weed_4-river_weed_4_animation_323
+  rotate: true
+  xy: 0, 1284
+  size: 425, 1013
+  orig: 570, 1054
+  offset: 59, 10
+  index: -1
+river_weed_4-river_weed_4_animation_326
+  rotate: true
+  xy: 1015, 1284
+  size: 425, 1012
+  orig: 570, 1054
+  offset: 59, 10
+  index: -1
+
+river_weed_4_png4.png
+size: 2034,1714
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_044
+  rotate: true
+  xy: 0, 429
+  size: 428, 1009
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_047
+  rotate: true
+  xy: 1013, 1287
+  size: 427, 1009
+  orig: 570, 1054
+  offset: 55, 10
+  index: -1
+river_weed_4-river_weed_4_animation_048
+  rotate: true
+  xy: 0, 859
+  size: 427, 1010
+  orig: 570, 1054
+  offset: 55, 10
+  index: -1
+river_weed_4-river_weed_4_animation_067
+  rotate: true
+  xy: 1012, 858
+  size: 427, 1016
+  orig: 570, 1054
+  offset: 55, 10
+  index: -1
+river_weed_4-river_weed_4_animation_068
+  rotate: true
+  xy: 1011, 429
+  size: 427, 1016
+  orig: 570, 1054
+  offset: 55, 10
+  index: -1
+river_weed_4-river_weed_4_animation_069
+  rotate: true
+  xy: 0, 0
+  size: 427, 1017
+  orig: 570, 1054
+  offset: 55, 10
+  index: -1
+river_weed_4-river_weed_4_animation_320
+  rotate: true
+  xy: 1019, 0
+  size: 427, 1015
+  orig: 570, 1054
+  offset: 57, 10
+  index: -1
+river_weed_4-river_weed_4_animation_327
+  rotate: true
+  xy: 0, 1288
+  size: 426, 1011
+  orig: 570, 1054
+  offset: 58, 10
+  index: -1
+
+river_weed_4_png5.png
+size: 2028,1718
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_042
+  rotate: true
+  xy: 0, 0
+  size: 429, 1008
+  orig: 570, 1054
+  offset: 53, 10
+  index: -1
+river_weed_4-river_weed_4_animation_045
+  rotate: true
+  xy: 1013, 1290
+  size: 428, 1009
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_046
+  rotate: true
+  xy: 0, 861
+  size: 428, 1009
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_070
+  rotate: true
+  xy: 1011, 860
+  size: 428, 1017
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_071
+  rotate: true
+  xy: 1011, 430
+  size: 428, 1017
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_318
+  rotate: true
+  xy: 1010, 0
+  size: 428, 1016
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_328
+  rotate: true
+  xy: 0, 1291
+  size: 427, 1011
+  orig: 570, 1054
+  offset: 57, 10
+  index: -1
+river_weed_4-river_weed_4_animation_330
+  rotate: true
+  xy: 0, 431
+  size: 428, 1009
+  orig: 570, 1054
+  offset: 55, 10
+  index: -1
+
+river_weed_4_png6.png
+size: 2036,1721
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_043
+  rotate: true
+  xy: 0, 862
+  size: 429, 1008
+  orig: 570, 1054
+  offset: 53, 10
+  index: -1
+river_weed_4-river_weed_4_animation_072
+  rotate: true
+  xy: 1010, 862
+  size: 429, 1018
+  orig: 570, 1054
+  offset: 53, 10
+  index: -1
+river_weed_4-river_weed_4_animation_073
+  rotate: true
+  xy: 0, 431
+  size: 429, 1018
+  orig: 570, 1054
+  offset: 53, 10
+  index: -1
+river_weed_4-river_weed_4_animation_317
+  rotate: true
+  xy: 1020, 431
+  size: 429, 1016
+  orig: 570, 1054
+  offset: 55, 10
+  index: -1
+river_weed_4-river_weed_4_animation_319
+  rotate: true
+  xy: 0, 1293
+  size: 428, 1015
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_329
+  rotate: true
+  xy: 1017, 1293
+  size: 428, 1010
+  orig: 570, 1054
+  offset: 56, 10
+  index: -1
+river_weed_4-river_weed_4_animation_331
+  rotate: true
+  xy: 0, 0
+  size: 429, 1009
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_332
+  rotate: true
+  xy: 1011, 0
+  size: 429, 1009
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+
+river_weed_4_png7.png
+size: 2038,1726
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_039
+  rotate: true
+  xy: 0, 1296
+  size: 430, 1007
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_040
+  rotate: true
+  xy: 1009, 1296
+  size: 430, 1008
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_041
+  rotate: true
+  xy: 0, 864
+  size: 430, 1008
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_074
+  rotate: true
+  xy: 1010, 864
+  size: 430, 1018
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_075
+  rotate: true
+  xy: 0, 432
+  size: 430, 1019
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_315
+  rotate: true
+  xy: 1021, 432
+  size: 430, 1017
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_316
+  rotate: true
+  xy: 0, 0
+  size: 430, 1017
+  orig: 570, 1054
+  offset: 54, 10
+  index: -1
+river_weed_4-river_weed_4_animation_333
+  rotate: true
+  xy: 1019, 0
+  size: 430, 1008
+  orig: 570, 1054
+  offset: 53, 10
+  index: -1
+
+river_weed_4_png8.png
+size: 2040,1731
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_034
+  rotate: true
+  xy: 1009, 0
+  size: 432, 1006
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+river_weed_4-river_weed_4_animation_037
+  rotate: true
+  xy: 0, 1300
+  size: 431, 1007
+  orig: 570, 1054
+  offset: 51, 10
+  index: -1
+river_weed_4-river_weed_4_animation_038
+  rotate: true
+  xy: 1009, 1300
+  size: 431, 1007
+  orig: 570, 1054
+  offset: 51, 10
+  index: -1
+river_weed_4-river_weed_4_animation_076
+  rotate: true
+  xy: 0, 867
+  size: 431, 1019
+  orig: 570, 1054
+  offset: 51, 10
+  index: -1
+river_weed_4-river_weed_4_animation_077
+  rotate: true
+  xy: 1021, 867
+  size: 431, 1019
+  orig: 570, 1054
+  offset: 51, 10
+  index: -1
+river_weed_4-river_weed_4_animation_314
+  rotate: true
+  xy: 0, 434
+  size: 431, 1018
+  orig: 570, 1054
+  offset: 53, 10
+  index: -1
+river_weed_4-river_weed_4_animation_334
+  rotate: true
+  xy: 1020, 434
+  size: 431, 1008
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_335
+  rotate: true
+  xy: 0, 1
+  size: 431, 1007
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+
+river_weed_4_png9.png
+size: 2041,1734
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_035
+  rotate: true
+  xy: 0, 1302
+  size: 432, 1006
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+river_weed_4-river_weed_4_animation_036
+  rotate: true
+  xy: 1008, 1302
+  size: 432, 1006
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+river_weed_4-river_weed_4_animation_078
+  rotate: true
+  xy: 0, 868
+  size: 432, 1019
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+river_weed_4-river_weed_4_animation_079
+  rotate: true
+  xy: 1021, 868
+  size: 432, 1020
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+river_weed_4-river_weed_4_animation_312
+  rotate: true
+  xy: 0, 434
+  size: 432, 1019
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_313
+  rotate: true
+  xy: 1021, 434
+  size: 432, 1018
+  orig: 570, 1054
+  offset: 52, 10
+  index: -1
+river_weed_4-river_weed_4_animation_336
+  rotate: true
+  xy: 0, 0
+  size: 432, 1007
+  orig: 570, 1054
+  offset: 51, 10
+  index: -1
+river_weed_4-river_weed_4_animation_337
+  rotate: true
+  xy: 1009, 0
+  size: 432, 1006
+  orig: 570, 1054
+  offset: 51, 10
+  index: -1
+
+river_weed_4_png10.png
+size: 2041,1739
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_029
+  rotate: true
+  xy: 1008, 0
+  size: 434, 1004
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+river_weed_4-river_weed_4_animation_031
+  rotate: true
+  xy: 0, 1306
+  size: 433, 1005
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+river_weed_4-river_weed_4_animation_032
+  rotate: true
+  xy: 1007, 1306
+  size: 433, 1005
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+river_weed_4-river_weed_4_animation_033
+  rotate: true
+  xy: 0, 871
+  size: 433, 1006
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+river_weed_4-river_weed_4_animation_080
+  rotate: true
+  xy: 1008, 871
+  size: 433, 1020
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+river_weed_4-river_weed_4_animation_081
+  rotate: true
+  xy: 0, 436
+  size: 433, 1020
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+river_weed_4-river_weed_4_animation_311
+  rotate: true
+  xy: 1022, 436
+  size: 433, 1019
+  orig: 570, 1054
+  offset: 51, 10
+  index: -1
+river_weed_4-river_weed_4_animation_338
+  rotate: true
+  xy: 0, 1
+  size: 433, 1006
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+
+river_weed_4_png11.png
+size: 2043,1743
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_021
+  rotate: true
+  xy: 1007, 0
+  size: 435, 1003
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_030
+  rotate: true
+  xy: 0, 1309
+  size: 434, 1005
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+river_weed_4-river_weed_4_animation_082
+  rotate: true
+  xy: 1007, 1309
+  size: 434, 1021
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+river_weed_4-river_weed_4_animation_083
+  rotate: true
+  xy: 0, 873
+  size: 434, 1021
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+river_weed_4-river_weed_4_animation_309
+  rotate: true
+  xy: 1023, 873
+  size: 434, 1020
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+river_weed_4-river_weed_4_animation_310
+  rotate: true
+  xy: 0, 437
+  size: 434, 1019
+  orig: 570, 1054
+  offset: 50, 10
+  index: -1
+river_weed_4-river_weed_4_animation_339
+  rotate: true
+  xy: 1021, 437
+  size: 434, 1006
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+river_weed_4-river_weed_4_animation_340
+  rotate: true
+  xy: 0, 1
+  size: 434, 1005
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+
+river_weed_4_png12.png
+size: 2027,1746
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_022
+  rotate: true
+  xy: 0, 1311
+  size: 435, 1003
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_023
+  rotate: true
+  xy: 1005, 1311
+  size: 435, 1003
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_024
+  rotate: true
+  xy: 0, 874
+  size: 435, 1004
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_025
+  rotate: true
+  xy: 1006, 874
+  size: 435, 1004
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_026
+  rotate: true
+  xy: 0, 437
+  size: 435, 1004
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_027
+  rotate: true
+  xy: 1006, 437
+  size: 435, 1004
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_028
+  rotate: true
+  xy: 0, 0
+  size: 435, 1004
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_084
+  rotate: true
+  xy: 1006, 0
+  size: 435, 1021
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+
+river_weed_4_png13.png
+size: 2043,1748
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_012
+  rotate: true
+  xy: 0, 438
+  size: 436, 1002
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_013
+  rotate: true
+  xy: 1004, 438
+  size: 436, 1002
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_014
+  rotate: true
+  xy: 0, 0
+  size: 436, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_015
+  rotate: true
+  xy: 1005, 0
+  size: 436, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_085
+  rotate: true
+  xy: 0, 1313
+  size: 435, 1021
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_308
+  rotate: true
+  xy: 1023, 1313
+  size: 435, 1020
+  orig: 570, 1054
+  offset: 49, 10
+  index: -1
+river_weed_4-river_weed_4_animation_341
+  rotate: true
+  xy: 0, 876
+  size: 435, 1004
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+river_weed_4-river_weed_4_animation_342
+  rotate: true
+  xy: 1006, 876
+  size: 435, 1004
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+
+river_weed_4_png14.png
+size: 2047,1750
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_016
+  rotate: true
+  xy: 0, 1314
+  size: 436, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_017
+  rotate: true
+  xy: 1005, 1314
+  size: 436, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_018
+  rotate: true
+  xy: 0, 876
+  size: 436, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_019
+  rotate: true
+  xy: 1005, 876
+  size: 436, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_020
+  rotate: true
+  xy: 0, 438
+  size: 436, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_086
+  rotate: true
+  xy: 1005, 438
+  size: 436, 1021
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_087
+  rotate: true
+  xy: 0, 0
+  size: 436, 1022
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_088
+  rotate: true
+  xy: 1024, 0
+  size: 436, 1023
+  orig: 570, 1054
+  offset: 45, 9
+  index: -1
+
+river_weed_4_png15.png
+size: 2046,1752
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_004
+  rotate: true
+  xy: 0, 439
+  size: 437, 1001
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_005
+  rotate: true
+  xy: 1003, 439
+  size: 437, 1001
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_006
+  rotate: true
+  xy: 0, 0
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_007
+  rotate: true
+  xy: 1004, 0
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_089
+  rotate: true
+  xy: 0, 1316
+  size: 436, 1023
+  orig: 570, 1054
+  offset: 45, 9
+  index: -1
+river_weed_4-river_weed_4_animation_306
+  rotate: true
+  xy: 1025, 1316
+  size: 436, 1021
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+river_weed_4-river_weed_4_animation_307
+  rotate: true
+  xy: 0, 878
+  size: 436, 1021
+  orig: 570, 1054
+  offset: 48, 10
+  index: -1
+river_weed_4-river_weed_4_animation_343
+  rotate: true
+  xy: 1023, 878
+  size: 436, 1004
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+
+river_weed_4_png16.png
+size: 2048,1754
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_008
+  rotate: true
+  xy: 0, 1317
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_009
+  rotate: true
+  xy: 1004, 1317
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_010
+  rotate: true
+  xy: 0, 878
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_011
+  rotate: true
+  xy: 1004, 878
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_090
+  rotate: true
+  xy: 0, 439
+  size: 437, 1023
+  orig: 570, 1054
+  offset: 44, 9
+  index: -1
+river_weed_4-river_weed_4_animation_091
+  rotate: true
+  xy: 1025, 439
+  size: 437, 1023
+  orig: 570, 1054
+  offset: 44, 9
+  index: -1
+river_weed_4-river_weed_4_animation_305
+  rotate: true
+  xy: 0, 0
+  size: 437, 1021
+  orig: 570, 1054
+  offset: 47, 10
+  index: -1
+river_weed_4-river_weed_4_animation_344
+  rotate: true
+  xy: 1023, 0
+  size: 437, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+
+river_weed_4_png17.png
+size: 2008,1755
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_001
+  rotate: true
+  xy: 1004, 0
+  size: 438, 1001
+  orig: 570, 1054
+  offset: 44, 10
+  index: -1
+river_weed_4-river_weed_4_animation_345
+  rotate: true
+  xy: 0, 1318
+  size: 437, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_346
+  rotate: true
+  xy: 1005, 1318
+  size: 437, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_347
+  rotate: true
+  xy: 0, 879
+  size: 437, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_348
+  rotate: true
+  xy: 1005, 879
+  size: 437, 1003
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_349
+  rotate: true
+  xy: 0, 440
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_350
+  rotate: true
+  xy: 1004, 440
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_352
+  rotate: true
+  xy: 0, 1
+  size: 437, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+
+river_weed_4_png18.png
+size: 2047,1758
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_002
+  rotate: true
+  xy: 0, 1320
+  size: 438, 1001
+  orig: 570, 1054
+  offset: 44, 10
+  index: -1
+river_weed_4-river_weed_4_animation_003
+  rotate: true
+  xy: 1003, 1320
+  size: 438, 1001
+  orig: 570, 1054
+  offset: 44, 10
+  index: -1
+river_weed_4-river_weed_4_animation_092
+  rotate: true
+  xy: 0, 880
+  size: 438, 1023
+  orig: 570, 1054
+  offset: 43, 9
+  index: -1
+river_weed_4-river_weed_4_animation_303
+  rotate: true
+  xy: 1025, 880
+  size: 438, 1022
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_304
+  rotate: true
+  xy: 0, 440
+  size: 438, 1021
+  orig: 570, 1054
+  offset: 46, 10
+  index: -1
+river_weed_4-river_weed_4_animation_351
+  rotate: true
+  xy: 1023, 440
+  size: 438, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_353
+  rotate: true
+  xy: 0, 0
+  size: 438, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_354
+  rotate: true
+  xy: 1004, 0
+  size: 438, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+
+river_weed_4_png19.png
+size: 2048,1762
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_000
+  rotate: true
+  xy: 1003, 883
+  size: 439, 1001
+  orig: 570, 1054
+  offset: 44, 10
+  index: -1
+river_weed_4-river_weed_4_animation_093
+  rotate: true
+  xy: 0, 0
+  size: 440, 1023
+  orig: 570, 1054
+  offset: 42, 9
+  index: -1
+river_weed_4-river_weed_4_animation_300
+  rotate: true
+  xy: 1025, 0
+  size: 440, 1023
+  orig: 570, 1054
+  offset: 44, 9
+  index: -1
+river_weed_4-river_weed_4_animation_302
+  rotate: true
+  xy: 1003, 442
+  size: 439, 1023
+  orig: 570, 1054
+  offset: 45, 9
+  index: -1
+river_weed_4-river_weed_4_animation_355
+  rotate: true
+  xy: 0, 1324
+  size: 438, 1002
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_356
+  rotate: true
+  xy: 1004, 1324
+  size: 438, 1001
+  orig: 570, 1054
+  offset: 45, 10
+  index: -1
+river_weed_4-river_weed_4_animation_357
+  rotate: true
+  xy: 0, 884
+  size: 438, 1001
+  orig: 570, 1054
+  offset: 44, 10
+  index: -1
+river_weed_4-river_weed_4_animation_358
+  rotate: true
+  xy: 0, 443
+  size: 439, 1001
+  orig: 570, 1054
+  offset: 44, 10
+  index: -1
+
+river_weed_4_png20.png
+size: 2048,1778
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_094
+  rotate: true
+  xy: 0, 894
+  size: 442, 1023
+  orig: 570, 1054
+  offset: 42, 9
+  index: -1
+river_weed_4-river_weed_4_animation_095
+  rotate: true
+  xy: 1025, 447
+  size: 444, 1023
+  orig: 570, 1054
+  offset: 41, 9
+  index: -1
+river_weed_4-river_weed_4_animation_096
+  rotate: true
+  xy: 1025, 0
+  size: 445, 1023
+  orig: 570, 1054
+  offset: 41, 9
+  index: -1
+river_weed_4-river_weed_4_animation_296
+  rotate: true
+  xy: 0, 4
+  size: 444, 1023
+  orig: 570, 1054
+  offset: 41, 9
+  index: -1
+river_weed_4-river_weed_4_animation_297
+  rotate: true
+  xy: 1025, 893
+  size: 442, 1023
+  orig: 570, 1054
+  offset: 42, 9
+  index: -1
+river_weed_4-river_weed_4_animation_298
+  rotate: true
+  xy: 0, 450
+  size: 442, 1023
+  orig: 570, 1054
+  offset: 42, 9
+  index: -1
+river_weed_4-river_weed_4_animation_299
+  rotate: true
+  xy: 1025, 1337
+  size: 441, 1023
+  orig: 570, 1054
+  offset: 43, 9
+  index: -1
+river_weed_4-river_weed_4_animation_301
+  rotate: true
+  xy: 0, 1338
+  size: 440, 1023
+  orig: 570, 1054
+  offset: 44, 9
+  index: -1
+
+river_weed_4_png21.png
+size: 2048,1802
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_097
+  rotate: true
+  xy: 1025, 1355
+  size: 447, 1023
+  orig: 570, 1054
+  offset: 40, 9
+  index: -1
+river_weed_4-river_weed_4_animation_098
+  rotate: true
+  xy: 0, 907
+  size: 448, 1023
+  orig: 570, 1054
+  offset: 40, 9
+  index: -1
+river_weed_4-river_weed_4_animation_099
+  rotate: true
+  xy: 0, 456
+  size: 449, 1023
+  orig: 570, 1054
+  offset: 40, 9
+  index: -1
+river_weed_4-river_weed_4_animation_100
+  rotate: true
+  xy: 1025, 0
+  size: 452, 1023
+  orig: 570, 1054
+  offset: 39, 9
+  index: -1
+river_weed_4-river_weed_4_animation_292
+  rotate: true
+  xy: 0, 3
+  size: 451, 1023
+  orig: 570, 1054
+  offset: 39, 9
+  index: -1
+river_weed_4-river_weed_4_animation_293
+  rotate: true
+  xy: 1025, 454
+  size: 449, 1023
+  orig: 570, 1054
+  offset: 40, 9
+  index: -1
+river_weed_4-river_weed_4_animation_294
+  rotate: true
+  xy: 1025, 905
+  size: 448, 1023
+  orig: 570, 1054
+  offset: 40, 9
+  index: -1
+river_weed_4-river_weed_4_animation_295
+  rotate: true
+  xy: 0, 1357
+  size: 445, 1023
+  orig: 570, 1054
+  offset: 41, 9
+  index: -1
+
+river_weed_4_png22.png
+size: 2048,1827
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_101
+  rotate: true
+  xy: 1025, 1374
+  size: 453, 1023
+  orig: 570, 1054
+  offset: 39, 9
+  index: -1
+river_weed_4-river_weed_4_animation_102
+  rotate: true
+  xy: 0, 918
+  size: 455, 1023
+  orig: 570, 1054
+  offset: 38, 9
+  index: -1
+river_weed_4-river_weed_4_animation_103
+  rotate: true
+  xy: 0, 460
+  size: 456, 1022
+  orig: 570, 1054
+  offset: 38, 9
+  index: -1
+river_weed_4-river_weed_4_animation_104
+  rotate: true
+  xy: 0, 1
+  size: 457, 1022
+  orig: 570, 1054
+  offset: 38, 9
+  index: -1
+river_weed_4-river_weed_4_animation_288
+  rotate: true
+  xy: 1024, 0
+  size: 457, 1022
+  orig: 570, 1054
+  offset: 38, 9
+  index: -1
+river_weed_4-river_weed_4_animation_289
+  rotate: true
+  xy: 1024, 459
+  size: 456, 1022
+  orig: 570, 1054
+  offset: 38, 9
+  index: -1
+river_weed_4-river_weed_4_animation_290
+  rotate: true
+  xy: 1025, 917
+  size: 455, 1023
+  orig: 570, 1054
+  offset: 38, 9
+  index: -1
+river_weed_4-river_weed_4_animation_291
+  rotate: true
+  xy: 0, 1375
+  size: 452, 1023
+  orig: 570, 1054
+  offset: 39, 9
+  index: -1
+
+river_weed_4_png23.png
+size: 2046,1854
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_105
+  rotate: true
+  xy: 0, 1395
+  size: 459, 1022
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_106
+  rotate: true
+  xy: 0, 932
+  size: 461, 1022
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_107
+  rotate: true
+  xy: 0, 468
+  size: 462, 1021
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_108
+  rotate: true
+  xy: 0, 2
+  size: 464, 1021
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_284
+  rotate: true
+  xy: 1023, 0
+  size: 464, 1021
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_285
+  rotate: true
+  xy: 1023, 466
+  size: 463, 1021
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_286
+  rotate: true
+  xy: 1024, 931
+  size: 461, 1022
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_287
+  rotate: true
+  xy: 1024, 1394
+  size: 460, 1022
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+
+river_weed_4_png24.png
+size: 2044,1877
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_109
+  rotate: true
+  xy: 0, 1412
+  size: 465, 1021
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_110
+  rotate: true
+  xy: 0, 943
+  size: 467, 1020
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_111
+  rotate: true
+  xy: 1022, 472
+  size: 469, 1020
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_112
+  rotate: true
+  xy: 0, 1
+  size: 470, 1019
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_280
+  rotate: true
+  xy: 1021, 0
+  size: 470, 1019
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_281
+  rotate: true
+  xy: 0, 473
+  size: 468, 1020
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_282
+  rotate: true
+  xy: 1022, 943
+  size: 467, 1020
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_283
+  rotate: true
+  xy: 1023, 1412
+  size: 465, 1021
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+
+river_weed_4_png25.png
+size: 2040,1902
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_113
+  rotate: true
+  xy: 0, 1430
+  size: 472, 1019
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_114
+  rotate: true
+  xy: 0, 955
+  size: 473, 1018
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_115
+  rotate: true
+  xy: 0, 479
+  size: 474, 1018
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_116
+  rotate: true
+  xy: 1019, 0
+  size: 477, 1017
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_276
+  rotate: true
+  xy: 0, 1
+  size: 476, 1017
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_277
+  rotate: true
+  xy: 1020, 479
+  size: 474, 1018
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_278
+  rotate: true
+  xy: 1020, 955
+  size: 473, 1018
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_279
+  rotate: true
+  xy: 1021, 1430
+  size: 472, 1019
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+
+river_weed_4_png26.png
+size: 2035,1925
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_117
+  rotate: true
+  xy: 1019, 1447
+  size: 478, 1016
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_118
+  rotate: true
+  xy: 1018, 966
+  size: 479, 1016
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_119
+  rotate: true
+  xy: 1018, 484
+  size: 480, 1015
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_120
+  rotate: true
+  xy: 0, 3
+  size: 482, 1015
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_272
+  rotate: true
+  xy: 1017, 0
+  size: 482, 1015
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_273
+  rotate: true
+  xy: 0, 487
+  size: 479, 1016
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_274
+  rotate: true
+  xy: 0, 968
+  size: 478, 1016
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_275
+  rotate: true
+  xy: 0, 1448
+  size: 477, 1017
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+
+river_weed_4_png27.png
+size: 2031,1946
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_121
+  rotate: true
+  xy: 1017, 1462
+  size: 484, 1014
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_122
+  rotate: true
+  xy: 1016, 975
+  size: 485, 1013
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_123
+  rotate: true
+  xy: 0, 2
+  size: 486, 1012
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_267
+  rotate: true
+  xy: 1014, 0
+  size: 486, 1012
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_268
+  rotate: true
+  xy: 0, 490
+  size: 485, 1013
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_269
+  rotate: true
+  xy: 1015, 488
+  size: 485, 1013
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_270
+  rotate: true
+  xy: 0, 977
+  size: 484, 1014
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_271
+  rotate: true
+  xy: 0, 1463
+  size: 483, 1015
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+
+river_weed_4_png28.png
+size: 2026,1964
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_124
+  rotate: true
+  xy: 0, 1477
+  size: 487, 1012
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_125
+  rotate: true
+  xy: 0, 987
+  size: 488, 1011
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_126
+  rotate: true
+  xy: 0, 495
+  size: 490, 1010
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_127
+  rotate: true
+  xy: 1012, 0
+  size: 492, 1009
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_263
+  rotate: true
+  xy: 0, 2
+  size: 491, 1010
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_264
+  rotate: true
+  xy: 1012, 494
+  size: 490, 1011
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_265
+  rotate: true
+  xy: 1013, 986
+  size: 489, 1011
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_266
+  rotate: true
+  xy: 1014, 1477
+  size: 487, 1012
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+
+river_weed_4_png29.png
+size: 2020,1983
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_128
+  rotate: true
+  xy: 1011, 1490
+  size: 493, 1009
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_129
+  rotate: true
+  xy: 1011, 994
+  size: 494, 1008
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_130
+  rotate: true
+  xy: 1010, 497
+  size: 495, 1007
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_258
+  rotate: true
+  xy: 0, 3
+  size: 495, 1007
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_259
+  rotate: true
+  xy: 1009, 0
+  size: 495, 1008
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_260
+  rotate: true
+  xy: 0, 500
+  size: 494, 1008
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_261
+  rotate: true
+  xy: 0, 996
+  size: 493, 1009
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_262
+  rotate: true
+  xy: 0, 1491
+  size: 492, 1009
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+
+river_weed_4_png30.png
+size: 2014,1996
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_131
+  rotate: true
+  xy: 0, 1500
+  size: 496, 1006
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_132
+  rotate: true
+  xy: 0, 1001
+  size: 497, 1005
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_133
+  rotate: true
+  xy: 0, 501
+  size: 498, 1005
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_134
+  rotate: true
+  xy: 0, 0
+  size: 499, 1004
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_254
+  rotate: true
+  xy: 1006, 0
+  size: 499, 1004
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_255
+  rotate: true
+  xy: 1007, 501
+  size: 498, 1005
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_256
+  rotate: true
+  xy: 1007, 1001
+  size: 497, 1005
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_257
+  rotate: true
+  xy: 1008, 1500
+  size: 496, 1006
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+
+river_weed_4_png31.png
+size: 2008,2013
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_135
+  rotate: true
+  xy: 1005, 1512
+  size: 501, 1003
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_136
+  rotate: true
+  xy: 0, 506
+  size: 502, 1001
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_137
+  rotate: true
+  xy: 1003, 0
+  size: 503, 1001
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_249
+  rotate: true
+  xy: 1003, 505
+  size: 502, 1001
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_250
+  rotate: true
+  xy: 0, 2
+  size: 502, 1001
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_251
+  rotate: true
+  xy: 0, 1010
+  size: 501, 1002
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_252
+  rotate: true
+  xy: 1004, 1009
+  size: 501, 1003
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_253
+  rotate: true
+  xy: 0, 1513
+  size: 500, 1003
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+
+river_weed_4_png32.png
+size: 2002,2023
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_138
+  rotate: true
+  xy: 1002, 1519
+  size: 504, 1000
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_139
+  rotate: true
+  xy: 0, 1014
+  size: 504, 999
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_140
+  rotate: true
+  xy: 0, 507
+  size: 505, 998
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_141
+  rotate: true
+  xy: 0, 0
+  size: 505, 997
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_243
+  rotate: true
+  xy: 999, 0
+  size: 505, 997
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_246
+  rotate: true
+  xy: 1001, 1013
+  size: 504, 999
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_247
+  rotate: true
+  xy: 1000, 507
+  size: 504, 1000
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_248
+  rotate: true
+  xy: 0, 1520
+  size: 503, 1000
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+
+river_weed_4_png33.png
+size: 1996,2032
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_142
+  rotate: true
+  xy: 1000, 1526
+  size: 506, 996
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_143
+  rotate: true
+  xy: 0, 510
+  size: 507, 995
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_144
+  rotate: true
+  xy: 997, 0
+  size: 508, 994
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_240
+  rotate: true
+  xy: 0, 1
+  size: 507, 995
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_241
+  rotate: true
+  xy: 0, 1019
+  size: 506, 996
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_242
+  rotate: true
+  xy: 998, 1018
+  size: 506, 996
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_244
+  rotate: true
+  xy: 997, 510
+  size: 506, 998
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+river_weed_4-river_weed_4_animation_245
+  rotate: true
+  xy: 0, 1527
+  size: 505, 998
+  orig: 570, 1054
+  offset: 31, 9
+  index: -1
+
+river_weed_4_png34.png
+size: 1990,2043
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_145
+  rotate: true
+  xy: 0, 1024
+  size: 509, 993
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_146
+  rotate: true
+  xy: 995, 512
+  size: 510, 992
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_147
+  rotate: true
+  xy: 0, 1
+  size: 510, 991
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_148
+  rotate: true
+  xy: 993, 0
+  size: 510, 990
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_236
+  rotate: true
+  xy: 995, 1024
+  size: 509, 992
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_237
+  rotate: true
+  xy: 0, 513
+  size: 509, 993
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_238
+  rotate: true
+  xy: 0, 1535
+  size: 508, 994
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+river_weed_4-river_weed_4_animation_239
+  rotate: true
+  xy: 996, 1535
+  size: 508, 994
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+
+river_weed_4_png35.png
+size: 1983,1536
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_149
+  rotate: true
+  xy: 994, 513
+  size: 511, 989
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_231
+  rotate: true
+  xy: 0, 1
+  size: 511, 989
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_232
+  rotate: true
+  xy: 991, 0
+  size: 511, 990
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_233
+  rotate: true
+  xy: 0, 1026
+  size: 510, 990
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_234
+  rotate: true
+  xy: 992, 1026
+  size: 510, 991
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_235
+  rotate: true
+  xy: 0, 514
+  size: 510, 992
+  orig: 570, 1054
+  offset: 32, 9
+  index: -1
+
+river_weed_4_png36.png
+size: 1978,1540
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_150
+  rotate: true
+  xy: 0, 1028
+  size: 512, 988
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_151
+  rotate: true
+  xy: 990, 1028
+  size: 512, 987
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_226
+  rotate: true
+  xy: 0, 514
+  size: 512, 987
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_228
+  rotate: true
+  xy: 989, 514
+  size: 512, 988
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_229
+  rotate: true
+  xy: 0, 0
+  size: 512, 988
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+river_weed_4-river_weed_4_animation_230
+  rotate: true
+  xy: 990, 0
+  size: 512, 988
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+
+river_weed_4_png37.png
+size: 1975,1543
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_152
+  rotate: true
+  xy: 0, 1030
+  size: 513, 986
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_153
+  rotate: true
+  xy: 988, 1030
+  size: 513, 986
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_223
+  rotate: true
+  xy: 0, 515
+  size: 513, 985
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_224
+  rotate: true
+  xy: 987, 515
+  size: 513, 986
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_225
+  rotate: true
+  xy: 0, 0
+  size: 513, 986
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_227
+  rotate: true
+  xy: 988, 0
+  size: 513, 987
+  orig: 570, 1054
+  offset: 33, 9
+  index: -1
+
+river_weed_4_png38.png
+size: 1971,1546
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_154
+  rotate: true
+  xy: 0, 1032
+  size: 514, 985
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_155
+  rotate: true
+  xy: 987, 1032
+  size: 514, 984
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_157
+  rotate: true
+  xy: 0, 516
+  size: 514, 983
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_217
+  rotate: true
+  xy: 985, 516
+  size: 514, 982
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_218
+  rotate: true
+  xy: 0, 0
+  size: 514, 983
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_220
+  rotate: true
+  xy: 985, 0
+  size: 514, 984
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+
+river_weed_4_png39.png
+size: 1548,1971
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_156
+  rotate: false
+  xy: 516, 988
+  size: 515, 983
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_158
+  rotate: false
+  xy: 516, 4
+  size: 515, 982
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_215
+  rotate: false
+  xy: 1033, 4
+  size: 515, 982
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_219
+  rotate: false
+  xy: 1033, 988
+  size: 515, 983
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_221
+  rotate: false
+  xy: 0, 0
+  size: 514, 984
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+river_weed_4-river_weed_4_animation_222
+  rotate: false
+  xy: 0, 986
+  size: 514, 985
+  orig: 570, 1054
+  offset: 34, 9
+  index: -1
+
+river_weed_4_png40.png
+size: 1965,1551
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_159
+  rotate: true
+  xy: 0, 1036
+  size: 515, 981
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_160
+  rotate: true
+  xy: 0, 518
+  size: 516, 980
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_162
+  rotate: true
+  xy: 982, 518
+  size: 516, 979
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_209
+  rotate: true
+  xy: 0, 0
+  size: 516, 978
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_210
+  rotate: true
+  xy: 980, 0
+  size: 516, 979
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_216
+  rotate: true
+  xy: 983, 1036
+  size: 515, 982
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+
+river_weed_4_png41.png
+size: 1963,1553
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_161
+  rotate: true
+  xy: 0, 0
+  size: 517, 979
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_163
+  rotate: true
+  xy: 981, 0
+  size: 517, 978
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_211
+  rotate: true
+  xy: 0, 1037
+  size: 516, 979
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_212
+  rotate: true
+  xy: 981, 1037
+  size: 516, 980
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_213
+  rotate: true
+  xy: 0, 519
+  size: 516, 980
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+river_weed_4-river_weed_4_animation_214
+  rotate: true
+  xy: 982, 519
+  size: 516, 981
+  orig: 570, 1054
+  offset: 35, 9
+  index: -1
+
+river_weed_4_png42.png
+size: 1955,1555
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_164
+  rotate: true
+  xy: 0, 1038
+  size: 517, 977
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_168
+  rotate: true
+  xy: 979, 1038
+  size: 517, 976
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_169
+  rotate: true
+  xy: 0, 519
+  size: 517, 976
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_170
+  rotate: true
+  xy: 978, 519
+  size: 517, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_171
+  rotate: true
+  xy: 0, 0
+  size: 517, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_191
+  rotate: true
+  xy: 977, 0
+  size: 517, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+
+river_weed_4_png43.png
+size: 1955,1555
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_192
+  rotate: true
+  xy: 0, 1038
+  size: 517, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_193
+  rotate: true
+  xy: 977, 1038
+  size: 517, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_194
+  rotate: true
+  xy: 0, 519
+  size: 517, 976
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_195
+  rotate: true
+  xy: 978, 519
+  size: 517, 976
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_196
+  rotate: true
+  xy: 0, 0
+  size: 517, 976
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_201
+  rotate: true
+  xy: 978, 0
+  size: 517, 977
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+
+river_weed_4_png44.png
+size: 1957,1555
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_202
+  rotate: true
+  xy: 0, 1038
+  size: 517, 977
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_203
+  rotate: true
+  xy: 979, 1038
+  size: 517, 977
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_204
+  rotate: true
+  xy: 0, 519
+  size: 517, 977
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_205
+  rotate: true
+  xy: 979, 519
+  size: 517, 977
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_206
+  rotate: true
+  xy: 0, 0
+  size: 517, 977
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_207
+  rotate: true
+  xy: 979, 0
+  size: 517, 978
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+
+river_weed_4_png45.png
+size: 1558,1956
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_165
+  rotate: false
+  xy: 519, 980
+  size: 518, 976
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_166
+  rotate: false
+  xy: 1039, 980
+  size: 518, 976
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_167
+  rotate: false
+  xy: 0, 0
+  size: 518, 976
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_197
+  rotate: false
+  xy: 520, 2
+  size: 518, 976
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_198
+  rotate: false
+  xy: 1040, 2
+  size: 518, 976
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_208
+  rotate: false
+  xy: 0, 978
+  size: 517, 978
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+
+river_weed_4_png46.png
+size: 1952,1558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_172
+  rotate: true
+  xy: 0, 1040
+  size: 518, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_173
+  rotate: true
+  xy: 977, 1040
+  size: 518, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_174
+  rotate: true
+  xy: 0, 520
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_175
+  rotate: true
+  xy: 976, 520
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_176
+  rotate: true
+  xy: 0, 0
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_177
+  rotate: true
+  xy: 976, 0
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+
+river_weed_4_png47.png
+size: 1950,1558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_178
+  rotate: true
+  xy: 0, 1040
+  size: 518, 973
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_182
+  rotate: true
+  xy: 975, 1040
+  size: 518, 973
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_183
+  rotate: true
+  xy: 0, 520
+  size: 518, 973
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_184
+  rotate: true
+  xy: 975, 520
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_185
+  rotate: true
+  xy: 0, 0
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_186
+  rotate: true
+  xy: 976, 0
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+
+river_weed_4_png48.png
+size: 1954,1558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_187
+  rotate: true
+  xy: 0, 1040
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_188
+  rotate: true
+  xy: 976, 1040
+  size: 518, 974
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_189
+  rotate: true
+  xy: 0, 520
+  size: 518, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_190
+  rotate: true
+  xy: 977, 520
+  size: 518, 975
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_199
+  rotate: true
+  xy: 0, 0
+  size: 518, 976
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+river_weed_4-river_weed_4_animation_200
+  rotate: true
+  xy: 978, 0
+  size: 518, 976
+  orig: 570, 1054
+  offset: 36, 9
+  index: -1
+
+river_weed_4_png49.png
+size: 1561,973
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+river_weed_4-river_weed_4_animation_179
+  rotate: false
+  xy: 0, 0
+  size: 519, 973
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_180
+  rotate: false
+  xy: 521, 0
+  size: 519, 973
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1
+river_weed_4-river_weed_4_animation_181
+  rotate: false
+  xy: 1042, 0
+  size: 519, 973
+  orig: 570, 1054
+  offset: 37, 9
+  index: -1

@@ -1,0 +1,90 @@
+
+river_weed_3.png
+size: 2768,2768
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 2
+  rotate: false
+  xy: 1, 1667
+  size: 1195, 1101
+  orig: 1195, 1101
+  offset: 0, 0
+  index: -1
+flower_left_1
+  rotate: false
+  xy: 2413, 2331
+  size: 178, 180
+  orig: 178, 180
+  offset: 0, 0
+  index: -1
+flower_left_2
+  rotate: true
+  xy: 2413, 1730
+  size: 216, 182
+  orig: 216, 182
+  offset: 0, 0
+  index: -1
+flower_left_3
+  rotate: false
+  xy: 2413, 2566
+  size: 200, 202
+  orig: 200, 202
+  offset: 0, 0
+  index: -1
+flower_left_4
+  rotate: false
+  xy: 2606, 1948
+  size: 162, 172
+  orig: 162, 172
+  offset: 0, 0
+  index: -1
+flower_left_5
+  rotate: true
+  xy: 2593, 2333
+  size: 187, 160
+  orig: 187, 160
+  offset: 0, 0
+  index: -1
+flower_right_1
+  rotate: false
+  xy: 2413, 1948
+  size: 191, 187
+  orig: 191, 187
+  offset: 0, 0
+  index: -1
+flower_right_2
+  rotate: false
+  xy: 2413, 2137
+  size: 172, 192
+  orig: 172, 192
+  offset: 0, 0
+  index: -1
+flower_right_3
+  rotate: false
+  xy: 2597, 1759
+  size: 152, 187
+  orig: 152, 187
+  offset: 0, 0
+  index: -1
+flower_right_4
+  rotate: true
+  xy: 2593, 2137
+  size: 194, 155
+  orig: 194, 155
+  offset: 0, 0
+  index: -1
+stem_left
+  rotate: false
+  xy: 1198, 1730
+  size: 657, 1038
+  orig: 657, 1038
+  offset: 0, 0
+  index: -1
+stem_right
+  rotate: false
+  xy: 1857, 1730
+  size: 554, 889
+  orig: 554, 889
+  offset: 0, 0
+  index: -1
