@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
+  _limitY: 1.85
 --- !u!114 &-8091969139313083714
 MonoBehaviour:
   m_ObjectHideFlags: 0

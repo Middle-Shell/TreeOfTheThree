@@ -13,7 +13,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject _numberPotScreen;
     private int _numberPot = 0; //заменить на подгрузку из сохранения
     
-    void Start()
+    void Awake()
     {
         PlayerStateEvent.PlayerDeathEvent += PlayerDeathScreen;
         PlayerStateEvent.PlayerCollectPotEvent += NumberPot;
@@ -24,7 +24,7 @@ public class UIController : MonoBehaviour
     {
         PlayerStateEvent.PlayerDeathEvent -= PlayerDeathScreen;
         _deathScreen.SetActive(true);
-        GameManager.SingletoneGameManager.ReloadScene();//для тестов, потом удалить
+        //GameManager.SingletoneGameManager.CloseLevel();
     }
 
     void NumberPot()
@@ -40,6 +40,7 @@ public class UIController : MonoBehaviour
     }
     private IEnumerator BlackOut()
     {
+        _blackoutScreen.gameObject.SetActive(true);
         bool isBlack = true;
         float t = 0.0f;
         Color blackoutScreen = _blackoutScreen.color;
@@ -60,6 +61,7 @@ public class UIController : MonoBehaviour
                 if (!isBlack)
                 {
                     print("out");
+                    _blackoutScreen.gameObject.SetActive(false);
                     break;
                 }
                 yield return new WaitForSeconds(.3f);

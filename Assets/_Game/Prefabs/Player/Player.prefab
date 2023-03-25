@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 515054337910420595}
   - component: {fileID: 1816650082969333940}
   - component: {fileID: 6935127711679524566}
+  - component: {fileID: 3699725967870269150}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -34,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 486588386517798137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.0546, y: 0.7906, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2.495, y: 2.495, z: 1.2475}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3898954073561625182}
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0194df0d65b7c489ae8f6ae4b6620d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _speed: 12
   _blockY: 0
 --- !u!114 &4999591414416327068
 MonoBehaviour:
@@ -222,9 +223,21 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25555897, y: -0.09829211}
-  m_Size: {x: 1.3641615, y: 3.739224}
+  m_Offset: {x: 0.06553482, y: -0.098291144}
+  m_Size: {x: 1.144134, y: 4.41932}
   m_Direction: 0
+--- !u!114 &3699725967870269150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486588386517798137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c6c2dac9265094aa1fa8b00d030690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1489964458399165263
 GameObject:
   m_ObjectHideFlags: 0

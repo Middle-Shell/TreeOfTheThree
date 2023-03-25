@@ -3,14 +3,14 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 using System.Text;
-using Newtonsoft.Json.Linq;
+//using Newtonsoft.Json.Linq;
 using Spine;
 /// <summary>
 /// Modify the Spine file version
 /// </summary>
 public class SpineImportSetting : AssetPostprocessor
 {
-    // Any resource (including folder) imports will be called
+    /*// Any resource (including folder) imports will be called
     void OnPreprocessAsset()
     {
         try
@@ -21,7 +21,8 @@ public class SpineImportSetting : AssetPostprocessor
                
             // Judgment is a spine file
             string msg = File.ReadAllText(this.assetPath, Encoding.UTF8);
-            JObject jo = JObject.Parse(msg);
+            
+            Json jo = Json.Deserialize(msg);
             string item = jo["skeleton"]["spine"].ToString();
                
             if (!string.IsNullOrEmpty(item)&& item.ToString()!="3.8")
@@ -37,6 +38,6 @@ public class SpineImportSetting : AssetPostprocessor
         {
             Debug.LogError("SpineImportSetting exception {e.Message}");
         }
-    }
+    }*/
   
 }

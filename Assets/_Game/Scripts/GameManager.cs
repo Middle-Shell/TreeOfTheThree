@@ -1,21 +1,17 @@
 using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager SingletoneGameManager { get; private set; }
 
-    [SerializeField] private List<GameObject> _levels;
-    private GameObject _currentLevel;
-    private int _currentIndexLevel;
+    [SerializeField] private List<GameObject> _levels = null;
+    [SerializeField] private UiManager _uiManager = null;
+    private GameObject _currentLevel = null;
 
-    public int CurrentLevelIndex
-    {
-        get => _currentIndexLevel;
-        set => _currentIndexLevel = value;
-    }
+    public int CurrentLevelIndex { get; private set; }
+
     private void Awake()
     {
         if (!SingletoneGameManager)
@@ -27,51 +23,105 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void Start()
+    {
+        _uiManager.ShowMenu();
         
     }
 
-    void Start()
+    private void Update()
     {
-        GenerateLevel(2);
+        if (Input.GetKey(KeyCode.Y))
+        {
+            SaveManager.SaveBestiary(7);
+        }
+
+        if (Input.GetKey(KeyCode.T))
+        {
+            SaveManager.SaveBestiary(0);
+        }
+
+        if (Input.GetKey(KeyCode.Escape) && _currentLevel != null)
+        {
+            _uiManager.ShowInGameMenu();
+        }
     }
 
-    public void GenerateLevel(int levelNumber, Transform startPosition = null)
+    public void GenerateLevel(int levelNumber, float startPositionX = 0)
     {
         CurrentLevelIndex = levelNumber;
-        print(CurrentLevelIndex);
+        SaveProgress(CurrentLevelIndex);
+        
         if (levelNumber > _levels.Count)
         {
-            Debug.LogWarning("Out of range! Num > count of levels");
+            Debug.LogWarning("Такого уровня не существует!");
         }
         else if (levelNumber < 0)
         {
-            Debug.LogWarning("Out of range! Num < 0");
+            Debug.LogWarning("Номера уровня строго неотрицательны!");
         }
         else
         {
             if (_currentLevel != null)
             {
                 Destroy(_currentLevel);
-                print("destroy");
             }
 
+            if (CurrentLevelIndex % 3 == 0)
+            {
+                PlayerStateEvent.OnFinishMilestone();
+                Player.DeletePlayer(); //меняем объект игрока только при переходе между этапами, иначе плавного переключения не будет
+                startPositionX = 0;
+                Camera.main.transform.position = Vector3.zero;
+            }
             _currentLevel = Instantiate(_levels[levelNumber]);
-            StartCoroutine(ShiftTransform(startPosition.position.x));
-            print(_currentLevel);
-            
+            StartCoroutine(ShiftTransform(startPositionX));
         }   
+    }
+
+    private void SaveProgress(int levelI)
+    {
+        SaveManager.SaveCurrentLevel(levelI);
+        //SaveManager.SaveBestiary();
+    }
+
+    public void PlayLevel(bool levelContinue)
+    {
+        _uiManager.HideMenu();
+        _uiManager.HideBestiary();
+        _uiManager.HideInGameMenu();
+        //добавить dethscreen
+
+        if (levelContinue)
+        {
+            GenerateLevel(SaveManager.LoadCurrentLevel());
+        }
+        else
+        {
+            GenerateLevel(0);
+        }
     }
 
     IEnumerator ShiftTransform(float shift)
     {
         yield return new WaitForSeconds(.01f);
-        _currentLevel.transform.position =
+        _currentLevel.transform.position = 
             new Vector3(_currentLevel.transform.position.x + shift, 0f);
     }
-    
-    public void ReloadScene()//РґР»СЏ С‚РµСЃС‚РѕРІ, РїРѕС‚РѕРј СѓРґР°Р»РёС‚СЊ
+    public void CloseLevel()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        GenerateLevel(CurrentLevelIndex);
+        _uiManager.ShowMenu();
+        _uiManager.HideBestiary();
+        _uiManager.HideInGameMenu();
+
+        Destroy(_currentLevel);
+        _currentLevel = null;
+        Player.DeletePlayer();
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

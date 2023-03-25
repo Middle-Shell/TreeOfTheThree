@@ -52,7 +52,8 @@ public class LevelSetting : MonoBehaviour
         _background.transform.position = new Vector2(_levelDistance / 2, _background.transform.position.y);
 
         _waystone.transform.position = new Vector2(_levelDistance, _floor.transform.position.y);
-        _player.transform.position = Vector2.zero;
+        if(_player != null)
+            _player.transform.position = Vector2.zero;//что бы генератор не крашился, если в генерации нет игрока
 
         GenerateObstacles();
         GenerateEnemys();
@@ -125,7 +126,7 @@ public class LevelSetting : MonoBehaviour
 
             if (possibleCount == 0)
             {
-                Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + i);
+                Debug.LogWarning("Количество препятствий превысило максимальное возможное значение! Генерация остановлена. Количество препятствий: " + i);
                 break;
             }
 
@@ -199,7 +200,7 @@ public class LevelSetting : MonoBehaviour
 
             if (possibleCount == 0)
             {
-                Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: " + i);
+                Debug.LogWarning("Количество врагов превысило максимальное возможное значение! Генерация остановлена. Количество врагов: " + i);
                 break;
             }
 
