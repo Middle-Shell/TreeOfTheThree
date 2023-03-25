@@ -9,7 +9,7 @@ public class JumpPlayer : MonoBehaviour
     
     private bool _isGrounded;
     private float _gravity;
-    private bool _isStop = true;
+    private bool _isStop = false;
     
     [SerializeField] [Range(0f, 10f)] private float  FallWeight = 5.0f;
     [SerializeField] [Range(0f, 10f)] private float JumpWeight = 0.5f;
@@ -39,7 +39,7 @@ public class JumpPlayer : MonoBehaviour
 
     void Update()
     {
-        if (_isStop)
+        if (!_isStop)
         {
             //проверяем падает ли игрок
             _isFalling = _rbody.velocity.y <= 0;

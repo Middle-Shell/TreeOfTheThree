@@ -1,59 +1,66 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelSetting : MonoBehaviour
 {
-    [SerializeField] private GameObject _waystone; // stone/totem at the end of the level
-    [SerializeField] private GameObject _player; 
-    [SerializeField] private GameObject _enemy;
-    [SerializeField] private GameObject _item;
-    [SerializeField] private GameObject _obstacle;
-    [SerializeField] private GameObject _roof;
-    [SerializeField] private GameObject _floor;
-    [SerializeField] private SpriteRenderer _background;
+    [SerializeField] private GameObject _waystone = null; // stone/totem at the end of the level
+    [SerializeField] private GameObject _player = null; 
+    [SerializeField] private List<GameObject> _enemy = new List<GameObject>();
+    [SerializeField] private List<GameObject> _item = new List<GameObject>();
+    [SerializeField] private List<GameObject> _obstacle = new List<GameObject>();
+    [SerializeField] private GameObject _roof = null;
+    [SerializeField] private GameObject _floor = null;
+    [SerializeField] private SpriteRenderer _background = null;
     [Space(30)]
     [Range(1, 10000)]
-    [SerializeField] private int _levelDistance;
+    [SerializeField] private int _levelDistance = 0;
     [Range(0, 1000)]
-    [SerializeField] private int _safeSpawnDistance;
+    [SerializeField] private int _safeSpawnDistance = 0;
     [Range(0, 1000)]
-    [SerializeField] private int _safeEndDistance;
+    [SerializeField] private int _safeEndDistance = 0;
     [Range(1, 100)]
-    [SerializeField] private int _safeWidthObstacle;
+    [SerializeField] private List<int> _safeWidthObstacle = new List<int>();
     [Range(1, 100)]
-    [SerializeField] private int _safeWidthEnemy;
+    [SerializeField] private List<int> _safeWidthEnemy = new List<int>();
     [Range(0, 100)]
-    [SerializeField] private int _enemyCount;
+    [SerializeField] private List<int> _enemyCount = new List<int>();
     [Range(0, 100)]
-    [SerializeField] private int _obstacleCount;
+    [SerializeField] private List<int> _obstacleCount = new List<int>();
     [Range(0, 100)]
-    [SerializeField] private int _itemCount;
+    [SerializeField] private List<int> _itemCount = new List<int>();
 
+    [SerializeField] private static Vector2 _startPoint = Vector2.zero;
+    
     bool[] freeCoordinates = null;
     void Start()
     {
         freeCoordinates = new bool[_levelDistance];
-
+    
         GenerateLevel();
     }
 
+    public static Vector2 StartPoint
+    {
+        set => _startPoint = value;
+    }
     private void GenerateLevel()
     {
         for (int i = 0; i < freeCoordinates.Length; i++)
         {
             freeCoordinates[i] = true;
         }
-        _roof.transform.position = new Vector2(_levelDistance / 2, _roof.transform.position.y);
-        _floor.transform.position = new Vector2(_levelDistance / 2, _floor.transform.position.y);
+        _roof.transform.position = _startPoint + new Vector2(_levelDistance / 2, _roof.transform.position.y);
+        _floor.transform.position = _startPoint + new Vector2(_levelDistance / 2, _floor.transform.position.y);
 
         _roof.transform.localScale = new Vector3(_levelDistance, 1, 1);
         _floor.transform.localScale = new Vector3(_levelDistance, 1, 1);
 
         _background.size = new Vector2(_levelDistance, _background.size.y);
-        _background.transform.position = new Vector2(_levelDistance / 2, _background.transform.position.y);
+        _background.transform.position = _startPoint + new Vector2(_levelDistance / 2, _background.transform.position.y);
 
-        _waystone.transform.position = new Vector2(_levelDistance, _floor.transform.position.y);
+        _waystone.transform.position = _startPoint +  new Vector2(_levelDistance, _floor.transform.position.y);
         if(_player != null)
-            _player.transform.position = Vector2.zero;//что бы генератор не крашился, если в генерации нет игрока
+            _player.transform.position = Vector2.zero;
 
         GenerateObstacles();
         GenerateEnemys();
@@ -67,70 +74,73 @@ public class LevelSetting : MonoBehaviour
         bool canPlace = false;
         int possibleCount = 0;
 
-        for (int i = 0; i < _obstacleCount;)
+        for (int g = 0; g < _obstacle.Count; g++)
         {
-            temp = Random.Range(_safeSpawnDistance + _safeWidthObstacle, freeCoordinates.Length - _safeEndDistance - _safeWidthObstacle);
-
-            if (freeCoordinates[temp] == true)
+            for (int i = 0; i < _obstacleCount[g];)
             {
-                for (int a = temp - _safeWidthObstacle; a < temp + _safeWidthObstacle; a++)
+                temp = Random.Range(_safeSpawnDistance + _safeWidthObstacle[g], freeCoordinates.Length - _safeEndDistance - _safeWidthObstacle[g]);
+
+                if (freeCoordinates[temp] == true)
                 {
-                    if (freeCoordinates[a] == false)
+                    for (int a = temp - _safeWidthObstacle[g]; a < temp + _safeWidthObstacle[g]; a++)
                     {
-                        isFree = false;
-                        break;
+                        if (freeCoordinates[a] == false)
+                        {
+                            isFree = false;
+                            break;
+                        }
+                    }
+
+                    if (isFree)
+                    {
+                        Vector2 tempVector = new Vector2(temp, _obstacle[g].transform.position.y);
+
+                        GameObject tempGM = Instantiate(_obstacle[g], _startPoint + tempVector, Quaternion.identity, transform);
+
+                        tempGM.SetActive(true);
+
+                        i++;
+
+                        for (int a = temp - _safeWidthObstacle[g]; a < temp + _safeWidthObstacle[g]; a++)
+                        {
+                            freeCoordinates[a] = false;
+                        }
+                    }
+                    else
+                    {
+                        isFree = true;
                     }
                 }
 
-                if (isFree)
+                for (int a = _safeSpawnDistance + _safeWidthObstacle[g]; a < freeCoordinates.Length - _safeEndDistance - _safeWidthObstacle[g]; a++)
                 {
-                    Vector2 tempVector = new Vector2(temp, _obstacle.transform.position.y);
-
-                    GameObject tempGM = Instantiate(_obstacle, tempVector, Quaternion.identity, transform);
-
-                    tempGM.SetActive(true);
-
-                    i++;
-
-                    for (int a = temp - _safeWidthObstacle; a < temp + _safeWidthObstacle; a++)
+                    for (int b = temp - _safeEndDistance; b < temp + _safeWidthObstacle[g]; b++)
                     {
-                        freeCoordinates[a] = false;
+                        if (freeCoordinates[a] == false)
+                        {
+                            canPlace = false;
+                            break;
+                        }
                     }
-                }
-                else
-                {
-                    isFree = true;
-                }
-            }
 
-            for (int a = _safeSpawnDistance + _safeWidthObstacle; a < freeCoordinates.Length - _safeEndDistance - _safeWidthObstacle; a ++) 
-            {
-                for (int b = temp - _safeEndDistance; b < temp + _safeWidthObstacle; b++)
-                {
-                    if (freeCoordinates[a] == false)
+                    if (canPlace == true)
                     {
-                        canPlace = false;
-                        break;
+                        possibleCount++;
+                    }
+                    else
+                    {
+                        canPlace = true;
                     }
                 }
 
-                if (canPlace == true)
+                if (possibleCount == 0)
                 {
-                    possibleCount++;
+                    Debug.LogWarning("РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРµРїСЏС‚СЃС‚РІРёР№ РїСЂРµРІС‹СЃРёР»Рѕ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РІРѕР·РјРѕР¶РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ! Р“РµРЅРµСЂР°С†РёСЏ РѕСЃС‚Р°РЅРѕРІР»РµРЅР°. РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРµРїСЏС‚СЃС‚РІРёР№: " + i);
+                    break;
                 }
-                else
-                {
-                    canPlace = true;
-                }
-            }
 
-            if (possibleCount == 0)
-            {
-                Debug.LogWarning("Количество препятствий превысило максимальное возможное значение! Генерация остановлена. Количество препятствий: " + i);
-                break;
+                possibleCount = 0;
             }
-
-            possibleCount = 0;
         }
     }
 
@@ -141,70 +151,73 @@ public class LevelSetting : MonoBehaviour
         bool canPlace = false;
         int possibleCount = 0;
 
-        for (int i = 0; i < _enemyCount;)
+        for (int g = 0; g < _enemy.Count; g++)
         {
-            temp = Random.Range(_safeSpawnDistance + _safeWidthEnemy, freeCoordinates.Length - _safeEndDistance - _safeWidthEnemy);
-
-            if (freeCoordinates[temp] == true)
+            for (int i = 0; i < _enemyCount[g];)
             {
-                for (int a = temp - _safeWidthEnemy; a < temp + _safeWidthEnemy; a++)
+                temp = Random.Range(_safeSpawnDistance + _safeWidthEnemy[g], freeCoordinates.Length - _safeEndDistance - _safeWidthEnemy[g]);
+
+                if (freeCoordinates[temp] == true)
                 {
-                    if (freeCoordinates[a] == false)
+                    for (int a = temp - _safeWidthEnemy[g]; a < temp + _safeWidthEnemy[g]; a++)
                     {
-                        isFree = false;
-                        break;
+                        if (freeCoordinates[a] == false)
+                        {
+                            isFree = false;
+                            break;
+                        }
+                    }
+
+                    if (isFree)
+                    {
+                        Vector2 tempVector = new Vector2(temp, _enemy[g].transform.position.y);
+
+                        GameObject tempGM = Instantiate(_enemy[g], _startPoint + tempVector, Quaternion.identity, transform);
+
+                        tempGM.SetActive(true);
+
+                        i++;
+
+                        for (int a = temp - _safeWidthEnemy[g]; a < temp + _safeWidthEnemy[g]; a++)
+                        {
+                            freeCoordinates[a] = false;
+                        }
+                    }
+                    else
+                    {
+                        isFree = true;
                     }
                 }
 
-                if (isFree)
+                for (int a = _safeSpawnDistance + _safeWidthEnemy[g]; a < freeCoordinates.Length - _safeEndDistance - _safeWidthEnemy[g]; a++)
                 {
-                    Vector2 tempVector = new Vector2(temp, _enemy.transform.position.y);
-
-                    GameObject tempGM = Instantiate(_enemy, tempVector, Quaternion.identity, transform);
-
-                    tempGM.SetActive(true);
-
-                    i++;
-
-                    for (int a = temp - _safeWidthEnemy; a < temp + _safeWidthEnemy; a++)
+                    for (int b = temp - _safeEndDistance; b < temp + _safeWidthEnemy[g]; b++)
                     {
-                        freeCoordinates[a] = false;
+                        if (freeCoordinates[a] == false)
+                        {
+                            canPlace = false;
+                            break;
+                        }
                     }
-                }
-                else
-                {
-                    isFree = true;
-                }
-            }
 
-            for (int a = _safeSpawnDistance + _safeWidthEnemy; a < freeCoordinates.Length - _safeEndDistance - _safeWidthEnemy; a ++)
-            {
-                for (int b = temp - _safeEndDistance; b < temp + _safeWidthEnemy; b++)
-                {
-                    if (freeCoordinates[a] == false)
+                    if (canPlace == true)
                     {
-                        canPlace = false;
-                        break;
+                        possibleCount++;
+                    }
+                    else
+                    {
+                        canPlace = true;
                     }
                 }
 
-                if (canPlace == true)
+                if (possibleCount == 0)
                 {
-                    possibleCount++;
+                    Debug.LogWarning("РљРѕР»РёС‡РµСЃС‚РІРѕ РІСЂР°РіРѕРІ РїСЂРµРІС‹СЃРёР»Рѕ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РІРѕР·РјРѕР¶РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ! Р“РµРЅРµСЂР°С†РёСЏ РѕСЃС‚Р°РЅРѕРІР»РµРЅР°. РљРѕР»РёС‡РµСЃС‚РІРѕ РІСЂР°РіРѕРІ: " + i);
+                    break;
                 }
-                else
-                {
-                    canPlace = true;
-                }
-            }
 
-            if (possibleCount == 0)
-            {
-                Debug.LogWarning("Количество врагов превысило максимальное возможное значение! Генерация остановлена. Количество врагов: " + i);
-                break;
+                possibleCount = 0;
             }
-
-            possibleCount = 0;
         }
     }
 
@@ -214,12 +227,15 @@ public class LevelSetting : MonoBehaviour
 
         temp = Random.Range(_safeSpawnDistance , freeCoordinates.Length - _safeEndDistance);
 
-        for (int i = 0; i < _itemCount; i++)
+        for (int g = 0; g < _item.Count; g++)
         {
-            Vector2 tempVector = new Vector2(temp, _item.transform.position.y);
+            for (int i = 0; i < _itemCount[g]; i++)
+            {
+                Vector2 tempVector = new Vector2(temp, _item[g].transform.position.y);
 
-            GameObject tempGM = Instantiate(_item, tempVector, Quaternion.identity, transform);
-            tempGM.SetActive(true);
+                GameObject tempGM = Instantiate(_item[g], _startPoint + tempVector, Quaternion.identity, transform);
+                tempGM.SetActive(true);
+            }
         }
     }
 }

@@ -5,15 +5,14 @@ using UnityEngine.PlayerLoop;
 
 public class TransformToWolfPlayer : MonoBehaviour
 {
-    
-    private static bool _isWolf;
+
+    private static bool _isWolf = false;
     private PlayerActions _playerActions;
     private JumpPlayer _jumpController;
 
-    [SerializeField] private Sprite _humanSprite;
-    [SerializeField] private Sprite _wolfSprite;
+    [SerializeField] private SpriteRenderer _humanSpriteObject;
+    [SerializeField] private SpriteRenderer _wolfSpriteObject;
     
-    [SerializeField] private SpriteRenderer _spriteRenderer;
     
 
     public static bool IsWolf
@@ -25,8 +24,7 @@ public class TransformToWolfPlayer : MonoBehaviour
     private void Awake()
     {
         _playerActions = new PlayerActions();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        StartCoroutine(Transformation());
+        //StartCoroutine(Transformation());
         _jumpController = GetComponent<JumpPlayer>();
     }
     
@@ -41,25 +39,38 @@ public class TransformToWolfPlayer : MonoBehaviour
         StopAllCoroutines();
     }
 
-    IEnumerator Transformation()
+    void Update()
+    {
+        if (_playerActions.Player_Map.Transformation.WasPressedThisFrame())
+        {
+            print(IsWolf);
+
+            IsWolf = !IsWolf;
+            print(_jumpController.IsStop);
+            _jumpController.IsStop = IsWolf;
+
+            if (_isWolf)
+            {
+                _wolfSpriteObject.enabled = true;
+                _humanSpriteObject.enabled = false;
+            }
+            else
+            {
+                _humanSpriteObject.enabled = true;
+                _wolfSpriteObject.enabled = false;
+            }
+            /*_spriteRenderer.color =
+                _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное*/
+        }
+    }
+    /*IEnumerator Transformation()
     {
         while (true)
         {
             yield return new WaitForSeconds(.1f);
-            if (_playerActions.Player_Map.Transformation.IsPressed())
-            {
-                print(IsWolf);
-                
-                IsWolf = !IsWolf;
-                print(_jumpController.IsStop);
-                _jumpController.IsStop = !IsWolf;
-
-                _spriteRenderer.sprite = _isWolf ? _wolfSprite : _humanSprite;
-                /*_spriteRenderer.color =
-                    _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное*/
-            }
+            
         }
-    }
+    }*/
     
     
     

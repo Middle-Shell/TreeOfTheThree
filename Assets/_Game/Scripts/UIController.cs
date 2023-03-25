@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] private GameObject _deathScreen;
+    
 
     [SerializeField] private Image _blackoutScreen;
     [SerializeField] private float _duration = 5.0f;
@@ -23,7 +23,6 @@ public class UIController : MonoBehaviour
     void PlayerDeathScreen()
     {
         PlayerStateEvent.PlayerDeathEvent -= PlayerDeathScreen;
-        _deathScreen.SetActive(true);
         //GameManager.SingletoneGameManager.CloseLevel();
     }
 
@@ -36,7 +35,8 @@ public class UIController : MonoBehaviour
 
     void BlackOutVoid()
     {
-        StartCoroutine(BlackOut());
+        if(GameManager.SingletoneGameManager.CurrentLevelIndex != 0)
+            StartCoroutine(BlackOut());
     }
     private IEnumerator BlackOut()
     {

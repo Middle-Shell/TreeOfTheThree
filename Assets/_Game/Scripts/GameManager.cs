@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UiManager _uiManager = null;
     private GameObject _currentLevel = null;
 
+
     public int CurrentLevelIndex { get; private set; }
 
     private void Awake()
@@ -75,8 +76,11 @@ public class GameManager : MonoBehaviour
                 startPositionX = 0;
                 Camera.main.transform.position = Vector3.zero;
             }
+
+            LevelSetting.StartPoint = new Vector2(startPositionX, 0);
             _currentLevel = Instantiate(_levels[levelNumber]);
-            StartCoroutine(ShiftTransform(startPositionX));
+            
+            //StartCoroutine(ShiftTransform(startPositionX));
         }   
     }
 
