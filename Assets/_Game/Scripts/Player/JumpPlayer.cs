@@ -16,7 +16,7 @@ public class JumpPlayer : MonoBehaviour
     private float _weight;
     private bool _isFalling;
     
-    [SerializeField] [Range(10f, 30f)] private float _jumpForce = 10f;
+    [SerializeField] [Range(10f, 60f)] private float _jumpForce = 10f;
     
     [SerializeField] private LayerMask _groundLayers;
     [SerializeField] private Transform _groundCheck;

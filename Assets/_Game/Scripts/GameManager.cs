@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
 
     public int CurrentLevelIndex { get; private set; }
+    public int CurrentBestNum { get; set; }
 
     private void Awake()
     {
@@ -52,7 +53,8 @@ public class GameManager : MonoBehaviour
     public void GenerateLevel(int levelNumber, float startPositionX = 0)
     {
         CurrentLevelIndex = levelNumber;
-        SaveProgress(CurrentLevelIndex);
+        SaveProgress(CurrentLevelIndex, CurrentBestNum);
+        
         
         if (levelNumber > _levels.Count)
         {
@@ -84,10 +86,10 @@ public class GameManager : MonoBehaviour
         }   
     }
 
-    private void SaveProgress(int levelI)
+    private void SaveProgress(int levelI, int bestNum)
     {
         SaveManager.SaveCurrentLevel(levelI);
-        //SaveManager.SaveBestiary();
+        SaveManager.SaveBestiary(bestNum);
     }
 
     public void PlayLevel(bool levelContinue)

@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ClickHandler : MonoBehaviour, IPointerClickHandler
+public class ClickHandler : MonoBehaviour
 {
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.Log("clicked");
-    }
-    /*
     void OnMouseDown()
     {
         PlayerStateEvent.OnPlayerCollectPot();
         Destroy(this.gameObject, 0.2f);
-    }*/
+    }
 }

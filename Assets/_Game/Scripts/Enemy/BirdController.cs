@@ -12,6 +12,7 @@ public class BirdController : MonoBehaviour
     [SerializeField] private GameObject _bulletPrefab; // Префаб пули
     [SerializeField] private Transform _firePoint; // Точка, из которой будут вылетать пули
     [SerializeField] private float _bulletForce = 10f;
+    [SerializeField] [Range(0f, 10f)] private float _rangeSpawnY = 2f;
 
     private Rigidbody2D _rb; // Компонент Rigidbody2D врага
     private Vector2 _moveDirection; // Направление движения
@@ -24,6 +25,7 @@ public class BirdController : MonoBehaviour
         
         _rb = GetComponent<Rigidbody2D>();
         _moveDirection = Vector2.right;
+        transform.position = new Vector3(transform.position.x, transform.position.y + Random.Range(-_rangeSpawnY, _rangeSpawnY), transform.position.z);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

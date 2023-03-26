@@ -48,8 +48,12 @@ public class UiManager : MonoBehaviour
     public void HideInGameMenu()
     {
         Time.timeScale = 1;
-        DethScreen();
-        PlayerStateEvent.PlayerDeathEvent += DethScreen;
+        if (GameManager.SingletoneGameManager.CurrentLevelIndex != 0)
+        {
+            DethScreen();
+            PlayerStateEvent.PlayerDeathEvent += DethScreen;
+        }
+
         _inGameMenu.SetActive(false);
     }
 
