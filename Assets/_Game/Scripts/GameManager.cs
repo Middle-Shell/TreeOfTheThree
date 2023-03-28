@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public int CurrentLevelIndex { get; private set; }
     public int CurrentBestNum { get; set; }
+    public UiManager UiManager => _uiManager;
 
     private void Awake()
     {
@@ -29,9 +30,13 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         _uiManager.ShowMenu();
-        
+        PlayerStateEvent.PlayerCollectPotEvent += SetNumPot;
     }
 
+    private void SetNumPot()
+    {
+        CurrentBestNum++;
+    }
     private void Update()
     {
         if (Input.GetKey(KeyCode.Y))
@@ -97,15 +102,14 @@ public class GameManager : MonoBehaviour
         _uiManager.HideMenu();
         _uiManager.HideBestiary();
         _uiManager.HideInGameMenu();
-        //добавить dethscreen
-
+        _uiManager.DeathScreen(false);
         if (levelContinue)
         {
             GenerateLevel(SaveManager.LoadCurrentLevel());
         }
         else
         {
-            GenerateLevel(0);
+            GenerateLevel(6);
         }
     }
 

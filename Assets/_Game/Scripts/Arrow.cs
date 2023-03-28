@@ -7,13 +7,13 @@ public class Arrow : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         switch (collision2D.gameObject.tag)
-        {
+        { 
             case "Eagle":
                 PlayerStateEvent.OnPlayerDeath();
                 Destroy(collision2D.gameObject, .2f);
                 return;
             
-            case "Enemy":
+            case "Kite":
                 Destroy(collision2D.gameObject, .2f);
                 return;
             

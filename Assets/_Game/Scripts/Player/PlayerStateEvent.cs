@@ -10,6 +10,7 @@ public class PlayerStateEvent : MonoBehaviour
 
     public static void OnPlayerDeath()
     {
+        GameManager.SingletoneGameManager.UiManager.DeathScreen(true);
         PlayerDeathEvent?.Invoke();
     }
     

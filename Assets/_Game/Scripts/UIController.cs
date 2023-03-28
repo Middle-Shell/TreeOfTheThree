@@ -30,7 +30,6 @@ public class UIController : MonoBehaviour
     {
         var text = _numberPotScreen.GetComponent<TextMeshProUGUI>().text;
         _numberPot += 1;
-        GameManager.SingletoneGameManager.CurrentBestNum = _numberPot;
         _numberPotScreen.GetComponent<TextMeshProUGUI>().text = _numberPot.ToString();
     }
 

@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 486588386517798086}
   - component: {fileID: 486588386517798136}
   - component: {fileID: 486588386517798084}
+  - component: {fileID: 3178437456253596326}
   - component: {fileID: 4999591414416327068}
   - component: {fileID: 486588386517798082}
   - component: {fileID: 6330663361419134500}
-  - component: {fileID: 515054337910420595}
   - component: {fileID: 1816650082969333940}
   - component: {fileID: 6935127711679524566}
   - component: {fileID: 3699725967870269150}
+  - component: {fileID: 3171054947400662078}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -129,8 +130,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0194df0d65b7c489ae8f6ae4b6620d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 12
+  _speed: 15
   _blockY: 0
+--- !u!114 &3178437456253596326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486588386517798137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903fca701396c424787205fb136efe5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: 10
 --- !u!114 &4999591414416327068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,19 +197,6 @@ MonoBehaviour:
   _point: {fileID: 8360597041224546216, guid: e76103fd96c02c247bbfd01bbde31df0, type: 3}
   _numOfPoints: 50
   _spaceBetweenPoints: 0.05
---- !u!114 &515054337910420595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486588386517798137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 903fca701396c424787205fb136efe5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 20
 --- !u!114 &1816650082969333940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _humanSpriteObject: {fileID: 486588386517798086}
   _wolfSpriteObject: {fileID: 8828036415088419014}
-  _spriteRenderer: {fileID: 0}
 --- !u!70 &6935127711679524566
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -239,6 +239,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c6c2dac9265094aa1fa8b00d030690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &3171054947400662078
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486588386517798137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.8562126, y: 5.8925314}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.3337564, y: 4.8766665}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 63.8985, y: 27.848509}
+  m_EdgeRadius: 0
 --- !u!1 &1489964458399165263
 GameObject:
   m_ObjectHideFlags: 0

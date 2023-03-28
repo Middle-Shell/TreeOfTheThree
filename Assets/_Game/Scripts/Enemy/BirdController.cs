@@ -7,7 +7,7 @@ public class BirdController : MonoBehaviour
     [SerializeField] private bool _isAttack; //будет ли атаковать
     
     [SerializeField] private float _moveSpeed = -3.0f; // Скорость перемещения врага
-    [SerializeField] private float _timeToChangeDirection = 2.0f; // Время до изменения направления движения
+    //[SerializeField] private float _timeToChangeDirection = 2.0f; // Время до изменения направления движения
     [SerializeField] private float _fireRate = 1.0f; // Частота стрельбы
     [SerializeField] private GameObject _bulletPrefab; // Префаб пули
     [SerializeField] private Transform _firePoint; // Точка, из которой будут вылетать пули
@@ -22,10 +22,9 @@ public class BirdController : MonoBehaviour
 
     private void Start()
     {
-        
         _rb = GetComponent<Rigidbody2D>();
         _moveDirection = Vector2.right;
-        transform.position = new Vector3(transform.position.x, transform.position.y + Random.Range(-_rangeSpawnY, _rangeSpawnY), transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y + (int)Random.Range(-_rangeSpawnY, _rangeSpawnY), transform.position.z);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,8 +56,19 @@ public class BirdController : MonoBehaviour
     {
         // Создаем пулю и выстраиваем ее по направлению к игроку
         GameObject bullet = Instantiate(_bulletPrefab, _firePoint.position, Quaternion.identity);
-        Vector2 direction = (_player.transform.position - _firePoint.position).normalized;
+    
+        // Рассчитываем время прибытия пули к цели
+        float distance = Vector2.Distance(_firePoint.position, _player.transform.position);
+        float timeToTarget = distance / _bulletForce;
+    
+        // Рассчитываем позицию цели в будущем
+        Vector3 targetPosition = _player.transform.position + new Vector3(RunPlayer.Speed * timeToTarget, 0f, 0f);
+        Vector3 direction = (targetPosition - _firePoint.position).normalized;
+    
+        // Задаем скорость пули
         bullet.GetComponent<Rigidbody2D>().velocity = direction * _bulletForce;
+    
+        // Завершаем метод
         _player = null;
     }
 }

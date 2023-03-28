@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2897920381610264607}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -45,9 +45,9 @@ GameObject:
   - component: {fileID: 2897920382091765786}
   - component: {fileID: 2897920382091765790}
   - component: {fileID: 8479598634816510521}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: bird_bad_1
-  m_TagString: Enemy
+  m_TagString: Kite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,6 +139,7 @@ MonoBehaviour:
   _bulletPrefab: {fileID: 5978098513130072357, guid: e277737f71a98f74ea4c6bb745597996, type: 3}
   _firePoint: {fileID: 2897920381610264607}
   _bulletForce: 15
+  _rangeSpawnY: 2
 --- !u!50 &2897920382091765786
 Rigidbody2D:
   serializedVersion: 4

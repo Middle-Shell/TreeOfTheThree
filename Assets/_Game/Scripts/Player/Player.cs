@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         CameraController.Instance.Player = transform;
+        print("camera");
         _player = gameObject;
         transform.parent = null;
     }

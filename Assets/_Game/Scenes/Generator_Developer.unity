@@ -4963,7 +4963,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -85.381, z: 0}
 --- !u!61 &316637031
 BoxCollider2D:
@@ -5040,7 +5040,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &823757780 stripped
 GameObject:
@@ -5060,7 +5060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2021224903397771998, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2021224903397771998, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5176,7 +5176,7 @@ PrefabInstance:
       objectReference: {fileID: 6466857590119500870, guid: 1c39d5e9bdf24fe489c71c83522d2d11, type: 3}
     - target: {fileID: 6392060337548404651, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6392060337548404651, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5379,7 +5379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6464338847657622565, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6464338847657622565, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5517,6 +5517,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 196423004}
+    - target: {fileID: 6464338848257719067, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_text
+      value: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6464338848257719067, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 6464338848257719067, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d1acfe0d821f6ff46a1567874b4eb7d9, type: 2}
+    - target: {fileID: 6464338848257719067, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8922983126354289599, guid: d1acfe0d821f6ff46a1567874b4eb7d9, type: 2}
     - target: {fileID: 6464338848393751467, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

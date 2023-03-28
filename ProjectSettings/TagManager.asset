@@ -8,6 +8,7 @@ TagManager:
   - Swamp
   - Eagle
   - Waystone
+  - Kite
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Swamp
   - Bullet
   - Cloud
-  - 
-  - 
+  - Kite
+  - Collectibles
   - 
   - 
   - 

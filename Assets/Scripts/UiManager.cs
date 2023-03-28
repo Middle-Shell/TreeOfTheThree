@@ -13,13 +13,11 @@ public class UiManager : MonoBehaviour
     void Start()
     {
         PlayerStateEvent.PlayerDeathEvent += ShowInGameMenu;
-        PlayerStateEvent.PlayerDeathEvent += DethScreen;
     }
 
-    private void DethScreen()
+    public void DeathScreen(bool enable)
     {
-        PlayerStateEvent.PlayerDeathEvent -= DethScreen;
-        _deathScreen.SetActive(!_deathScreen.activeSelf);
+        _deathScreen.SetActive(enable);
     }
 
     public void ShowBestiary()
@@ -48,12 +46,6 @@ public class UiManager : MonoBehaviour
     public void HideInGameMenu()
     {
         Time.timeScale = 1;
-        if (GameManager.SingletoneGameManager.CurrentLevelIndex != 0)
-        {
-            DethScreen();
-            PlayerStateEvent.PlayerDeathEvent += DethScreen;
-        }
-
         _inGameMenu.SetActive(false);
     }
 
