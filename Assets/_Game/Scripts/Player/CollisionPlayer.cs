@@ -14,7 +14,7 @@ public class CollisionPlayer : MonoBehaviour
 
         if (collider2D.gameObject.CompareTag("Waystone"))
         {
-            GameManager.SingletoneGameManager.GenerateLevel(GameManager.SingletoneGameManager.CurrentLevelIndex + 1, collider2D.transform.position.x);
+            GameManager.SingletoneGameManager.GenerateLevel(GameManager.SingletoneGameManager.CurrentLevelIndex + 1, collider2D.transform.position.x-5);
         }
     }
 

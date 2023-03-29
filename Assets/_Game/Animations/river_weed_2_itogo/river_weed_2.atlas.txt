@@ -1,0 +1,83 @@
+
+river_weed_2.png
+size: 1379,1379
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flower_1
+  rotate: true
+  xy: 1005, 266
+  size: 229, 196
+  orig: 229, 196
+  offset: 0, 0
+  index: -1
+flower_2
+  rotate: false
+  xy: 1197, 497
+  size: 180, 217
+  orig: 180, 217
+  offset: 0, 0
+  index: -1
+flower_3
+  rotate: false
+  xy: 901, 25
+  size: 190, 239
+  orig: 190, 239
+  offset: 0, 0
+  index: -1
+flower_4
+  rotate: false
+  xy: 1005, 952
+  size: 193, 212
+  orig: 193, 212
+  offset: 0, 0
+  index: -1
+flower_5
+  rotate: false
+  xy: 1005, 497
+  size: 190, 227
+  orig: 190, 227
+  offset: 0, 0
+  index: -1
+flower_6
+  rotate: false
+  xy: 1005, 726
+  size: 183, 224
+  orig: 183, 224
+  offset: 0, 0
+  index: -1
+flower_7
+  rotate: false
+  xy: 1093, 52
+  size: 190, 212
+  orig: 190, 212
+  offset: 0, 0
+  index: -1
+flower_8
+  rotate: false
+  xy: 1190, 726
+  size: 189, 207
+  orig: 189, 207
+  offset: 0, 0
+  index: -1
+flower_9
+  rotate: false
+  xy: 1005, 1167
+  size: 197, 205
+  orig: 197, 205
+  offset: 0, 0
+  index: -1
+fon
+  rotate: false
+  xy: 1, 266
+  size: 1002, 1113
+  orig: 1002, 1113
+  offset: 0, 0
+  index: -1
+stem
+  rotate: true
+  xy: 1, 28
+  size: 236, 898
+  orig: 236, 898
+  offset: 0, 0
+  index: -1

@@ -82,7 +82,7 @@ MonoBehaviour:
   _floor: {fileID: 6466857590383982285}
   _background: {fileID: 6466857591341432384}
   _levelDistance: 1000
-  _safeSpawnDistance: 20
+  _safeSpawnDistance: 40
   _safeEndDistance: 20
   _safeWidthObstacle: 050000000500000005000000050000000500000005000000
   _safeWidthEnemy: 0a00000005000000

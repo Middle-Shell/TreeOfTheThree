@@ -28,9 +28,9 @@ public class UIController : MonoBehaviour
 
     void NumberPot()
     {
-        var text = _numberPotScreen.GetComponent<TextMeshProUGUI>().text;
-        _numberPot += 1;
-        _numberPotScreen.GetComponent<TextMeshProUGUI>().text = _numberPot.ToString();
+        //var text = _numberPotScreen.GetComponent<TextMeshProUGUI>().text;
+        //_numberPot += 1;
+        //_numberPotScreen.GetComponent<TextMeshProUGUI>().text = _numberPot.ToString();
     }
 
     void BlackOutVoid()

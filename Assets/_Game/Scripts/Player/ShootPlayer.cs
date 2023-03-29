@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ShootPlayer : MonoBehaviour
@@ -89,6 +90,18 @@ public class ShootPlayer : MonoBehaviour
         for (int i = 0; i < _numOfPoints; i++)
         {
             _points[i].transform.position = PointPosition(-500);
+        }
+    }
+
+    public void OnDestroy()
+    {
+        DeleteAllPoints();
+    }
+    private void DeleteAllPoints()
+    {
+        for (int i = 0; i < _numOfPoints; i++)
+        {
+            Destroy(_points[i]);
         }
     }
     private Vector2 PointPosition(float t)
