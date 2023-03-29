@@ -35,7 +35,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 1
     aniso: 1
-    mipBias: -0.5
+    mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
@@ -51,7 +51,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 0
   textureShape: 1
@@ -76,7 +76,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -88,7 +88,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -100,7 +100,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -112,7 +112,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
@@ -124,7 +124,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -136,37 +136,16 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Layer 0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 2602
-        height: 3128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 
-      internalID: 0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: bag
       rect:
         serializedVersion: 2
-        x: 3894
-        y: 949
+        x: 1091
+        y: 1669
         width: 201
         height: 255
       alignment: 0
@@ -186,10 +165,10 @@ TextureImporter:
       name: bottom skirt blue
       rect:
         serializedVersion: 2
-        x: 2724
-        y: 2019
-        width: 677
-        height: 315
+        x: 484
+        y: 3416
+        width: 315
+        height: 677
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,8 +186,8 @@ TextureImporter:
       name: bottom skirt blue_l
       rect:
         serializedVersion: 2
-        x: 3542
-        y: 3128
+        x: 1202
+        y: 2883
         width: 288
         height: 271
       alignment: 0
@@ -228,8 +207,8 @@ TextureImporter:
       name: bottom skirt blue_r
       rect:
         serializedVersion: 2
-        x: 2078
-        y: 3129
+        x: 1195
+        y: 3788
         width: 474
         height: 305
       alignment: 0
@@ -249,8 +228,8 @@ TextureImporter:
       name: bottom skirt red
       rect:
         serializedVersion: 2
-        x: 3417
-        y: 2055
+        x: 707
+        y: 1249
         width: 677
         height: 315
       alignment: 0
@@ -270,8 +249,8 @@ TextureImporter:
       name: bottom slirt white
       rect:
         serializedVersion: 2
-        x: 2605
-        y: 2299
+        x: 739
+        y: 574
         width: 677
         height: 315
       alignment: 0
@@ -291,8 +270,8 @@ TextureImporter:
       name: bracelet
       rect:
         serializedVersion: 2
-        x: 3578
-        y: 715
+        x: 678
+        y: -1
         width: 153
         height: 101
       alignment: 0
@@ -312,8 +291,8 @@ TextureImporter:
       name: brooch
       rect:
         serializedVersion: 2
-        x: 2605
-        y: 2143
+        x: 1308
+        y: 2591
         width: 169
         height: 129
       alignment: 0
@@ -333,10 +312,10 @@ TextureImporter:
       name: chest blue
       rect:
         serializedVersion: 2
-        x: 2952
-        y: -1
-        width: 674
-        height: 823
+        x: 1
+        y: 1643
+        width: 823
+        height: 674
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +333,10 @@ TextureImporter:
       name: chest red
       rect:
         serializedVersion: 2
-        x: 3005
-        y: 790
-        width: 819
-        height: 674
+        x: 1
+        y: 2156
+        width: 674
+        height: 819
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,8 +354,8 @@ TextureImporter:
       name: chest white
       rect:
         serializedVersion: 2
-        x: 2891
-        y: 1402
+        x: 1
+        y: 2839
         width: 820
         height: 672
       alignment: 0
@@ -396,8 +375,8 @@ TextureImporter:
       name: hair 1
       rect:
         serializedVersion: 2
-        x: 3787
-        y: 1825
+        x: 1246
+        y: 684
         width: 308
         height: 307
       alignment: 0
@@ -417,8 +396,8 @@ TextureImporter:
       name: hair 2
       rect:
         serializedVersion: 2
-        x: 3832
-        y: 1206
+        x: 1255
+        y: 320
         width: 251
         height: 307
       alignment: 0
@@ -438,8 +417,8 @@ TextureImporter:
       name: hair 3
       rect:
         serializedVersion: 2
-        x: 2605
-        y: 2590
+        x: 1256
+        y: 3152
         width: 191
         height: 259
       alignment: 0
@@ -459,8 +438,8 @@ TextureImporter:
       name: hair 4
       rect:
         serializedVersion: 2
-        x: 3934
-        y: 391
+        x: 1294
+        y: 1662
         width: 161
         height: 297
       alignment: 0
@@ -480,10 +459,10 @@ TextureImporter:
       name: hair 5
       rect:
         serializedVersion: 2
-        x: 3360
-        y: 2837
-        width: 338
-        height: 307
+        x: 1021
+        y: 1329
+        width: 307
+        height: 338
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,10 +480,10 @@ TextureImporter:
       name: head
       rect:
         serializedVersion: 2
-        x: 3617
-        y: 0
-        width: 356
-        height: 390
+        x: 1
+        y: 3513
+        width: 390
+        height: 356
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,8 +501,8 @@ TextureImporter:
       name: left arm 1
       rect:
         serializedVersion: 2
-        x: 3328
-        y: 3300
+        x: 1240
+        y: 1088
         width: 233
         height: 239
       alignment: 0
@@ -543,8 +522,8 @@ TextureImporter:
       name: left arm blue 2
       rect:
         serializedVersion: 2
-        x: 3022
-        y: 2595
+        x: 822
+        y: -76
         width: 386
         height: 462
       alignment: 0
@@ -564,8 +543,8 @@ TextureImporter:
       name: left arm blue 3
       rect:
         serializedVersion: 2
-        x: 2866
-        y: 3005
+        x: 1087
+        y: 3118
         width: 244
         height: 528
       alignment: 0
@@ -585,8 +564,8 @@ TextureImporter:
       name: left arm red 2
       rect:
         serializedVersion: 2
-        x: 3644
-        y: 2348
+        x: 673
+        y: 3479
         width: 388
         height: 463
       alignment: 0
@@ -606,8 +585,8 @@ TextureImporter:
       name: left arm red 3
       rect:
         serializedVersion: 2
-        x: 3114
-        y: 3039
+        x: 1115
+        y: 374
         width: 244
         height: 528
       alignment: 0
@@ -627,8 +606,8 @@ TextureImporter:
       name: left arm white 2
       rect:
         serializedVersion: 2
-        x: 2755
-        y: 2568
+        x: 870
+        y: 3630
         width: 388
         height: 463
       alignment: 0
@@ -648,10 +627,10 @@ TextureImporter:
       name: left arm white 3
       rect:
         serializedVersion: 2
-        x: 1584
-        y: 3130
-        width: 528
-        height: 244
+        x: 1242
+        y: 2061
+        width: 244
+        height: 528
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -669,8 +648,8 @@ TextureImporter:
       name: left leg
       rect:
         serializedVersion: 2
-        x: 2605
-        y: -2
+        x: 278
+        y: 208
         width: 491
         height: 1501
       alignment: 0
@@ -690,8 +669,8 @@ TextureImporter:
       name: neck
       rect:
         serializedVersion: 2
-        x: 3819
-        y: 3198
+        x: 464
+        y: 0
         width: 212
         height: 208
       alignment: 0
@@ -711,10 +690,10 @@ TextureImporter:
       name: right arm 1
       rect:
         serializedVersion: 2
-        x: 3664
-        y: 1807
-        width: 288
-        height: 258
+        x: 1198
+        y: 0
+        width: 258
+        height: 288
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,8 +711,8 @@ TextureImporter:
       name: right arm blue 2
       rect:
         serializedVersion: 2
-        x: 2570
-        y: 2970
+        x: 1045
+        y: 2516
         width: 261
         height: 488
       alignment: 0
@@ -753,8 +732,8 @@ TextureImporter:
       name: right arm blue 3
       rect:
         serializedVersion: 2
-        x: 3627
-        y: 392
+        x: 724
+        y: 1519
         width: 365
         height: 562
       alignment: 0
@@ -774,8 +753,8 @@ TextureImporter:
       name: right arm red 2
       rect:
         serializedVersion: 2
-        x: 2626
-        y: 1500
+        x: 990
+        y: 837
         width: 263
         height: 490
       alignment: 0
@@ -795,8 +774,8 @@ TextureImporter:
       name: right arm red 3
       rect:
         serializedVersion: 2
-        x: 3729
-        y: 1342
+        x: 724
+        y: 2200
         width: 365
         height: 562
       alignment: 0
@@ -816,8 +795,8 @@ TextureImporter:
       name: right arm white 2
       rect:
         serializedVersion: 2
-        x: 3832
-        y: 2706
+        x: 1018
+        y: 1967
         width: 263
         height: 490
       alignment: 0
@@ -837,8 +816,8 @@ TextureImporter:
       name: right arm white 3
       rect:
         serializedVersion: 2
-        x: 3284
-        y: 2273
+        x: 757
+        y: 2811
         width: 365
         height: 562
       alignment: 0
@@ -859,7 +838,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 2007
+        y: -1
         width: 462
         height: 1584
       alignment: 0
@@ -879,8 +858,8 @@ TextureImporter:
       name: ties
       rect:
         serializedVersion: 2
-        x: 3975
-        y: 0
+        x: 277
+        y: 184
         width: 87
         height: 98
       alignment: 0

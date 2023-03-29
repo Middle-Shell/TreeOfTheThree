@@ -4,254 +4,247 @@ size: 4095,4095
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Layer 0
-  rotate: false
-  xy: 1, 967
-  size: 2602, 3128
-  orig: 2602, 3128
-  offset: 0, 0
-  index: -1
 bag
   rotate: false
-  xy: 3894, 2891
+  xy: 1091, 2171
   size: 201, 255
   orig: 201, 255
   offset: 0, 0
   index: -1
 bottom skirt blue
-  rotate: false
-  xy: 2724, 1761
+  rotate: true
+  xy: 484, 2
   size: 677, 315
   orig: 694, 315
   offset: 0, 0
   index: -1
 bottom skirt blue_l
   rotate: false
-  xy: 3542, 696
+  xy: 1202, 941
   size: 288, 271
   orig: 309, 315
   offset: 4, 44
   index: -1
 bottom skirt blue_r
-  rotate: false
-  xy: 2078, 661
+  rotate: 270
+  xy: 1195, 2
   size: 474, 305
   orig: 479, 307
   offset: 5, 2
   index: -1
 bottom skirt red
-  rotate: false
-  xy: 3417, 1725
+  rotate: 270
+  xy: 707, 2531
   size: 677, 315
   orig: 694, 315
   offset: 0, 0
   index: -1
 bottom slirt white
-  rotate: false
-  xy: 2605, 1481
+  rotate: 270
+  xy: 739, 3206
   size: 677, 315
   orig: 694, 315
   offset: 0, 0
   index: -1
 bracelet
   rotate: false
-  xy: 3578, 3279
+  xy: 678, 3995
   size: 153, 101
   orig: 156, 102
   offset: 0, 0
   index: -1
 brooch
   rotate: false
-  xy: 2605, 1823
+  xy: 1308, 1375
   size: 169, 129
   orig: 169, 129
   offset: 0, 0
   index: -1
 chest blue
-  rotate: false
-  xy: 2952, 3273
+  rotate: true
+  xy: 1, 1778
   size: 674, 823
   orig: 674, 855
   offset: 0, 32
   index: -1
 chest red
-  rotate: true
-  xy: 3005, 2631
+  rotate: 270
+  xy: 1, 1120
   size: 674, 819
   orig: 674, 851
   offset: 0, 32
   index: -1
 chest white
   rotate: true
-  xy: 2891, 2021
+  xy: 1, 584
   size: 672, 820
   orig: 672, 852
   offset: 0, 32
   index: -1
 hair 1
   rotate: true
-  xy: 3787, 1963
+  xy: 1246, 3104
   size: 307, 308
   orig: 307, 308
   offset: 0, 0
   index: -1
 hair 2
   rotate: false
-  xy: 3832, 2582
+  xy: 1255, 3468
   size: 251, 307
   orig: 251, 307
   offset: 0, 0
   index: -1
 hair 3
   rotate: false
-  xy: 2605, 1246
+  xy: 1256, 684
   size: 191, 259
   orig: 191, 259
   offset: 0, 0
   index: -1
 hair 4
   rotate: false
-  xy: 3934, 3407
+  xy: 1294, 2136
   size: 161, 297
   orig: 161, 374
   offset: 0, 77
   index: -1
 hair 5
-  rotate: false
-  xy: 3360, 951
+  rotate: true
+  xy: 1021, 2428
   size: 338, 307
   orig: 338, 307
   offset: 0, 0
   index: -1
 head
-  rotate: true
-  xy: 3617, 3705
+  rotate: false
+  xy: 1, 226
   size: 390, 356
   orig: 390, 356
   offset: 0, 0
   index: -1
 left arm 1
   rotate: false
-  xy: 3328, 556
+  xy: 1240, 2768
   size: 233, 239
   orig: 233, 239
   offset: 0, 0
   index: -1
 left arm blue 2
-  rotate: false
-  xy: 3022, 1038
+  rotate: 270
+  xy: 822, 3709
   size: 386, 462
   orig: 386, 462
   offset: 0, 0
   index: -1
 left arm blue 3
-  rotate: false
-  xy: 2866, 562
+  rotate: 180
+  xy: 1087, 449
   size: 244, 528
   orig: 244, 528
   offset: 0, 0
   index: -1
 left arm red 2
   rotate: false
-  xy: 3644, 1284
+  xy: 673, 153
   size: 388, 463
   orig: 388, 463
   offset: 0, 0
   index: -1
 left arm red 3
   rotate: false
-  xy: 3114, 528
+  xy: 1115, 3193
   size: 244, 528
   orig: 244, 528
   offset: 0, 0
   index: -1
 left arm white 2
   rotate: false
-  xy: 2755, 1064
+  xy: 870, 2
   size: 388, 463
   orig: 388, 463
   offset: 0, 0
   index: -1
 left arm white 3
-  rotate: true
-  xy: 1584, 721
+  rotate: 180
+  xy: 1242, 1506
   size: 244, 528
   orig: 244, 528
   offset: 0, 0
   index: -1
 left leg
-  rotate: false
-  xy: 2605, 2596
+  rotate: 180
+  xy: 278, 2386
   size: 491, 1501
   orig: 519, 1572
   offset: 9, 64
   index: -1
 neck
   rotate: false
-  xy: 3819, 689
+  xy: 464, 3887
   size: 212, 208
   orig: 212, 208
   offset: 0, 0
   index: -1
 right arm 1
-  rotate: false
-  xy: 3664, 2030
+  rotate: true
+  xy: 1198, 3807
   size: 288, 258
   orig: 288, 258
   offset: 0, 0
   index: -1
 right arm blue 2
   rotate: false
-  xy: 2570, 637
+  xy: 1045, 1091
   size: 261, 488
   orig: 261, 488
   offset: 0, 0
   index: -1
 right arm blue 3
   rotate: false
-  xy: 3627, 3141
+  xy: 724, 2014
   size: 365, 562
   orig: 365, 562
   offset: 0, 0
   index: -1
 right arm red 2
   rotate: false
-  xy: 2626, 2105
+  xy: 990, 2768
   size: 263, 490
   orig: 263, 490
   offset: 0, 0
   index: -1
 right arm red 3
   rotate: false
-  xy: 3729, 2191
+  xy: 724, 1333
   size: 365, 562
   orig: 365, 562
   offset: 0, 0
   index: -1
 right arm white 2
-  rotate: false
-  xy: 3832, 899
+  rotate: 180
+  xy: 1018, 1638
   size: 263, 490
   orig: 263, 490
   offset: 0, 0
   index: -1
 right arm white 3
   rotate: false
-  xy: 3284, 1260
+  xy: 757, 722
   size: 365, 562
   orig: 365, 562
   offset: 0, 0
   index: -1
 right leg
-  rotate: 270
-  xy: 1, 504
+  rotate: false
+  xy: 1, 2512
   size: 462, 1584
   orig: 503, 1625
   offset: 12, 41
   index: -1
 ties
   rotate: false
-  xy: 3975, 3997
+  xy: 277, 3813
   size: 87, 98
   orig: 87, 98
   offset: 0, 0
