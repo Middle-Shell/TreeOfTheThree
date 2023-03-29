@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets._Game.Scripts;
 using UnityEngine;
 
-public class FishController : MonoBehaviour
+public class FishController : MonoBehaviour//, IEnableObject
 {
     [SerializeField] private float _speed = 5f;
     
@@ -15,6 +16,17 @@ public class FishController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
+    public void OnBecameVisible()
+    {
+        enabled = true;
+        print("Visible");
+    }
+
+    public void OnBecameInvisible()
+    {
+        print("Invisible");
+        enabled = false;
+    }
     
     void FixedUpdate()
     {

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets._Game.Scripts;
 using UnityEngine;
 
-public class BirdController : MonoBehaviour
+public class BirdController : MonoBehaviour//, IEnableObject
 {
     [SerializeField] private bool _isAttack; //будет ли атаковать
     
@@ -14,11 +15,13 @@ public class BirdController : MonoBehaviour
     [SerializeField] private float _bulletForce = 10f;
     [SerializeField] [Range(0f, 10f)] private float _rangeSpawnY = 2f;
 
+
     private Rigidbody2D _rb; // Компонент Rigidbody2D врага
     private Vector2 _moveDirection; // Направление движения
     private float _timeSinceDirectionChange; // Время с последнего изменения направления движения
     private float _timeSinceLastShot; // Время с последнего выстрела
     private Transform _player;
+    [SerializeField] private bool _isMove;
 
     private void Start()
     {
@@ -27,6 +30,17 @@ public class BirdController : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y + (int)Random.Range(-_rangeSpawnY, _rangeSpawnY), transform.position.z);
     }
 
+    public void OnBecameVisible()
+    {
+        enabled = true;
+        print("Visible");
+    }
+
+    public void OnBecameInvisible()
+    {
+        print("Invisible");
+        enabled = false;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && _isAttack)
@@ -40,7 +54,7 @@ public class BirdController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         //перемещаемся туда-сюда
         /*if (Time.time - _timeSinceDirectionChange >= _timeToChangeDirection)
@@ -51,6 +65,17 @@ public class BirdController : MonoBehaviour
 
         _rb.velocity = _moveDirection * _moveSpeed;
     }
+
+    /*private IEnumerator FixUpdateCoroutine()
+    {
+        while (true)
+        {
+            if(!_isMove) yield break;
+            print("move");
+            _rb.velocity = _moveDirection * _moveSpeed;
+            yield return new WaitForSeconds(0.01f);
+        }
+    }*/
 
     private void Shoot()
     {

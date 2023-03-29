@@ -109,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b6cc7cebeb943548b67209656523a1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77d45f216a641874abfb5b2c6c718a21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,19 +127,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2897920382091765785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f9df7eb787482340ad3f1d8b179a561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _isAttack: 1
   _moveSpeed: -5
-  _timeToChangeDirection: 5
   _fireRate: 1
   _bulletPrefab: {fileID: 5978098513130072357, guid: e277737f71a98f74ea4c6bb745597996, type: 3}
   _firePoint: {fileID: 2897920381610264607}
   _bulletForce: 15
   _rangeSpawnY: 2
+  _isMove: 0
 --- !u!50 &2897920382091765786
 Rigidbody2D:
   serializedVersion: 4
@@ -174,18 +174,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.1295314, y: -4.5982795}
+  m_Offset: {x: -2.357652, y: -4.5982795}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.26, y: 2.72}
+    oldSize: {x: 2.2533333, y: 2.0866666}
     newSize: {x: 2.26, y: 2.72}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.991391, y: 13.424193}
+  m_Size: {x: 5.5245166, y: 13.424193}
   m_EdgeRadius: 0
 --- !u!61 &8479598634816510521
 BoxCollider2D:
@@ -204,7 +204,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.26, y: 2.72}
+    oldSize: {x: 2.2533333, y: 2.0866666}
     newSize: {x: 2.26, y: 2.72}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

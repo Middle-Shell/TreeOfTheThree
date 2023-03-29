@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets._Game.Scripts;
 using UnityEngine;
 
-public class WolfController : MonoBehaviour
+public class WolfController : MonoBehaviour//, IEnableObject
 {
     private CircleCollider2D _circleCollider2D;
 
@@ -15,6 +16,17 @@ public class WolfController : MonoBehaviour
         _circleCollider2D.radius = _rangeDetect;
     }
 
+    public void OnBecameVisible()
+    {
+        enabled = true;
+        print("Visible");
+    }
+
+    public void OnBecameInvisible()
+    {
+        print("Invisible");
+        enabled = false;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

@@ -46,7 +46,6 @@ public class UIController : MonoBehaviour
         Color blackoutScreen = _blackoutScreen.color;
         while (true)
         {
-            print("enter");
             //Постепенно меняем альфа канал спрайтов
             var a = Mathf.Lerp(_blackoutScreen.color.a, (isBlack?1:0), t);
             blackoutScreen.a = a;

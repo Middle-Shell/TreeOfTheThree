@@ -1,8 +1,10 @@
-﻿namespace Assets._Game.Scripts
+﻿using UnityEngine;
+
+namespace Assets._Game.Scripts
 {
     public interface IEnableObject
     {
-        public void Enable();
-        public void Disable();
+        public void OnBecameVisible();
+        public void OnBecameInvisible();
     }
 }

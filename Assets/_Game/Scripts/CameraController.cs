@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
     [Header("Parameters")]
     [SerializeField] private Transform _player;
     [SerializeField] [Range(0.5f, 10f)] private readonly float movingSpeed = 5f;
-    [SerializeField] private readonly Vector3 _offsetXYZ = new (4f, 0f, -500f);//-500 по Z что бы не было спрайтов уходящих за камеру
+    [SerializeField] private Vector3 _offsetXYZ = new (4f, 0f, -500f);//-500 по Z что бы не было спрайтов уходящих за камеру
     [SerializeField] private float _limitY;
 
     private Vector3 _target;

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets._Game.Scripts;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class CloudController : MonoBehaviour
+public class CloudController : MonoBehaviour//, IEnableObject
 {
     [SerializeField] private SpriteRenderer _whiteCloud;
     [SerializeField] private SpriteRenderer _blackCloud;
@@ -27,6 +28,17 @@ public class CloudController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _moveDirection = Vector2.left;
+    }
+    public void OnBecameVisible()
+    {
+        enabled = true;
+        print("Visible");
+    }
+
+    public void OnBecameInvisible()
+    {
+        print("Invisible");
+        enabled = false;
     }
 
     private void FixedUpdate()
