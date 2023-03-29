@@ -53,6 +53,7 @@ public class JumpPlayer : MonoBehaviour
             if (_isGrounded && _playerActions.Player_Map.Jump.IsPressed())
             {
                 _rbody.velocity = Vector2.up * _jumpForce;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Character_Jump");
             }
         }
     }
