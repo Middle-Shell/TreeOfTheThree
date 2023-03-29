@@ -5,6 +5,8 @@ using TMPro;
 
 public class Bestiary : MonoBehaviour
 {
+    [SerializeField] private Button _previusPage = null;
+    [SerializeField] private Button _nextPage = null;
     [SerializeField] private GameObject _glos = null;
     [SerializeField] private GameObject _page = null;
     [SerializeField] private GameObject _bestiary = null;
@@ -20,10 +22,14 @@ public class Bestiary : MonoBehaviour
     [SerializeField] private Image _imageUI = null;
 
     [Space(30)]
-    [SerializeField] private string _wrongName = null;
-    [SerializeField] private string _wrongText = null;
-    [SerializeField] private Sprite _wrongImage = null;
+    [SerializeField] private List<string> _wrongNameButtons = null;
+    [SerializeField] private List<string> _wrongName = null;
+    [SerializeField] private List<string> _wrongText = null;
+    [SerializeField] private List<Sprite> _wrongImage = null;
+    
 
+
+    private int currentPaheNumber = 0;
     public void ShowBestiary()
     {
         int bestiaryPages = SaveManager.LoadBestiary();
@@ -34,7 +40,7 @@ public class Bestiary : MonoBehaviour
 
         for (int i = bestiaryPages; i < _nameButtons.Count; i++)
         {
-            _nameButtons[i].text = _wrongText;
+            _nameButtons[i].text = _wrongNameButtons[i];
         }
 
         _bestiary.SetActive(true);
@@ -48,7 +54,7 @@ public class Bestiary : MonoBehaviour
 
         if (pageNumber > bestiaryPages || bestiaryPages == 0)
         {
-            ChangeWrongUi();
+            ChangeWrongUi(pageNumber);
         }
         else
         {
@@ -59,11 +65,31 @@ public class Bestiary : MonoBehaviour
         _page.SetActive(true);
     }
 
-    private void ChangeWrongUi()
+    private void ChangeWrongUi(int pageNumber)
     {
-        _nameTMP.text = _wrongName;
-        _textTMP.text = _wrongText;
-        _imageUI.sprite = _wrongImage;
+        _nameTMP.text = _wrongName[pageNumber];
+        _textTMP.text = _wrongText[pageNumber];
+        _imageUI.sprite = _wrongImage[pageNumber];
+
+        currentPaheNumber = pageNumber;
+
+        if (pageNumber == 0)
+        {
+            _previusPage.gameObject.SetActive(false);
+        }
+        else
+        {
+            _previusPage.gameObject.SetActive(true);
+        }
+
+        if (pageNumber == _name.Count-1)
+        {
+            _nextPage.gameObject.SetActive(false);
+        }
+        else
+        {
+            _nextPage.gameObject.SetActive(true);
+        }
     }
 
     private void ChangeUi(int pageNumber)
@@ -71,5 +97,55 @@ public class Bestiary : MonoBehaviour
         _nameTMP.text = _name[pageNumber];
         _textTMP.text = _text[pageNumber];
         _imageUI.sprite = _image[pageNumber];
+
+        currentPaheNumber = pageNumber;
+
+        if (pageNumber == 0)
+        {
+            _previusPage.gameObject.SetActive(false);
+        }
+        else
+        {
+            _previusPage.gameObject.SetActive(true);
+        }
+
+        if (pageNumber == _name.Count-1)
+        {
+            _nextPage.gameObject.SetActive(false);
+        }
+        else
+        {
+            _nextPage.gameObject.SetActive(true);
+        }
+    }
+
+    public void NextPage()
+    {
+        int bestiaryPages = SaveManager.LoadBestiary();
+
+        if (currentPaheNumber + 1 > bestiaryPages || bestiaryPages == 0)
+        {
+            ChangeWrongUi(currentPaheNumber + 1);
+        }
+        else
+        {
+            ChangeUi(currentPaheNumber + 1);
+        }
+
+    }
+
+    public void PreviusPage()
+    {
+        int bestiaryPages = SaveManager.LoadBestiary();
+
+        if (currentPaheNumber - 1 > bestiaryPages || bestiaryPages == 0)
+        {
+            ChangeWrongUi(currentPaheNumber - 1);
+        }
+        else
+        {
+            ChangeUi(currentPaheNumber - 1);
+        }
+
     }
 }

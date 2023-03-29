@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -9,11 +8,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> _levels = null;
     [SerializeField] private UiManager _uiManager = null;
     private GameObject _currentLevel = null;
-
-
-    public int CurrentLevelIndex { get; private set; }
-    public int CurrentBestNum { get; set; }
-    public UiManager UiManager => _uiManager;
 
     private void Awake()
     {
@@ -30,13 +24,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         _uiManager.ShowMenu();
-        PlayerStateEvent.PlayerCollectPotEvent += SetNumPot;
     }
 
-    private void SetNumPot()
-    {
-        CurrentBestNum++;
-    }
     private void Update()
     {
         if (Input.GetKey(KeyCode.Y))
@@ -55,12 +44,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GenerateLevel(int levelNumber, float startPositionX = 0)
+    public void GenerateLevel(int levelNumber)
     {
-        CurrentLevelIndex = levelNumber;
-        SaveProgress(CurrentLevelIndex, CurrentBestNum);
-        
-        
         if (levelNumber > _levels.Count)
         {
             Debug.LogWarning("Такого уровня не существует!");
@@ -73,28 +58,11 @@ public class GameManager : MonoBehaviour
         {
             if (_currentLevel != null)
             {
-                Destroy(_currentLevel);
+                GameObject.Destroy(_currentLevel);
             }
 
-            if (CurrentLevelIndex % 3 == 0)
-            {
-                PlayerStateEvent.OnFinishMilestone();
-                Player.DeletePlayer(); //меняем объект игрока только при переходе между этапами, иначе плавного переключения не будет
-                startPositionX = 0;
-                Camera.main.transform.position = Vector3.zero;
-            }
-
-            LevelSetting.StartPoint = new Vector2(startPositionX, 0);
-            _currentLevel = Instantiate(_levels[levelNumber]);
-            
-            //StartCoroutine(ShiftTransform(startPositionX));
+            _currentLevel = Instantiate(_levels[levelNumber], transform);
         }   
-    }
-
-    private void SaveProgress(int levelI, int bestNum)
-    {
-        SaveManager.SaveCurrentLevel(levelI);
-        SaveManager.SaveBestiary(bestNum);
     }
 
     public void PlayLevel(bool levelContinue)
@@ -102,32 +70,25 @@ public class GameManager : MonoBehaviour
         _uiManager.HideMenu();
         _uiManager.HideBestiary();
         _uiManager.HideInGameMenu();
-        _uiManager.DeathScreen(false);
+
         if (levelContinue)
         {
             GenerateLevel(SaveManager.LoadCurrentLevel());
         }
         else
         {
-            GenerateLevel(6);
+            GenerateLevel(0);
         }
     }
 
-    IEnumerator ShiftTransform(float shift)
-    {
-        yield return new WaitForSeconds(.01f);
-        _currentLevel.transform.position = 
-            new Vector3(_currentLevel.transform.position.x + shift, 0f);
-    }
     public void CloseLevel()
     {
         _uiManager.ShowMenu();
         _uiManager.HideBestiary();
         _uiManager.HideInGameMenu();
 
-        Destroy(_currentLevel);
+        GameObject.Destroy(_currentLevel);
         _currentLevel = null;
-        Player.DeletePlayer();
     }
 
     public void Exit()

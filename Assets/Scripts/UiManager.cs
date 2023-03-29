@@ -8,17 +8,6 @@ public class UiManager : MonoBehaviour
     [SerializeField] private Bestiary _bestiary = null;
     [SerializeField] private GameObject _menu = null;
     [SerializeField] private GameObject _inGameMenu = null;
-    [SerializeField] private GameObject _deathScreen;
-
-    void Start()
-    {
-        PlayerStateEvent.PlayerDeathEvent += ShowInGameMenu;
-    }
-
-    public void DeathScreen(bool enable)
-    {
-        _deathScreen.SetActive(enable);
-    }
 
     public void ShowBestiary()
     { 
@@ -39,13 +28,11 @@ public class UiManager : MonoBehaviour
     }
     public void ShowInGameMenu()
     {
-        Time.timeScale = 0;
         _inGameMenu.SetActive(true);
     }
 
     public void HideInGameMenu()
     {
-        Time.timeScale = 1;
         _inGameMenu.SetActive(false);
     }
 

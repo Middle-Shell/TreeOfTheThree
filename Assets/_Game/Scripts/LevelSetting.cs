@@ -29,38 +29,31 @@ public class LevelSetting : MonoBehaviour
     [Range(0, 100)]
     [SerializeField] private List<int> _itemCount = new List<int>();
 
-    [SerializeField] private static Vector2 _startPoint = Vector2.zero;
-    
     bool[] freeCoordinates = null;
     void Start()
     {
         freeCoordinates = new bool[_levelDistance];
-    
+
         GenerateLevel();
     }
 
-    public static Vector2 StartPoint
-    {
-        set => _startPoint = value;
-    }
     private void GenerateLevel()
     {
         for (int i = 0; i < freeCoordinates.Length; i++)
         {
             freeCoordinates[i] = true;
         }
-        _roof.transform.position = _startPoint + new Vector2(_levelDistance / 2, _roof.transform.position.y);
-        _floor.transform.position = _startPoint + new Vector2(_levelDistance / 2, _floor.transform.position.y);
+        _roof.transform.position = new Vector2(_levelDistance / 2, _roof.transform.position.y);
+        _floor.transform.position = new Vector2(_levelDistance / 2, _floor.transform.position.y);
 
         _roof.transform.localScale = new Vector3(_levelDistance, 1, 1);
         _floor.transform.localScale = new Vector3(_levelDistance, 1, 1);
 
         _background.size = new Vector2(_levelDistance, _background.size.y);
-        _background.transform.position = _startPoint + new Vector2(_levelDistance / 2, _background.transform.position.y);
+        _background.transform.position = new Vector2(_levelDistance / 2, _background.transform.position.y);
 
-        _waystone.transform.position = _startPoint +  new Vector2(_levelDistance, _floor.transform.position.y);
-        if(_player != null)
-            _player.transform.position = Vector2.zero;
+        _waystone.transform.position = new Vector2(_levelDistance, _roof.transform.position.y);
+        _player.transform.position = Vector2.zero;
 
         GenerateObstacles();
         GenerateEnemys();
@@ -95,7 +88,7 @@ public class LevelSetting : MonoBehaviour
                     {
                         Vector2 tempVector = new Vector2(temp, _obstacle[g].transform.position.y);
 
-                        GameObject tempGM = Instantiate(_obstacle[g], _startPoint + tempVector, Quaternion.identity, transform);
+                        GameObject tempGM = Instantiate(_obstacle[g], tempVector, Quaternion.identity, transform);
 
                         tempGM.SetActive(true);
 
@@ -135,7 +128,7 @@ public class LevelSetting : MonoBehaviour
 
                 if (possibleCount == 0)
                 {
-                    Debug.LogWarning("РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРµРїСЏС‚СЃС‚РІРёР№ РїСЂРµРІС‹СЃРёР»Рѕ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РІРѕР·РјРѕР¶РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ! Р“РµРЅРµСЂР°С†РёСЏ РѕСЃС‚Р°РЅРѕРІР»РµРЅР°. РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРµРїСЏС‚СЃС‚РІРёР№: " + i);
+                    Debug.LogWarning("Количество препятствий превысило максимальное возможное значение! Генерация остановлена. Количество препятствий: " + i);
                     break;
                 }
 
@@ -172,7 +165,7 @@ public class LevelSetting : MonoBehaviour
                     {
                         Vector2 tempVector = new Vector2(temp, _enemy[g].transform.position.y);
 
-                        GameObject tempGM = Instantiate(_enemy[g], _startPoint + tempVector, Quaternion.identity, transform);
+                        GameObject tempGM = Instantiate(_enemy[g], tempVector, Quaternion.identity, transform);
 
                         tempGM.SetActive(true);
 
@@ -212,7 +205,7 @@ public class LevelSetting : MonoBehaviour
 
                 if (possibleCount == 0)
                 {
-                    Debug.LogWarning("РљРѕР»РёС‡РµСЃС‚РІРѕ РІСЂР°РіРѕРІ РїСЂРµРІС‹СЃРёР»Рѕ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РІРѕР·РјРѕР¶РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ! Р“РµРЅРµСЂР°С†РёСЏ РѕСЃС‚Р°РЅРѕРІР»РµРЅР°. РљРѕР»РёС‡РµСЃС‚РІРѕ РІСЂР°РіРѕРІ: " + i);
+                    Debug.LogWarning("Количество врагов превысило максимальное возможное значение! Генерация остановлена. Количество врагов: " + i);
                     break;
                 }
 
@@ -233,7 +226,7 @@ public class LevelSetting : MonoBehaviour
             {
                 Vector2 tempVector = new Vector2(temp, _item[g].transform.position.y);
 
-                GameObject tempGM = Instantiate(_item[g], _startPoint + tempVector, Quaternion.identity, transform);
+                GameObject tempGM = Instantiate(_item[g], tempVector, Quaternion.identity, transform);
                 tempGM.SetActive(true);
             }
         }
