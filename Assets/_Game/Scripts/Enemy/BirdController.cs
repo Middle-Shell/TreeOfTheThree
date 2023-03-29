@@ -32,6 +32,7 @@ public class BirdController : MonoBehaviour//, IEnableObject
 
     public void OnBecameVisible()
     {
+        print("Blyat");
         enabled = true;
         print("Visible");
     }
