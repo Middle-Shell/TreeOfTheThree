@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager SingletoneGameManager { get; private set; }
 
+[SerializeField] private int _startLevelNum = 0;
     [SerializeField] private List<GameObject> _levels = null;
     [SerializeField] private UiManager _uiManager = null;
     private GameObject _currentLevel = null;
@@ -109,7 +110,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            GenerateLevel(6);
+            GenerateLevel(_startLevelNum);
         }
     }
 
