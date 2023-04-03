@@ -68,14 +68,14 @@ MonoBehaviour:
   _roof: {fileID: 7279351702541949722}
   _floor: {fileID: 7279351702328903128}
   _background: {fileID: 7279351703384788309}
-  _levelDistance: 1000
+  _levelDistance: 2500
   _safeSpawnDistance: 40
   _safeEndDistance: 10
-  _safeWidthObstacle: 1e000000
+  _safeWidthObstacle: 14000000
   _safeWidthEnemy: 0a000000
-  _enemyCount: 06000000
-  _obstacleCount: 06000000
-  _itemCount: 01000000010000000100000001000000
+  _enemyCount: 1e000000
+  _obstacleCount: 19000000
+  _itemCount: 08000000080000000800000008000000
 --- !u!1 &7279351702328903128
 GameObject:
   m_ObjectHideFlags: 0
