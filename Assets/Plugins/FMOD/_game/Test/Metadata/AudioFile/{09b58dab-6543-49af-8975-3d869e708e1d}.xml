@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{09b58dab-6543-49af-8975-3d869e708e1d}">
+		<property name="assetPath">
+			<value>The_Toxic_Avenger_-_Till_the_End_54176435.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>258.03755102040816</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{40b153d3-a21d-49fb-b5b8-16554a038cb2}</destination>
+		</relationship>
+	</object>
+</objects>
