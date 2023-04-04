@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            GenerateLevel(6);
+            GenerateLevel(0);
         }
     }
 

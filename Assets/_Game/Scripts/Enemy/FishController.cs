@@ -6,6 +6,7 @@ using UnityEngine;
 public class FishController : MonoBehaviour//, IEnableObject
 {
     [SerializeField] private float _speed = 5f;
+    [SerializeField] [Range(0f, 10f)] private float _rangeSpawnY = 4f;
     
     private Rigidbody2D _rigidbody2D;
 
@@ -14,6 +15,7 @@ public class FishController : MonoBehaviour//, IEnableObject
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        transform.position = new Vector3(transform.position.x, transform.position.y + (int)Random.Range(-_rangeSpawnY, _rangeSpawnY), transform.position.z);
     }
 
     public void OnBecameVisible()
