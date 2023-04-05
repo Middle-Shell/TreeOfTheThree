@@ -48,12 +48,12 @@ public class JumpPlayer : MonoBehaviour
             // Проверяем, коснулся ли игрок земли
             _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayers);
 
-            _rbody.velocity += Vector2.up * _gravity * _weight * Time.deltaTime;
-
             if (_isGrounded && _playerActions.Player_Map.Jump.IsPressed())
             {
                 _rbody.velocity = Vector2.up * _jumpForce;
+                print(_rbody.velocity);
             }
+            _rbody.velocity += Vector2.up * _gravity * _weight * Time.deltaTime;
         }
     }
     
