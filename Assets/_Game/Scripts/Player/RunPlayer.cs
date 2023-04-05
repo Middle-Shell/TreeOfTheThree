@@ -22,5 +22,7 @@ public class RunPlayer : MonoBehaviour
     void FixedUpdate()
     {
         _rbody.velocity = new Vector2( Speed, _rbody.velocity.y);
+    
+
     }
 }

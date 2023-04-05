@@ -2587,7 +2587,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903fca701396c424787205fb136efe5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 20
+  a: 10
+--- !u!114 &1126786107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126786098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadEvent: 1
+  UnloadEvent: 0
+  Banks:
+  - Master
+  - Master.strings
+  CollisionTag: 
+  PreloadSamples: 1
+--- !u!114 &1126786118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126786098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1708779339
+      Data2: 1335847031
+      Data3: -753578073
+      Data4: 1090365191
+    Path: event:/Master/Character/Character_Jump
+  Event: 
+  PlayEvent: 15
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1149972259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3514,7 +3563,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e7cbae1d857ee44ca3f78edee6112f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deathScreen: {fileID: 646553149}
+  _blackoutScreen: {fileID: 0}
+  _duration: 5
+  _numberPotScreen: {fileID: 0}
 --- !u!114 &1505002166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3607,8 +3658,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1517820778}
   - component: {fileID: 1517820777}
-  - component: {fileID: 1517820776}
   - component: {fileID: 1517820775}
+  - component: {fileID: 1517820779}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3629,16 +3680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 1126786098}
-  movingSpeed: 6
   _offsetXYZ: {x: 4, y: 0, z: -500}
---- !u!81 &1517820776
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517820774}
-  m_Enabled: 1
+  _limitY: 0
 --- !u!20 &1517820777
 Camera:
   m_ObjectHideFlags: 0
@@ -3697,6 +3740,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1517820779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517820774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1523169415
 GameObject:
   m_ObjectHideFlags: 0
