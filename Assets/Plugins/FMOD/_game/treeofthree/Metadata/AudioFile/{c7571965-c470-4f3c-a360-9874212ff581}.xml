@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c7571965-c470-4f3c-a360-9874212ff581}">
+		<property name="assetPath">
+			<value>Swim V1- P4.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.88800000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc508214-cc7f-4c88-bfab-869b17caa7b4}</destination>
+		</relationship>
+	</object>
+</objects>
