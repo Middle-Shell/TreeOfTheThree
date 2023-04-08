@@ -7,13 +7,13 @@ public class WolfController : MonoBehaviour//, IEnableObject
 {
     private CircleCollider2D _circleCollider2D;
 
-    [SerializeField] private float _rangeDetect = 5f;
+    //[SerializeField] private float _rangeDetect = 5f;
     // Start is called before the first frame update
     void Start()
     {
-        _circleCollider2D = gameObject.AddComponent<CircleCollider2D>();
+        /*_circleCollider2D = gameObject.AddComponent<CircleCollider2D>();
         _circleCollider2D.isTrigger = true;
-        _circleCollider2D.radius = _rangeDetect;
+        _circleCollider2D.radius = _rangeDetect;*/
     }
 
     public void OnBecameVisible()

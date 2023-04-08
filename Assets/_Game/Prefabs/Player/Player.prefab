@@ -131,6 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 15
   _blockY: 0
+  _fallWeight: 10
+  _ascentWeight: 10
 --- !u!114 &3178437456253596326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903fca701396c424787205fb136efe5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: 10
 --- !u!114 &4999591414416327068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,9 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2cce3c23d856a4382c10bff22f9245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FallWeight: 2.5
-  JumpWeight: 2.5
-  _jumpForce: 30
+  FallWeight: 2
+  JumpWeight: 1
+  _jumpForce: 32
+  _jumpCooldown: 0.5
   _groundLayers:
     serializedVersion: 2
     m_Bits: 320

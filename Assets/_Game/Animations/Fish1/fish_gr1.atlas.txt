@@ -1,0 +1,55 @@
+
+fish_2.png
+size: 1149,1149
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fish3dark
+  rotate: false
+  xy: 1, 886
+  size: 423, 263
+  orig: 423, 263
+  offset: 0, 0
+  index: -1
+fish4dark
+  rotate: false
+  xy: 1, 301
+  size: 348, 175
+  orig: 348, 175
+  offset: 0, 0
+  index: -1
+fish5dark
+  rotate: false
+  xy: 1, 121
+  size: 324, 178
+  orig: 324, 178
+  offset: 0, 0
+  index: -1
+fish_2light
+  rotate: false
+  xy: 1, 478
+  size: 413, 194
+  orig: 413, 194
+  offset: 0, 0
+  index: -1
+fish_3light
+  rotate: false
+  xy: 1, 674
+  size: 389, 210
+  orig: 389, 210
+  offset: 0, 0
+  index: -1
+fish_4light
+  rotate: true
+  xy: 351, 154
+  size: 315, 123
+  orig: 315, 123
+  offset: 0, 0
+  index: -1
+fish_5light
+  rotate: false
+  xy: 1, 1
+  size: 289, 118
+  orig: 289, 118
+  offset: 0, 0
+  index: -1

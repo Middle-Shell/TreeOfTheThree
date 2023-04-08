@@ -7,7 +7,6 @@ public class RunPlayer : MonoBehaviour
 {
     [Range(10f, 40f)] public const float Speed = 10;
     private Rigidbody2D _rbody;
-    public int a = 10;
     private Vector2 _moveInput;
 
 

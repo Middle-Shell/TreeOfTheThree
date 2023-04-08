@@ -5,10 +5,12 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public static CameraController Instance  { get; private set; }
+    [SerializeField] private bool _runOver;
     
     [Header("Parameters")]
     [SerializeField] private Transform _player;
-    [SerializeField] [Range(0.5f, 10f)] private readonly float movingSpeed = 5f;
+    [SerializeField] [Range(0f, 10f)] private float _movingSpeed = 3f;
+    [SerializeField] [Range(0f, 10f)] private float _movingSpeedRunOver = 0.5f;
     [SerializeField] private Vector3 _offsetXYZ = new (4f, 0f, -500f);//-500 по Z что бы не было спрайтов уходящих за камеру
     [SerializeField] private float _limitYDown;
     [SerializeField] private float _limitYUp;
@@ -38,7 +40,7 @@ public class CameraController : MonoBehaviour
         if (Player)
         {
             _target = Player.position + _offsetXYZ;
-
+            
             if (_target.y > _limitYUp)
             {
                 _target.y = _limitYUp;
@@ -48,8 +50,11 @@ public class CameraController : MonoBehaviour
             {
                 _target.y = -_limitYDown;
             }
-
-            transform.position = Vector3.Lerp(transform.position, _target, movingSpeed * Time.deltaTime);
+            if(_runOver)
+                transform.Translate(new Vector3(_movingSpeedRunOver, 0f, 0f));
+            else
+                transform.position = Vector3.Lerp(transform.position, _target, _movingSpeed * Time.deltaTime);
+            
         }
     }
 }

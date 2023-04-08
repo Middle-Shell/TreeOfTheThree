@@ -9,14 +9,17 @@ public class JumpPlayer : MonoBehaviour
 
     private bool _isGrounded;
     private float _gravity;
-    private bool _isStop = false;
+    private bool _isStop;
+    private float _weight;
+    private bool _isFalling;
+    private float _timer;
 
     [SerializeField][Range(0f, 10f)] private float FallWeight = 5.0f;
     [SerializeField][Range(0f, 10f)] private float JumpWeight = 0.5f;
-    private float _weight;
-    private bool _isFalling;
+    
 
-    [SerializeField][Range(10f, 60f)] private float _jumpForce = 10f;
+    [SerializeField][Range(0f, 60f)] private float _jumpForce = 10f;
+    [SerializeField] [Range(0.2f, 5f)] private float _jumpCooldown = 0.5f;
 
     [SerializeField] private LayerMask _groundLayers;
     [SerializeField] private Transform _groundCheck;
@@ -48,12 +51,19 @@ public class JumpPlayer : MonoBehaviour
             // Проверяем, коснулся ли игрок земли
             _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayers);
 
-            if (_isGrounded && _playerActions.Player_Map.Jump.IsPressed())
+            if (_isGrounded)
             {
-                _rbody.velocity = Vector2.up * _jumpForce;
-                print(_rbody.velocity);
+                _timer += Time.deltaTime;
+                if (_playerActions.Player_Map.Jump.IsPressed() && _timer >= _jumpCooldown)
+                {
+                    //_rbody.velocity = Vector2.up * _jumpForce;
+                    _rbody.AddForce(new Vector2(2f, 1f) * _jumpForce, ForceMode2D.Impulse);
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Master/Character/Character_Jump");
+                    _timer = 0f;
+                }
+
+                
             }
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Master/Character/Character_Jump");
             _rbody.velocity += Vector2.up * _gravity * _weight * Time.deltaTime;
         }
     }
