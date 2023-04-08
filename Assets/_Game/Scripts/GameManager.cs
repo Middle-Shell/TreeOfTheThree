@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager SingletoneGameManager { get; private set; }
 
+[SerializeField] private int _startLevelNum = 0;
     [SerializeField] private List<GameObject> _levels = null;
     [SerializeField] private UiManager _uiManager = null;
     private GameObject _currentLevel = null;
@@ -63,11 +64,11 @@ public class GameManager : MonoBehaviour
         
         if (levelNumber > _levels.Count)
         {
-            Debug.LogWarning("Превышение лимита!");
+            Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!");
         }
         else if (levelNumber < 0)
         {
-            Debug.LogWarning("Отрицательных уровней нет!");
+            Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ!");
         }
         else
         {
@@ -109,7 +110,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            GenerateLevel(0);
+            GenerateLevel(_startLevelNum);
         }
     }
 

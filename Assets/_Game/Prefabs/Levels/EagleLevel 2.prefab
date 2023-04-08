@@ -81,13 +81,13 @@ MonoBehaviour:
   _roof: {fileID: 6466857591102695439}
   _floor: {fileID: 6466857590383982285}
   _background: {fileID: 6466857591341432384}
-  _levelDistance: 1000
+  _levelDistance: 2000
   _safeSpawnDistance: 40
   _safeEndDistance: 20
   _safeWidthObstacle: 050000000500000005000000050000000500000005000000
-  _safeWidthEnemy: 0a00000005000000
-  _enemyCount: 0500000005000000
-  _obstacleCount: 020000000200000002000000020000000200000002000000
+  _safeWidthEnemy: 0a0000000a000000
+  _enemyCount: 0a00000005000000
+  _obstacleCount: 030000000300000003000000030000000400000003000000
   _itemCount: 02000000020000000200000002000000
 --- !u!1 &6466857590383982285
 GameObject:
@@ -115,7 +115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6466857590383982285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.35, z: 0}
+  m_LocalPosition: {x: 0, y: -10.7, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
