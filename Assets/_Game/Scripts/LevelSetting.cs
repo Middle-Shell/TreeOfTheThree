@@ -224,13 +224,13 @@ public class LevelSetting : MonoBehaviour
     private void GenerateItems()
     {
         int temp;
-
-        temp = Random.Range(_safeSpawnDistance , freeCoordinates.Length - _safeEndDistance);
-
+        
         for (int g = 0; g < _item.Count; g++)
         {
             for (int i = 0; i < _itemCount[g]; i++)
             {
+                temp = Random.Range(_safeSpawnDistance , freeCoordinates.Length - _safeEndDistance);
+
                 Vector2 tempVector = new Vector2(temp, _item[g].transform.position.y);
 
                 GameObject tempGM = Instantiate(_item[g], _startPoint + tempVector, Quaternion.identity, transform);

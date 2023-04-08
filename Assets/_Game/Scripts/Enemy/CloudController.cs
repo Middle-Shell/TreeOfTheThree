@@ -63,6 +63,7 @@ public class CloudController : MonoBehaviour//, IEnableObject
 
     private void Shoot()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Master/Character/Cloud_Thunder");
         Destroy(Instantiate(_bulletPrefab, _firePoint.position, Quaternion.identity), 1f);
     }
 

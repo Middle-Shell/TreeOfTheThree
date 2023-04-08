@@ -193,6 +193,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _powerMin: 10
   _powerMax: 20
+  _maxAngle: 80
+  _minAngle: 0
   _prefab: {fileID: 5978098513130072357, guid: e277737f71a98f74ea4c6bb745597996, type: 3}
   _pointPosition: {fileID: 4594812944199564574}
   _firePosition: {fileID: 2722636194837044412}

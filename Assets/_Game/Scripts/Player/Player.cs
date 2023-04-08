@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     
     void Start()
     {
+        if(_player != null)
+            Destroy(gameObject);
         CameraController.Instance.Player = transform;
         print("camera");
         _player = gameObject;

@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
         _uiManager.HideBestiary();
         _uiManager.HideInGameMenu();
         _uiManager.DeathScreen(false);
+        Player.DeletePlayer();
         if (levelContinue)
         {
             GenerateLevel(SaveManager.LoadCurrentLevel());

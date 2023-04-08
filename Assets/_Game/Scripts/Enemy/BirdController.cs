@@ -10,6 +10,7 @@ public class BirdController : MonoBehaviour//, IEnableObject
     [SerializeField] private float _moveSpeed = -3.0f; // Скорость перемещения врага
     //[SerializeField] private float _timeToChangeDirection = 2.0f; // Время до изменения направления движения
     [SerializeField] private float _fireRate = 1.0f; // Частота стрельбы
+    [SerializeField] [Range(0f, 10f)] private float _throwError = 5f;
     [SerializeField] private GameObject _bulletPrefab; // Префаб пули
     [SerializeField] private Transform _firePoint; // Точка, из которой будут вылетать пули
     [SerializeField] private float _bulletForce = 10f;
@@ -37,7 +38,6 @@ public class BirdController : MonoBehaviour//, IEnableObject
 
     public void OnBecameInvisible()
     {
-        print("Invisible");
         enabled = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -86,11 +86,13 @@ public class BirdController : MonoBehaviour//, IEnableObject
         float timeToTarget = distance / _bulletForce;
     
         // Рассчитываем позицию цели в будущем
-        Vector3 targetPosition = _player.transform.position + new Vector3(RunPlayer.Speed * timeToTarget, 0f, 0f);
-        Vector3 direction = (targetPosition - _firePoint.position).normalized;
+        Vector3 targetPosition = _player.transform.position + new Vector3(RunPlayer.Speed * timeToTarget, 1.5f, 0f);
+        Vector3 direction = (targetPosition - _firePoint.position);
+        direction.x += (int) Random.Range(-_throwError, _throwError);
+        print(direction);
     
         // Задаем скорость пули
-        bullet.GetComponent<Rigidbody2D>().velocity = direction * _bulletForce;
+        bullet.GetComponent<Rigidbody2D>().velocity = direction.normalized * _bulletForce;
     
         // Завершаем метод
         _player = null;

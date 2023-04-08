@@ -16,6 +16,11 @@ public class UiManager : MonoBehaviour
         PlayerStateEvent.PlayerDeathEvent += ShowInGameMenu;
     }
 
+    public void ReturnToMenu()
+    {
+        GameManager.SingletoneGameManager.CloseLevel();
+    }
+
     public void DeathScreen(bool enable)
     {
         _deathScreen.SetActive(enable);
