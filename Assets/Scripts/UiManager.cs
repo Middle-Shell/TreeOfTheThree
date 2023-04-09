@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class UiManager : MonoBehaviour
 {
     [SerializeField] private GameObject _continueButton = null;
+    [SerializeField] private GameObject _continueButtonInGame = null;
     [SerializeField] private Bestiary _bestiary = null;
     [SerializeField] private GameObject _menu = null;
     [SerializeField] private GameObject _inGameMenu = null;
@@ -14,6 +15,7 @@ public class UiManager : MonoBehaviour
     void Start()
     {
         PlayerStateEvent.PlayerDeathEvent += ShowInGameMenu;
+        PlayerStateEvent.PlayerDeathEvent += HideContinueButtonInGame;
     }
 
     public void ReturnToMenu()
@@ -43,6 +45,11 @@ public class UiManager : MonoBehaviour
         else
             _continueButton.SetActive(false);
     }
+
+    private void HideContinueButtonInGame()
+    {
+        _continueButtonInGame.SetActive(false);
+    }
     public void ShowInGameMenu()
     {
         Time.timeScale = 0;
@@ -52,6 +59,7 @@ public class UiManager : MonoBehaviour
     public void HideInGameMenu()
     {
         Time.timeScale = 1;
+        _continueButtonInGame.SetActive(true);
         _inGameMenu.SetActive(false);
     }
 

@@ -15,8 +15,15 @@ public class CollisionPlayer : MonoBehaviour
         if (collider2D.gameObject.CompareTag("Waystone"))
         {
             GameManager.SingletoneGameManager.GenerateLevel(SaveManager.LoadCurrentLevel() + 1, collider2D.transform.position.x-5);
+            Player.FreeMove(false);
+        }
+
+        if (collider2D.gameObject.CompareTag("FreeMove"))
+        {
+            Player.FreeMove(true);
         }
     }
+
 
     void OnCollisionEnter2D(Collision2D collision)
     {

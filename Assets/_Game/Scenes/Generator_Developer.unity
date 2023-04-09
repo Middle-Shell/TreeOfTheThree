@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &114825562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7968905880506172602, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+  m_PrefabInstance: {fileID: 6464338847008111036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &196423004 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
@@ -146,8 +151,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1215288291641784993, guid: 260949f46a715084288ca75149d47ae9, type: 3}
+      propertyPath: _runOver
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215288291641784993, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: _offsetXYZ.x
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215288291641784993, guid: 260949f46a715084288ca75149d47ae9, type: 3}
+      propertyPath: _movingSpeedRunOver
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2021224903397771998, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: m_RootOrder
@@ -163,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2021224903397771998, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -500
       objectReference: {fileID: 0}
     - target: {fileID: 2021224903397771998, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -193,6 +206,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2241159839235278003, guid: 260949f46a715084288ca75149d47ae9, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174572219649546563, guid: 260949f46a715084288ca75149d47ae9, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6382806911744697052, guid: 260949f46a715084288ca75149d47ae9, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6726587961092580345, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -216,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 1959548370}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _startLevelNum
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.size
@@ -225,15 +250,15 @@ PrefabInstance:
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[0]
       value: 
-      objectReference: {fileID: 4489332279318574164, guid: 397ec187d7a37484c964b85d45bcdc63, type: 3}
+      objectReference: {fileID: 4489332279318574164, guid: f635636b58879b04eac32de1579f2adf, type: 3}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[1]
       value: 
-      objectReference: {fileID: 4489332279318574164, guid: f635636b58879b04eac32de1579f2adf, type: 3}
+      objectReference: {fileID: 4489332279318574164, guid: f03551e5943379940b187ca70032d84e, type: 3}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[2]
       value: 
-      objectReference: {fileID: 4489332279318574164, guid: f03551e5943379940b187ca70032d84e, type: 3}
+      objectReference: {fileID: 4489332279318574164, guid: 397ec187d7a37484c964b85d45bcdc63, type: 3}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[3]
       value: 
@@ -380,7 +405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 365536501747808611, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1821528852713106027, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_fontAsset
@@ -828,7 +853,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 996edd68bc065ea4284f50bae6d02b0d, type: 3}
     - target: {fileID: 7968905879460217078, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7968905879475093708, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_IsActive
@@ -946,6 +971,10 @@ PrefabInstance:
       propertyPath: _background
       value: 
       objectReference: {fileID: 1331154639}
+    - target: {fileID: 7968905879802427041, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: _continueButtonInGame
+      value: 
+      objectReference: {fileID: 114825562}
     - target: {fileID: 7968905879911586271, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -2
@@ -1184,7 +1213,7 @@ PrefabInstance:
       objectReference: {fileID: 1959548370}
     - target: {fileID: 7968905880190577763, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Restart
+      value: ReturnToMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7968905880190577763, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

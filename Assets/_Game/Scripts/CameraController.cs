@@ -22,6 +22,11 @@ public class CameraController : MonoBehaviour
         get => _player;
         set => _player = value;
     }
+
+    public bool RunOver
+    {
+        set => _runOver = value;
+    }
     
     void Awake()
     {

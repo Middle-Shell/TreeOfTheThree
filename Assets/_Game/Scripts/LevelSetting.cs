@@ -59,7 +59,7 @@ public class LevelSetting : MonoBehaviour
         _background.transform.position = _startPoint + new Vector2(_levelDistance / 2, _background.transform.position.y);
 
         _waystone.transform.position = _startPoint +  new Vector2(_levelDistance, _floor.transform.position.y);
-        if(_player != null)
+        if(Player.IsPlayerNotNull)
             _player.transform.position = Vector2.zero;
 
         GenerateObstacles();
