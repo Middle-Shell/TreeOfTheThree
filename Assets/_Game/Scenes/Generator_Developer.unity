@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1215288291641784993, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: _runOver
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1215288291641784993, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: _offsetXYZ.x
@@ -241,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 1959548370}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _startLevelNum
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.size
@@ -250,15 +250,15 @@ PrefabInstance:
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[0]
       value: 
-      objectReference: {fileID: 4489332279318574164, guid: f635636b58879b04eac32de1579f2adf, type: 3}
+      objectReference: {fileID: 4489332279318574164, guid: 397ec187d7a37484c964b85d45bcdc63, type: 3}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[1]
       value: 
-      objectReference: {fileID: 4489332279318574164, guid: f03551e5943379940b187ca70032d84e, type: 3}
+      objectReference: {fileID: 4489332279318574164, guid: f635636b58879b04eac32de1579f2adf, type: 3}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[2]
       value: 
-      objectReference: {fileID: 4489332279318574164, guid: 397ec187d7a37484c964b85d45bcdc63, type: 3}
+      objectReference: {fileID: 4489332279318574164, guid: f03551e5943379940b187ca70032d84e, type: 3}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.data[3]
       value: 
@@ -851,6 +851,10 @@ PrefabInstance:
       propertyPath: _image.Array.data[5]
       value: 
       objectReference: {fileID: 21300000, guid: 996edd68bc065ea4284f50bae6d02b0d, type: 3}
+    - target: {fileID: 7968905879460217076, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: _wrongNameButtons.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7968905879460217078, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1360,12 +1364,40 @@ PrefabInstance:
       value: "\u0412\u042B\u0425\u041E\u0414"
       objectReference: {fileID: 0}
     - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1959548370}
+    - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideInGameMenu
+      value: ShowBestiary
       objectReference: {fileID: 0}
     - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ShowBestiary
+      value: HideInGameMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: HideMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UiManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968905880933485304, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7968905880933485307, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_AnchorMax.y

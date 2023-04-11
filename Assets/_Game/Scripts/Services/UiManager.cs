@@ -30,12 +30,18 @@ public class UiManager : MonoBehaviour
 
     public void ShowBestiary()
     { 
+        Time.timeScale = 0;
         _bestiary.gameObject.SetActive(true);
         _bestiary.ShowBestiary();
     }
 
     public void ShowMenu()
     {
+        if (Player.IsPlayerNotNull)
+        {
+            ShowInGameMenu();
+            return;
+        }
         _menu.SetActive(true);
 
         if (SaveManager.LoadCurrentLevel() != 0)

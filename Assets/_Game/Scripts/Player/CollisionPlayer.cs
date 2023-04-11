@@ -24,6 +24,14 @@ public class CollisionPlayer : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D collider2D)
+    {
+        if (collider2D.gameObject.CompareTag("FreeMove"))
+        {
+            Player.FreeMove(false);
+        }
+    }
+
 
     void OnCollisionEnter2D(Collision2D collision)
     {

@@ -82,10 +82,14 @@ public class GameManager : MonoBehaviour
                 PlayerStateEvent.OnFinishMilestone();
                 Player.DeletePlayer(); 
                 startPositionX = 0;
-                Camera.main.transform.position = Vector3.zero;
             }
 
+            if (CurrentLevelIndex < 3) //в билде не требуется т.к. игра начинается с 0 и RunOver по умолчанию true
+                CameraController.Instance.RunOver = true;
+
             LevelSetting.StartPoint = new Vector2(startPositionX, 0);
+            var cam = Camera.main;
+            cam.transform.position = new Vector3(startPositionX, 0, cam.transform.position.z);
             _currentLevel = Instantiate(_levels[levelNumber]);
             
             //StartCoroutine(ShiftTransform(startPositionX));

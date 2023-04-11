@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: hero for animation v2_SkeletonData
+  m_Name: ryby gr2_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 1e7503e838a528441977ccf9ef11f98e, type: 2}
+  - {fileID: 11400000, guid: 4634a707023a4b34282f57a7a18552ec, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 7ae3d16bc066f894fb96653cdd34e0dc, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: af79f6d1e15796e40af0b9f6238f4476, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

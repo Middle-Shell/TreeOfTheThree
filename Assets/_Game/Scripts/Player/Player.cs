@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
             _player.GetComponent<RunPlayer>().enabled = !isFree;
             _player.GetComponent<MovePlayer>().enabled = isFree;
             _player.GetComponent<MovePlayer>().BlockY = isFree;
+            CameraController.Instance.RunOver = false;
         }
         else
             CameraController.Instance.RunOver = !isFree;

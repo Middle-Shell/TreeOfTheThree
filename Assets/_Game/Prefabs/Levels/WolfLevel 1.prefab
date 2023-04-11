@@ -714,15 +714,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: _jumpForce
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: _groundLayers.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 6153962748272492450, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: initialSkinName
+      value: White
+      objectReference: {fileID: 0}
     - target: {fileID: 6330663361419134500, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432599221538421817, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
