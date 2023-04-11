@@ -2,15 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class UiManager : MonoBehaviour
 {
+    [Header("Menu")]
     [SerializeField] private GameObject _continueButton = null;
     [SerializeField] private GameObject _continueButtonInGame = null;
     [SerializeField] private Bestiary _bestiary = null;
     [SerializeField] private GameObject _menu = null;
     [SerializeField] private GameObject _inGameMenu = null;
+    
+    [Header("Dead Screen")]
     [SerializeField] private GameObject _deathScreen;
+    [SerializeField] private TextMeshProUGUI _deadText = null;
+    [SerializeField] private List<string> _deadTexts = new List<string>();
 
     void Start()
     {
@@ -26,6 +32,8 @@ public class UiManager : MonoBehaviour
     public void DeathScreen(bool enable)
     {
         _deathScreen.SetActive(enable);
+        _deadText.gameObject.SetActive(true);
+        _deadText.text = _deadTexts[Random.Range(0, _deadTexts.Count)];
     }
 
     public void ShowBestiary()
