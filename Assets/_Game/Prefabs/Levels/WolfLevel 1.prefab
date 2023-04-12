@@ -706,16 +706,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: FallWeight
-      value: 2
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: JumpWeight
-      value: 2.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: _jumpForce
-      value: 25
+      value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: _groundCheck
+      value: 
+      objectReference: {fileID: 1033367348731344128}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: _groundLayers.m_Bits
       value: 64
@@ -734,6 +738,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+--- !u!4 &1033367348731344128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3898954073561625182, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+  m_PrefabInstance: {fileID: 4056789104689252190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4507023220218842011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 486588386517798085, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}

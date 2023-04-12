@@ -438,15 +438,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: FallWeight
-      value: 2
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: JumpWeight
-      value: 2.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: _jumpForce
-      value: 25
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: _groundLayers.m_Bits
