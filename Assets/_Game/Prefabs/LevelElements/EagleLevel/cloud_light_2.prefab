@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7755826406413534809}
   - component: {fileID: 3995882914235517436}
   - component: {fileID: 1841942082442970294}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cloud_light_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

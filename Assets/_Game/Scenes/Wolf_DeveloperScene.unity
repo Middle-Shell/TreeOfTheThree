@@ -2535,6 +2535,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3147361663105950666, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: PlayEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147361663105950666, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Character_Jump
+      objectReference: {fileID: 0}
     - target: {fileID: 3898954073561625182, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_RootOrder
       value: 0

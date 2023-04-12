@@ -7,6 +7,8 @@ public class ShootPlayer : MonoBehaviour
 {
     [SerializeField] private float _powerMin = 10f;
     [SerializeField] private float _powerMax = 20f;
+    [SerializeField] private float _maxAngle = 80f;
+    [SerializeField] private float _minAngle = -20f;
 
     [SerializeField] private GameObject _prefab;
     [SerializeField] private Transform _pointPosition;
@@ -48,7 +50,7 @@ public class ShootPlayer : MonoBehaviour
         _mousePosition = _cam.ScreenToWorldPoint(Input.mousePosition);
         _direction = _mousePosition - _bowPosition;
         _angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
-        if (_angle > 80f || _angle < -20f)
+        if (_angle > _maxAngle || _angle < _minAngle)
         {
             _isCharging = false;
             _isAllowFire = false;
@@ -81,6 +83,7 @@ public class ShootPlayer : MonoBehaviour
     {
         _isCharging = false;
         GameObject newArrow = Instantiate(_prefab, _firePosition.position, _firePosition.rotation);
+        newArrow.GetComponent<Arrow>().IsPlayer = true;
         newArrow.GetComponent<Rigidbody2D>().velocity = _pointPosition.transform.right * _currentPower;
         ThrowOutPoints();
     }

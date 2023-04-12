@@ -1,0 +1,258 @@
+
+hero for animation v2.png
+size: 4084,4084
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bag
+  rotate: true
+  xy: 464, 3875
+  size: 201, 255
+  orig: 201, 255
+  offset: 0, 0
+  index: -1
+bottom skirt blue_l
+  rotate: 180
+  xy: 1145, 3426
+  size: 288, 271
+  orig: 309, 315
+  offset: 4, 44
+  index: -1
+bottom skirt blue_r
+  rotate: 270
+  xy: 1057, 2967
+  size: 474, 305
+  orig: 479, 307
+  offset: 5, 2
+  index: -1
+bottom skirt red_l
+  rotate: 270
+  xy: 1193, 378
+  size: 288, 271
+  orig: 309, 315
+  offset: 4, 44
+  index: -1
+bottom skirt red_r
+  rotate: 270
+  xy: 1084, 1024
+  size: 472, 305
+  orig: 477, 307
+  offset: 5, 2
+  index: -1
+bottom slirt white_l
+  rotate: true
+  xy: 1094, 661
+  size: 471, 305
+  orig: 476, 307
+  offset: 5, 2
+  index: -1
+bottom slirt white_r
+  rotate: 180
+  xy: 1176, 2
+  size: 288, 271
+  orig: 309, 315
+  offset: 4, 44
+  index: -1
+bracelet
+  rotate: false
+  xy: 970, 3336
+  size: 153, 101
+  orig: 156, 102
+  offset: 0, 0
+  index: -1
+brooch
+  rotate: false
+  xy: 762, 2762
+  size: 169, 129
+  orig: 169, 129
+  offset: 0, 0
+  index: -1
+chest blue
+  rotate: true
+  xy: 1, 1767
+  size: 674, 823
+  orig: 674, 855
+  offset: 0, 32
+  index: -1
+chest red
+  rotate: 270
+  xy: 1, 1109
+  size: 674, 819
+  orig: 674, 851
+  offset: 0, 32
+  index: -1
+chest white
+  rotate: true
+  xy: 1, 573
+  size: 672, 820
+  orig: 672, 852
+  offset: 0, 32
+  index: -1
+hair 1
+  rotate: false
+  xy: 1197, 2715
+  size: 307, 308
+  orig: 307, 308
+  offset: 0, 0
+  index: -1
+hair 2
+  rotate: false
+  xy: 1212, 3777
+  size: 251, 307
+  orig: 251, 307
+  offset: 0, 0
+  index: -1
+hair 3
+  rotate: false
+  xy: 1273, 2192
+  size: 191, 259
+  orig: 191, 259
+  offset: 0, 0
+  index: -1
+hair 4
+  rotate: false
+  xy: 1246, 3684
+  size: 161, 297
+  orig: 161, 374
+  offset: 0, 77
+  index: -1
+hair 5
+  rotate: true
+  xy: 942, 2626
+  size: 338, 307
+  orig: 338, 307
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1, 215
+  size: 390, 356
+  orig: 390, 356
+  offset: 0, 0
+  index: -1
+left arm 1
+  rotate: false
+  xy: 1218, 1821
+  size: 233, 239
+  orig: 233, 239
+  offset: 0, 0
+  index: -1
+left arm blue 2
+  rotate: false
+  xy: 736, 1048
+  size: 386, 462
+  orig: 386, 462
+  offset: 0, 0
+  index: -1
+left arm blue 3
+  rotate: false
+  xy: 1005, 3556
+  size: 244, 528
+  orig: 244, 528
+  offset: 0, 0
+  index: -1
+left arm red 2
+  rotate: false
+  xy: 715, 2917
+  size: 388, 463
+  orig: 388, 463
+  offset: 0, 0
+  index: -1
+left arm red 3
+  rotate: 180
+  xy: 1043, 1436
+  size: 244, 528
+  orig: 244, 528
+  offset: 0, 0
+  index: -1
+left arm white 2
+  rotate: false
+  xy: 723, 1641
+  size: 388, 463
+  orig: 388, 463
+  offset: 0, 0
+  index: -1
+left arm white 3
+  rotate: 180
+  xy: 1064, 1995
+  size: 244, 528
+  orig: 244, 528
+  offset: 0, 0
+  index: -1
+left leg
+  rotate: 180
+  xy: 278, 2375
+  size: 491, 1501
+  orig: 519, 1572
+  offset: 9, 64
+  index: -1
+neck
+  rotate: false
+  xy: 721, 3876
+  size: 212, 208
+  orig: 212, 208
+  offset: 0, 0
+  index: -1
+right arm 1
+  rotate: 180
+  xy: 1165, 2453
+  size: 288, 258
+  orig: 288, 258
+  offset: 0, 0
+  index: -1
+right arm blue 2
+  rotate: false
+  xy: 979, 76
+  size: 261, 488
+  orig: 261, 488
+  offset: 0, 0
+  index: -1
+right arm blue 3
+  rotate: 180
+  xy: 393, 26
+  size: 365, 562
+  orig: 365, 562
+  offset: 0, 0
+  index: -1
+right arm red 2
+  rotate: false
+  xy: 746, 3375
+  size: 263, 490
+  orig: 263, 490
+  offset: 0, 0
+  index: -1
+right arm red 3
+  rotate: false
+  xy: 627, 76
+  size: 365, 562
+  orig: 365, 562
+  offset: 0, 0
+  index: -1
+right arm white 2
+  rotate: false
+  xy: 850, 569
+  size: 263, 490
+  orig: 263, 490
+  offset: 0, 0
+  index: -1
+right arm white 3
+  rotate: 180
+  xy: 706, 2198
+  size: 365, 562
+  orig: 365, 562
+  offset: 0, 0
+  index: -1
+right leg
+  rotate: false
+  xy: 1, 2501
+  size: 462, 1584
+  orig: 503, 1625
+  offset: 12, 41
+  index: -1
+ties
+  rotate: false
+  xy: 277, 3802
+  size: 87, 98
+  orig: 87, 98
+  offset: 0, 0
+  index: -1

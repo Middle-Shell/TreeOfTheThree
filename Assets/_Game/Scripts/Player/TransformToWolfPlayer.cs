@@ -10,8 +10,8 @@ public class TransformToWolfPlayer : MonoBehaviour
     private PlayerActions _playerActions;
     private JumpPlayer _jumpController;
 
-    [SerializeField] private SpriteRenderer _humanSpriteObject;
-    [SerializeField] private SpriteRenderer _wolfSpriteObject;
+    [SerializeField] private GameObject _humanSpriteObject;
+    [SerializeField] private GameObject _wolfSpriteObject;
     
     
 
@@ -51,13 +51,13 @@ public class TransformToWolfPlayer : MonoBehaviour
 
             if (_isWolf)
             {
-                _wolfSpriteObject.enabled = true;
-                _humanSpriteObject.enabled = false;
+                _wolfSpriteObject.SetActive(true);
+                _humanSpriteObject.SetActive(false);
             }
             else
             {
-                _humanSpriteObject.enabled = true;
-                _wolfSpriteObject.enabled = false;
+                _humanSpriteObject.SetActive(true);
+                _wolfSpriteObject.SetActive(false);
             }
             /*_spriteRenderer.color =
                 _isWolf ? Color.red : Color.white; //когда будут арты и т.п. поменять на что то вразумительное*/

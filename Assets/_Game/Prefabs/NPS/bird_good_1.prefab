@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4127178917086708880}
   - component: {fileID: -565542665048839316}
   - component: {fileID: 1443237844645774440}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: bird_good_1
   m_TagString: Eagle
   m_Icon: {fileID: 0}
@@ -102,6 +102,7 @@ MonoBehaviour:
   _isAttack: 0
   _moveSpeed: -3
   _fireRate: 1
+  _throwError: 5
   _bulletPrefab: {fileID: 0}
   _firePoint: {fileID: 0}
   _bulletForce: 10

@@ -1,0 +1,62 @@
+
+ryby gr1.png
+size: 2731,2731
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fish_2
+  rotate: false
+  xy: 1, 2537
+  size: 413, 194
+  orig: 413, 194
+  offset: 0, 0
+  index: -1
+fish_2dark
+  rotate: false
+  xy: 777, 2537
+  size: 356, 194
+  orig: 356, 194
+  offset: 0, 0
+  index: -1
+fish_3
+  rotate: false
+  xy: 416, 2537
+  size: 359, 194
+  orig: 359, 194
+  offset: 0, 0
+  index: -1
+fish_3dark
+  rotate: false
+  xy: 1485, 2537
+  size: 312, 194
+  orig: 312, 194
+  offset: 0, 0
+  index: -1
+fish_4_2
+  rotate: false
+  xy: 2125, 2608
+  size: 315, 123
+  orig: 315, 123
+  offset: 0, 0
+  index: -1
+fish_4dark
+  rotate: false
+  xy: 1135, 2556
+  size: 348, 175
+  orig: 348, 175
+  offset: 0, 0
+  index: -1
+fish_5_3
+  rotate: false
+  xy: 2442, 2613
+  size: 289, 118
+  orig: 289, 118
+  offset: 0, 0
+  index: -1
+fish_5dark
+  rotate: false
+  xy: 1799, 2553
+  size: 324, 178
+  orig: 324, 178
+  offset: 0, 0
+  index: -1

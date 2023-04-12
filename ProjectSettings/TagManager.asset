@@ -9,6 +9,7 @@ TagManager:
   - Eagle
   - Waystone
   - Kite
+  - FreeMove
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Cloud
   - Kite
   - Collectibles
-  - 
+  - Eagle
   - 
   - 
   - 

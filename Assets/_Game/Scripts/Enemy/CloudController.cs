@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Assets._Game.Scripts;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -63,6 +62,7 @@ public class CloudController : MonoBehaviour//, IEnableObject
 
     private void Shoot()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Master/NPC/Cloud_Thunder");
         Destroy(Instantiate(_bulletPrefab, _firePoint.position, Quaternion.identity), 1f);
     }
 

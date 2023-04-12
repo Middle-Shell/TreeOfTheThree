@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 6979502010203885828}
   - component: {fileID: 3995539395929416074}
   - component: {fileID: 2076778174054516440}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: lighting_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5421066100711511349}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FirePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3873550223303102494}
   - component: {fileID: 2152520375262354818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cloud_light_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
