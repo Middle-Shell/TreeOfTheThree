@@ -1,61 +1,54 @@
 
 river_weed_5.png
-size: 1543,1543
+size: 2244,2244
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Layer 2
-  rotate: false
-  xy: 1, 541
-  size: 1002, 1002
-  orig: 1002, 1002
-  offset: 0, 0
-  index: -1
 leaf_1
   rotate: false
-  xy: 1157, 801
+  xy: 1, 791
   size: 197, 227
   orig: 197, 227
   offset: 0, 0
   index: -1
 leaf_2
   rotate: false
-  xy: 1158, 1030
+  xy: 1, 592
   size: 207, 197
   orig: 207, 197
   offset: 0, 0
   index: -1
 leaf_3
   rotate: true
-  xy: 1158, 560
+  xy: 1, 1020
   size: 239, 208
   orig: 239, 208
   offset: 0, 0
   index: -1
 leaf_4
   rotate: false
-  xy: 1158, 1229
+  xy: 1, 411
   size: 204, 179
   orig: 204, 179
   offset: 0, 0
   index: -1
 leaf_5
   rotate: true
-  xy: 1356, 802
+  xy: 1, 183
   size: 226, 158
   orig: 226, 158
   offset: 0, 0
   index: -1
 leaf_6
-  rotate: true
-  xy: 1364, 1229
+  rotate: false
+  xy: 1, 2
   size: 197, 179
   orig: 197, 179
   offset: 0, 0
   index: -1
 stem
   rotate: false
-  xy: 1005, 560
+  xy: 1, 1261
   size: 151, 983
   orig: 151, 983
   offset: 0, 0

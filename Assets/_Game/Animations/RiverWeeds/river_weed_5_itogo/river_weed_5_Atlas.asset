@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: river_weed_5_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 7879d7459661d70469b423c79a2bfe08, type: 3}
+  atlasFile: {fileID: 4900000, guid: 54bd2cbd36335a34cae90b156f660e41, type: 3}
   materials:
-  - {fileID: 2100000, guid: 42d4e10237db3c343842731409ceea53, type: 2}
+  - {fileID: 2100000, guid: 2d2a6f5c504c5634aa22209bcaf1464d, type: 2}

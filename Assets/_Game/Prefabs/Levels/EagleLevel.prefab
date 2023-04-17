@@ -452,6 +452,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -2.357652
       objectReference: {fileID: 0}
+    - target: {fileID: 7957479940888280894, guid: fbb51c61c5981ab499b5fd5cead0b96d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8479598634816510521, guid: fbb51c61c5981ab499b5fd5cead0b96d, type: 3}
       propertyPath: m_Enabled
       value: 1

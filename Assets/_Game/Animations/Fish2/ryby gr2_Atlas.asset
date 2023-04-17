@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: ryby gr2_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: ad43bc7bdaaa12d4783735ee3329ae76, type: 3}
+  atlasFile: {fileID: 4900000, guid: 95ca86c92409f2948814e02393a30948, type: 3}
   materials:
   - {fileID: 2100000, guid: 5d23651e404a104469be256af6928feb, type: 2}

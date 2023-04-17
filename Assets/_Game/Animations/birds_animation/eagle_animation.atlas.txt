@@ -1,0 +1,76 @@
+
+eagle_animation.png
+size: 1573,1573
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 10
+  rotate: true
+  xy: 1337, 1043
+  size: 530, 235
+  orig: 530, 235
+  offset: 0, 0
+  index: -1
+Layer 11 copy
+  rotate: false
+  xy: 1, 999
+  size: 136, 86
+  orig: 136, 86
+  offset: 0, 0
+  index: -1
+Layer 12
+  rotate: false
+  xy: 602, 1136
+  size: 537, 437
+  orig: 537, 437
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 1465, 1043
+  size: 94, 130
+  orig: 94, 130
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: false
+  xy: 139, 999
+  size: 136, 86
+  orig: 136, 86
+  offset: 0, 0
+  index: -1
+Layer 8
+  rotate: true
+  xy: 277, 995
+  size: 90, 128
+  orig: 90, 128
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 1125, 1016
+  size: 557, 250
+  orig: 557, 250
+  offset: 0, 0
+  index: -1
+leg_left
+  rotate: false
+  xy: 824, 1033
+  size: 216, 101
+  orig: 216, 101
+  offset: 0, 0
+  index: -1
+leg_right
+  rotate: false
+  xy: 602, 1020
+  size: 220, 114
+  orig: 220, 114
+  offset: 0, 0
+  index: -1
+wing
+  rotate: false
+  xy: 1, 1087
+  size: 599, 486
+  orig: 599, 486
+  offset: 0, 0
+  index: -1

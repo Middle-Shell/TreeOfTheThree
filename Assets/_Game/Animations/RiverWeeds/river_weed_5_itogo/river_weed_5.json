@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "Rdbe0hDG8Nvy5f82yHyt/tkLUHM",
+	"hash": "VzUB0V2NPW90dY+45H20AMVjyzY",
 	"spine": "3.8",
 	"x": -192.03,
-	"y": -10.54,
-	"width": 418,
-	"height": 983,
+	"y": -1001,
+	"width": 1193.03,
+	"height": 1973.46,
 	"images": "./images/",
 	"audio": "D:/!SPINE/game/vodorosli/rivier_weed/rivier_weed_5"
 },
@@ -29,7 +29,6 @@
 	{ "name": "all15", "parent": "all8", "length": 119.16, "rotation": -57.09, "x": 21.1, "y": -0.76 }
 ],
 "slots": [
-	{ "name": "Layer 2", "bone": "all", "attachment": "Layer 2" },
 	{ "name": "stem", "bone": "all", "attachment": "stem" },
 	{ "name": "leaf_6", "bone": "all", "attachment": "leaf_6" },
 	{ "name": "leaf_5", "bone": "all", "attachment": "leaf_5" },
@@ -42,9 +41,6 @@
 	{
 		"name": "default",
 		"attachments": {
-			"Layer 2": {
-				"Layer 2": { "x": 500, "y": -500, "width": 1002, "height": 1002 }
-			},
 			"stem": {
 				"stem": {
 					"type": "mesh",

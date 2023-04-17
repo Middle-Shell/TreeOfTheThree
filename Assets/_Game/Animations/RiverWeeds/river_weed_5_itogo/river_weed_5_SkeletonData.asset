@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: river_weed_5_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 33cc4a4df7d34f64bb51b5d849fc164c, type: 2}
+  - {fileID: 11400000, guid: 5d31540684b4fe346b276017b2025223, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 124d88c9ca78b394c8e776edc35acfe4, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 7af0dfcba713ccf41a7ec808e3285e49, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

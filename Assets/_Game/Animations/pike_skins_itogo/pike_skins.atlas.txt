@@ -1,0 +1,139 @@
+
+fish_1.png
+size: 813,813
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 1, 505
+  size: 326, 113
+  orig: 326, 113
+  offset: 0, 0
+  index: -1
+dark_body
+  rotate: true
+  xy: 453, 487
+  size: 326, 114
+  orig: 326, 120
+  offset: 0, 3
+  index: -1
+dark_bubki_arc
+  rotate: false
+  xy: 1, 462
+  size: 214, 41
+  orig: 214, 41
+  offset: 0, 0
+  index: -1
+bubki_arc
+  rotate: false
+  xy: 1, 462
+  size: 214, 41
+  orig: 214, 41
+  offset: 0, 0
+  index: -1
+dark_flipper1
+  rotate: true
+  xy: 785, 726
+  size: 67, 28
+  orig: 67, 28
+  offset: 0, 0
+  index: -1
+dark_flipper2
+  rotate: 180
+  xy: 503, 462
+  size: 60, 46
+  orig: 60, 46
+  offset: 0, 0
+  index: -1
+dark_flipper3
+  rotate: false
+  xy: 716, 724
+  size: 68, 42
+  orig: 68, 42
+  offset: 0, 0
+  index: -1
+dark_flipper4
+  rotate: false
+  xy: 217, 462
+  size: 72, 41
+  orig: 72, 41
+  offset: 0, 0
+  index: -1
+dark_flipper_tail
+  rotate: false
+  xy: 566, 477
+  size: 120, 91
+  orig: 120, 91
+  offset: 0, 0
+  index: -1
+dark_head
+  rotate: false
+  xy: 688, 483
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+dark_hrebet_arc
+  rotate: true
+  xy: 642, 569
+  size: 244, 72
+  orig: 244, 72
+  offset: 0, 0
+  index: -1
+flipper1
+  rotate: false
+  xy: 716, 768
+  size: 67, 28
+  orig: 67, 28
+  offset: 0, 0
+  index: -1
+flipper2
+  rotate: false
+  xy: 329, 478
+  size: 68, 47
+  orig: 68, 47
+  offset: 0, 0
+  index: -1
+flipper3
+  rotate: false
+  xy: 399, 476
+  size: 72, 42
+  orig: 72, 42
+  offset: 0, 0
+  index: -1
+flipper4
+  rotate: false
+  xy: 716, 681
+  size: 72, 41
+  orig: 72, 41
+  offset: 0, 0
+  index: -1
+flipper_tail
+  rotate: false
+  xy: 329, 527
+  size: 120, 91
+  orig: 120, 91
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 716, 582
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+hrebet_arc
+  rotate: true
+  xy: 568, 569
+  size: 244, 72
+  orig: 244, 72
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 1, 620
+  size: 450, 193
+  orig: 450, 193
+  offset: 0, 0
+  index: -1

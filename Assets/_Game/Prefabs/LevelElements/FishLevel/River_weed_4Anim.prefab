@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8763587092971074506
+--- !u!1 &7945318536115061961
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1169817556479647631}
-  - component: {fileID: 6848797548790210883}
-  - component: {fileID: 651566415478573540}
-  - component: {fileID: 1471260164532099450}
-  - component: {fileID: 716419446429914770}
+  - component: {fileID: 7945318536115061972}
+  - component: {fileID: 7945318536115061973}
+  - component: {fileID: 7945318536115061962}
+  - component: {fileID: 7945318536115061963}
+  - component: {fileID: 7945318536115061960}
   m_Layer: 6
   m_Name: River_weed_4Anim
   m_TagString: Untagged
@@ -20,36 +20,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1169817556479647631
+--- !u!4 &7945318536115061972
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8763587092971074506}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.86, y: -10.67, z: 0}
-  m_LocalScale: {x: 1.1591, y: 1.1591, z: 1.1591}
+  m_GameObject: {fileID: 7945318536115061961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6848797548790210883
+--- !u!33 &7945318536115061973
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8763587092971074506}
+  m_GameObject: {fileID: 7945318536115061961}
   m_Mesh: {fileID: 0}
---- !u!23 &651566415478573540
+--- !u!23 &7945318536115061962
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8763587092971074506}
+  m_GameObject: {fileID: 7945318536115061961}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ddca34547fe01f04da71124ff9ba7cbf, type: 2}
+  - {fileID: 2100000, guid: 2d2a6f5c504c5634aa22209bcaf1464d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,19 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1471260164532099450
+--- !u!114 &7945318536115061963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8763587092971074506}
+  m_GameObject: {fileID: 7945318536115061961}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 20a24c1daab7c7f43bd3faaddb93999e, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 12323780f82fc3649978f4383e3db9a2, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -119,23 +119,23 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: river_weed_4_animation
+  _animationName: river_weed_5_animation
   loop: 1
   timeScale: 1
---- !u!61 &716419446429914770
+--- !u!61 &7945318536115061960
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8763587092971074506}
+  m_GameObject: {fileID: 7945318536115061961}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12833375, y: 4.7450113}
+  m_Offset: {x: 0.16966975, y: 4.8094335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -146,5 +146,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4072447, y: 9.582127}
+  m_Size: {x: 4.1801105, y: 9.829867}
   m_EdgeRadius: 0
