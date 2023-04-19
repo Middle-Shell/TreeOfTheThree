@@ -246,7 +246,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 20, y: 10}
+  m_Size: {x: 18.181818, y: 10.227273}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -558,20 +558,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waystone: {fileID: 4914517677515281651}
   _player: {fileID: 4914517677775921855}
-  _enemy: {fileID: 4914517679082207649}
-  _item: {fileID: 4914517677742591307}
-  _obstacle: {fileID: 4914517679060536629}
+  _enemy:
+  - {fileID: 0}
+  _item:
+  - {fileID: 0}
+  _obstacle:
+  - {fileID: 0}
   _roof: {fileID: 4914517677369979392}
   _floor: {fileID: 4914517678801366210}
   _background: {fileID: 4914517677609100367}
   _levelDistance: 200
   _safeSpawnDistance: 2
   _safeEndDistance: 2
-  _safeWidthObstacle: 2
-  _safeWidthEnemy: 2
-  _enemyCount: 15
-  _obstacleCount: 15
-  _itemCount: 3
+  _safeWidthObstacle: 
+  _safeWidthEnemy: 
+  _enemyCount: 
+  _obstacleCount: 
+  _itemCount: 
 --- !u!1 &4914517679060536629
 GameObject:
   m_ObjectHideFlags: 0
