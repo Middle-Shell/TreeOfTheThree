@@ -41,6 +41,7 @@ public class BirdController : MonoBehaviour//, IEnableObject
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        print(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Player") && _isAttack)
         {
             _player = collision.gameObject.transform;

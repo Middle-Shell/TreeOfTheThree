@@ -13,7 +13,7 @@ public class CloudController : MonoBehaviour//, IEnableObject
     
     [SerializeField] private float _moveSpeed = 3.0f; // Скорость перемещения врага
     [SerializeField] private float _fireRate = 3.0f; // Частота стрельбы
-    [SerializeField] private GameObject _bulletPrefab; // Префаб пули
+    [SerializeField] private List<GameObject> _bulletPrefabs; // Префаб пули
     [SerializeField] private Transform _firePoint; // Точка, из которой будут вылетать пули
     [SerializeField] private LayerMask _layerMask;
 
@@ -63,7 +63,7 @@ public class CloudController : MonoBehaviour//, IEnableObject
     private void Shoot()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Master/NPC/Cloud_Thunder");
-        Destroy(Instantiate(_bulletPrefab, _firePoint.position, Quaternion.identity), 1f);
+        Destroy(Instantiate(_bulletPrefabs[Random.Range(0,1)], _firePoint.position, Quaternion.identity), 1f);
     }
 
     private IEnumerator  ChangeCloudToWhite()

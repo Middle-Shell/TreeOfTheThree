@@ -108,7 +108,9 @@ MonoBehaviour:
   _isAttack: 1
   _moveSpeed: 0.5
   _fireRate: 4
-  _bulletPrefab: {fileID: 7565671415688878568, guid: 016f28c3d0d2bc046b63e3848433792a, type: 3}
+  _bulletPrefabs:
+  - {fileID: 7565671415688878568, guid: 016f28c3d0d2bc046b63e3848433792a, type: 3}
+  - {fileID: 2975316982540587279, guid: 99a41ca9c06731f46bd5c4297d340b4f, type: 3}
   _firePoint: {fileID: 5421066100711511349}
   _layerMask:
     serializedVersion: 2

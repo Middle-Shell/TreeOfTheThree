@@ -443,7 +443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2897920382091765785, guid: fbb51c61c5981ab499b5fd5cead0b96d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2897920382091765789, guid: fbb51c61c5981ab499b5fd5cead0b96d, type: 3}
       propertyPath: m_RootOrder
@@ -1480,7 +1480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1684518670297792541, guid: f0b9920e30d347d40aaed05e2c5f2485, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2029509712554133176, guid: f0b9920e30d347d40aaed05e2c5f2485, type: 3}
       propertyPath: m_Mesh
