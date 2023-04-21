@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets._Game.Scripts.Enemy;
 using UnityEngine;
 
-public class BirdController : MonoBehaviour//, IEnableObject
+public class BirdController : MonoBehaviour, IEnemy//, IEnableObject
 {
     [SerializeField] private bool _isAttack; //будет ли атаковать
     
@@ -23,11 +24,21 @@ public class BirdController : MonoBehaviour//, IEnableObject
     private Transform _player;
     [SerializeField] private bool _isMove;
 
+    public void Active()
+    {
+        enabled = true;
+    }
+
+    public void Deactivate()
+    {
+        enabled = false;
+    }
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _moveDirection = Vector2.right;
         transform.position = new Vector3(transform.position.x, transform.position.y + (int)Random.Range(-_rangeSpawnY, _rangeSpawnY), transform.position.z);
+        this.enabled = false;
     }
 
     public void OnBecameVisible()
