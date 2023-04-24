@@ -31,12 +31,10 @@ public class CloudController : MonoBehaviour//, IEnableObject
     public void OnBecameVisible()
     {
         enabled = true;
-        print("Visible");
     }
 
     public void OnBecameInvisible()
     {
-        print("Invisible");
         enabled = false;
     }
 
