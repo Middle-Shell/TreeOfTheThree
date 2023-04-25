@@ -8,7 +8,6 @@ public class CollisionPlayer : MonoBehaviour
     {
         if (collider2D.gameObject.CompareTag("Enemy"))
         {
-            print(collider2D.gameObject.name + " Hit!");
             PlayerStateEvent.OnPlayerDeath();
         }
 

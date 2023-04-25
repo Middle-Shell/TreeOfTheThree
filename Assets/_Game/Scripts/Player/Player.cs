@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private static GameObject _player;
+    
 
     void Start()
     {

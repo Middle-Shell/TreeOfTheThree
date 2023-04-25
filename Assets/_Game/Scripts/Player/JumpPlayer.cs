@@ -44,13 +44,9 @@ public class JumpPlayer : MonoBehaviour
     {
         if (!_isStop)
         {
-            //проверяем падает ли игрок
-            _isFalling = _rbody.velocity.y <= 0;
-            _weight = _isFalling ? FallWeight : JumpWeight;
-
             // Проверяем, коснулся ли игрок земли
             _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayers);
-
+            
             if (_isGrounded)
             {
                 _timer += Time.deltaTime;
@@ -60,10 +56,16 @@ public class JumpPlayer : MonoBehaviour
                     _rbody.AddForce(new Vector2(2f, 1f) * _jumpForce, ForceMode2D.Impulse);
                     FMODUnity.RuntimeManager.PlayOneShot("event:/Master/Character/Character_Jump");
                     _timer = 0f;
+                    GetComponent<AnimControllerPlayer>().PlayAnimation("Jump_up", false);
                 }
 
                 
             }
+            //проверяем падает ли игрок
+            _isFalling = _rbody.velocity.y <= 0;
+            _weight = _isFalling ? FallWeight : JumpWeight;
+            if(_isFalling && !_isGrounded) GetComponent<AnimControllerPlayer>().PlayAnimation("Jump_down", false);
+            
             _rbody.velocity += Vector2.up * _gravity * _weight * Time.deltaTime;
         }
     }

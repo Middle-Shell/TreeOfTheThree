@@ -14,6 +14,7 @@ public class MovePlayer : MonoBehaviour
     private Rigidbody2D _rbody;
     private Vector2 _moveInput;
     private float _gravity;
+    private bool _isRunning;
 
     public bool BlockY
     {
@@ -48,6 +49,19 @@ public class MovePlayer : MonoBehaviour
             }
 
             _rbody.velocity += _ascentForce;
+        }
+        else
+        {
+            if (_moveInput.x > 0 && !_isRunning)
+            {
+                GetComponent<AnimControllerPlayer>().PlayAnimation("run", true);
+                _isRunning = true;
+            }
+            else
+            {
+                GetComponent<AnimControllerPlayer>().PlayAnimation("Idle", true);//чинить
+                _isRunning = false;
+            }
         }
     }
     
