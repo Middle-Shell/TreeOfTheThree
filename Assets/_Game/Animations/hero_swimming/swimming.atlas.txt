@@ -1,0 +1,53 @@
+swimming.png
+size:1058,1058
+filter:Linear,Linear
+bag
+bounds:951,552,114,96
+rotate:90
+bottom skirt red 1
+bounds:818,825,188,232
+bottom skirt red 2
+bounds:951,669,153,90
+rotate:90
+bracelet
+bounds:1009,970,35,87
+brooch
+bounds:927,73,70,46
+chest red
+bounds:1,227,468,310
+hair 1
+bounds:416,22,202,101
+rotate:90
+hair 2
+bounds:769,380,157,113
+rotate:90
+hair 3
+bounds:928,447,129,102
+hair 4
+bounds:928,266,111,178
+hair 5
+bounds:734,245,191,132
+head
+bounds:520,55,172,217
+rotate:90
+left arm 1
+bounds:740,127,182,115
+left arm red 2
+bounds:803,553,248,145
+rotate:90
+left arm red 3
+bounds:472,381,294,156
+left leg
+bounds:1,540,799,261
+neck
+bounds:928,122,126,141
+right arm 1
+bounds:740,16,184,108
+right arm red 2
+bounds:472,230,259,148
+right arm red 3
+bounds:1,27,412,197
+right leg
+bounds:1,804,814,253
+ties
+bounds:927,29,44,41

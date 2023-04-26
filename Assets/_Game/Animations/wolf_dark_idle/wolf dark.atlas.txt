@@ -1,0 +1,111 @@
+
+wolf dark.png
+size: 3722,3722
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+wolf_dark_body
+  rotate: false
+  xy: 1, 3138
+  size: 1134, 585
+  orig: 1134, 803
+  offset: 0, 218
+  index: -1
+wolf_dark_ears
+  rotate: false
+  xy: 1049, 3157
+  size: 210, 206
+  orig: 210, 206
+  offset: 0, 0
+  index: -1
+wolf_dark_front_leg1.1
+  rotate: 180
+  xy: 1253, 3140
+  size: 290, 137
+  orig: 290, 150
+  offset: 0, 13
+  index: -1
+wolf_dark_front_leg1.2
+  rotate: true
+  xy: 3384, 3205
+  size: 206, 252
+  orig: 226, 307
+  offset: 10, 48
+  index: -1
+wolf_dark_front_leg1.3
+  rotate: 270
+  xy: 3207, 3427
+  size: 278, 369
+  orig: 282, 378
+  offset: 0, 0
+  index: -1
+wolf_dark_front_leg2.1
+  rotate: 180
+  xy: 2729, 3144
+  size: 290, 135
+  orig: 290, 150
+  offset: 0, 15
+  index: -1
+wolf_dark_front_leg2.2
+  rotate: true
+  xy: 2346, 3136
+  size: 204, 242
+  orig: 226, 307
+  offset: 9, 53
+  index: -1
+wolf_dark_front_leg2.3
+  rotate: true
+  xy: 3060, 3176
+  size: 282, 370
+  orig: 450, 574
+  offset: 164, 190
+  index: -1
+wolf_dark_head
+  rotate: false
+  xy: 1064, 3263
+  size: 702, 460
+  orig: 702, 461
+  offset: 0, 0
+  index: -1
+wolf_dark_hind_leg1.1
+  rotate: true
+  xy: 2896, 3262
+  size: 460, 314
+  orig: 465, 323
+  offset: 0, 7
+  index: -1
+wolf_dark_hind_leg1.2
+  rotate: 270
+  xy: 2297, 3333
+  size: 390, 365
+  orig: 421, 384
+  offset: 0, 19
+  index: -1
+wolf_dark_hind_leg2.1
+  rotate: 270
+  xy: 2589, 3134
+  size: 465, 311
+  orig: 465, 323
+  offset: 0, 0
+  index: -1
+wolf_dark_hind_leg2.2
+  rotate: 270
+  xy: 2012, 3137
+  size: 460, 365
+  orig: 460, 384
+  offset: 0, 19
+  index: -1
+wolf_dark_jaw
+  rotate: 270
+  xy: 3523, 3408
+  size: 237, 198
+  orig: 237, 198
+  offset: 0, 0
+  index: -1
+wolf_dark_tail
+  rotate: 180
+  xy: 1706, 3148
+  size: 374, 545
+  orig: 374, 545
+  offset: 0, 0
+  index: -1

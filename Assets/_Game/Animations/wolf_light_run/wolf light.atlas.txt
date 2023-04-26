@@ -1,0 +1,76 @@
+
+wolf light.png
+size: 3018,3018
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+wolf_light_body
+  rotate: false
+  xy: 1, 2447
+  size: 1117, 572
+  orig: 1134, 803
+  offset: 3, 231
+  index: -1
+wolf_light_ears
+  rotate: 180
+  xy: 2806, 2812
+  size: 210, 206
+  orig: 210, 206
+  offset: 0, 0
+  index: -1
+wolf_light_front_leg1.2
+  rotate: 180
+  xy: 1609, 2461
+  size: 226, 241
+  orig: 226, 307
+  offset: 0, 44
+  index: -1
+wolf_light_front_leg1.3
+  rotate: false
+  xy: 2446, 2449
+  size: 282, 359
+  orig: 282, 378
+  offset: 0, 9
+  index: -1
+wolf_light_head
+  rotate: false
+  xy: 1106, 2557
+  size: 697, 461
+  orig: 702, 461
+  offset: 0, 0
+  index: -1
+wolf_light_hind_leg1
+  rotate: 270
+  xy: 2662, 2553
+  size: 465, 323
+  orig: 465, 323
+  offset: 0, 0
+  index: -1
+wolf_light_hind_leg1.2
+  rotate: 270
+  xy: 2098, 2597
+  size: 421, 361
+  orig: 421, 384
+  offset: 0, 23
+  index: -1
+wolf_light_jaw
+  rotate: 180
+  xy: 2153, 2426
+  size: 231, 198
+  orig: 237, 198
+  offset: 2, 0
+  index: -1
+wolf_light_tail
+  rotate: false
+  xy: 1777, 2473
+  size: 374, 545
+  orig: 374, 545
+  offset: 0, 0
+  index: -1
+wolfs_light_front_leg1.1
+  rotate: false
+  xy: 978, 2481
+  size: 283, 124
+  orig: 290, 150
+  offset: 7, 17
+  index: -1

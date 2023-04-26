@@ -43,19 +43,21 @@ public class TransformToWolfPlayer : MonoBehaviour
     {
         if (_playerActions.Player_Map.Transformation.WasPressedThisFrame())
         {
-            print(IsWolf);
+            //print(IsWolf);
 
             IsWolf = !IsWolf;
-            print(_jumpController.IsStop);
+            //print(_jumpController.IsStop);
             _jumpController.IsStop = IsWolf;
 
             if (_isWolf)
             {
+                //print(IsWolf);
                 _wolfSpriteObject.SetActive(true);
                 _humanSpriteObject.SetActive(false);
             }
             else
             {
+                //print(IsWolf);
                 _humanSpriteObject.SetActive(true);
                 _wolfSpriteObject.SetActive(false);
             }

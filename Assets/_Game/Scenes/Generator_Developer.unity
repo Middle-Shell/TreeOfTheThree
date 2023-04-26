@@ -214,6 +214,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6232210180703541050, guid: 260949f46a715084288ca75149d47ae9, type: 3}
+      propertyPath: orthographic size
+      value: 18.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6382806911744697052, guid: 260949f46a715084288ca75149d47ae9, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -241,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 1959548370}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _startLevelNum
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.size
