@@ -1,53 +1,160 @@
+
 swimming.png
-size:1058,1058
-filter:Linear,Linear
+size: 1957,1957
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
 bag
-bounds:951,552,114,96
-rotate:90
+  rotate: true
+  xy: 1810, 1688
+  size: 114, 96
+  orig: 114, 96
+  offset: 0, 0
+  index: -1
 bottom skirt red 1
-bounds:818,825,188,232
+  rotate: false
+  xy: 1056, 1546
+  size: 188, 232
+  orig: 188, 232
+  offset: 0, 0
+  index: -1
 bottom skirt red 2
-bounds:951,669,153,90
-rotate:90
+  rotate: false
+  xy: 48, 1878
+  size: 134, 80
+  orig: 153, 90
+  offset: 10, 10
+  index: -1
 bracelet
-bounds:1009,970,35,87
+  rotate: false
+  xy: 1908, 1636
+  size: 35, 87
+  orig: 35, 87
+  offset: 0, 0
+  index: -1
 brooch
-bounds:927,73,70,46
+  rotate: false
+  xy: 167, 1911
+  size: 70, 46
+  orig: 70, 46
+  offset: 0, 0
+  index: -1
 chest red
-bounds:1,227,468,310
+  rotate: 270
+  xy: 767, 1496
+  size: 462, 288
+  orig: 468, 310
+  offset: 0, 18
+  index: -1
 hair 1
-bounds:416,22,202,101
-rotate:90
+  rotate: 180
+  xy: 50, 1642
+  size: 202, 101
+  orig: 202, 101
+  offset: 0, 0
+  index: -1
 hair 2
-bounds:769,380,157,113
-rotate:90
+  rotate: true
+  xy: 941, 1477
+  size: 157, 113
+  orig: 157, 113
+  offset: 0, 0
+  index: -1
 hair 3
-bounds:928,447,129,102
+  rotate: 180
+  xy: 1827, 1511
+  size: 129, 102
+  orig: 129, 102
+  offset: 0, 0
+  index: -1
 hair 4
-bounds:928,266,111,178
+  rotate: false
+  xy: 1827, 1562
+  size: 111, 124
+  orig: 111, 178
+  offset: 0, 54
+  index: -1
 hair 5
-bounds:734,245,191,132
+  rotate: true
+  xy: 1693, 1495
+  size: 191, 132
+  orig: 191, 132
+  offset: 0, 0
+  index: -1
 head
-bounds:520,55,172,217
-rotate:90
+  rotate: false
+  xy: 1246, 1586
+  size: 172, 217
+  orig: 172, 217
+  offset: 0, 0
+  index: -1
 left arm 1
-bounds:740,127,182,115
+  rotate: false
+  xy: 1237, 1475
+  size: 182, 107
+  orig: 182, 115
+  offset: 0, 2
+  index: -1
 left arm red 2
-bounds:803,553,248,145
-rotate:90
+  rotate: 270
+  xy: 1560, 1636
+  size: 248, 140
+  orig: 248, 145
+  offset: 0, 0
+  index: -1
 left arm red 3
-bounds:472,381,294,156
+  rotate: 270
+  xy: 1408, 1663
+  size: 294, 156
+  orig: 294, 156
+  offset: 0, 0
+  index: -1
 left leg
-bounds:1,540,799,261
+  rotate: false
+  xy: 1, 1488
+  size: 769, 251
+  orig: 799, 261
+  offset: 30, 7
+  index: -1
 neck
-bounds:928,122,126,141
+  rotate: 180
+  xy: 1769, 1816
+  size: 126, 141
+  orig: 126, 141
+  offset: 0, 0
+  index: -1
 right arm 1
-bounds:740,16,184,108
+  rotate: true
+  xy: 1702, 1688
+  size: 184, 107
+  orig: 184, 108
+  offset: 0, 1
+  index: -1
 right arm red 2
-bounds:472,230,259,148
+  rotate: false
+  xy: 1420, 1517
+  size: 259, 147
+  orig: 259, 148
+  offset: 0, 0
+  index: -1
 right arm red 3
-bounds:1,27,412,197
+  rotate: false
+  xy: 1054, 1780
+  size: 314, 178
+  orig: 412, 197
+  offset: 0, 0
+  index: -1
 right leg
-bounds:1,804,814,253
+  rotate: false
+  xy: 1, 1723
+  size: 793, 235
+  orig: 814, 253
+  offset: 21, 13
+  index: -1
 ties
-bounds:927,29,44,41
+  rotate: false
+  xy: 116, 1704
+  size: 44, 41
+  orig: 44, 41
+  offset: 0, 0
+  index: -1

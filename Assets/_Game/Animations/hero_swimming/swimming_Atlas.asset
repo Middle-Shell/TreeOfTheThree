@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: swimming_Atlas
   m_EditorClassIdentifier: 
   atlasFile: {fileID: 4900000, guid: 5e4ac0d1fb9dd3541bcc12c3e4664005, type: 3}
-  materials: []
+  materials:
+  - {fileID: 2100000, guid: 3c524cfaa13ffc143bc88cedc9dfcac1, type: 2}
