@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: hero for animation v2_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: b1ba7fcbc31431c41af49ebe1cba915e, type: 2}
+  - {fileID: 11400000, guid: 61cb247d4179fb849952e62802b22cfc, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 20b602c492a04c14ca7e8ba8ffc7fed6, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 083a3cda1fcfe58458dbf5032476b4c5, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

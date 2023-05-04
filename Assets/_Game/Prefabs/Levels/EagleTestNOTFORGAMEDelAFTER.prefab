@@ -703,6 +703,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6466857590119500864}
     m_Modifications:
+    - target: {fileID: 152246758210505624, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: initialSkinName
+      value: Blue
+      objectReference: {fileID: 0}
     - target: {fileID: 486588386517798083, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 4.27
@@ -795,6 +799,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1508208474732731878, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: rootMotionBoneName
+      value: '[RED]collar_arm_R'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1508208474732731878, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: animationTrackFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1816650082969333940, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -814,6 +826,10 @@ PrefabInstance:
     - target: {fileID: 3699725967870269150, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554191125253805183, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled
@@ -847,6 +863,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6411006819559835893, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_Size.y
+      value: 25.646545
+      objectReference: {fileID: 0}
+    - target: {fileID: 6411006819559835893, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6411006819559835893, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_Offset.y
+      value: 10.923742
+      objectReference: {fileID: 0}
     - target: {fileID: 6935127711679524566, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -859,7 +887,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
 --- !u!1 &1967385782450816796 stripped
 GameObject:

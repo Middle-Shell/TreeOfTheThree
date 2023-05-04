@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: hero for animation v2_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: d200f88d0a1e4e94388305eeeed077d5, type: 3}
+  atlasFile: {fileID: 4900000, guid: 8722bc678fdcaf24aa34d2a19697efc6, type: 3}
   materials:
-  - {fileID: 2100000, guid: 4bb8cee5aa2822e4188247e693cba18a, type: 2}
+  - {fileID: 2100000, guid: e06e5d2c88521944ea9d967af6bff2ad, type: 2}

@@ -28,6 +28,8 @@ public class ShootPlayer : MonoBehaviour
     private Vector2 _mousePosition;
     private bool _isAllowFire;
     private float _angle;
+    
+    private AnimControllerPlayer _animControllerPlayer;
 
     private void Awake()
     {
@@ -36,6 +38,7 @@ public class ShootPlayer : MonoBehaviour
     
     private void Start()
     {
+        _animControllerPlayer = GetComponent<AnimControllerPlayer>();
         _points = new GameObject[_numOfPoints];
         for (int i = 0; i < _numOfPoints; i++)
         {
@@ -63,12 +66,14 @@ public class ShootPlayer : MonoBehaviour
         {
             _isCharging = true;
             _currentPower = _powerMin;
+            StartCoroutine(_animControllerPlayer.PlayAnimation("run_to_targeting_transition", false));
+            StartCoroutine(Charging());
         }
         else if (Input.GetMouseButtonUp(0) && _isCharging)
         {
-            Fire();
+            StartCoroutine(Fire());
         }
-
+        
         if (_isCharging)
         {
             _currentPower = Mathf.Min(_currentPower + Time.deltaTime/1.5f * (_powerMax - _powerMin), _powerMax);
@@ -79,13 +84,26 @@ public class ShootPlayer : MonoBehaviour
         }
     }
 
-    private void Fire()
+    private IEnumerator Charging()
     {
+        print("Enter");
+        yield return new WaitForSeconds(0.667f);
+        print("Wait");
+        StartCoroutine(_animControllerPlayer.PlayAnimation("run_with_targeting"));
+    }
+
+    private IEnumerator Fire()
+    {
+        StopCoroutine(Charging());
         _isCharging = false;
+        StartCoroutine(_animControllerPlayer.PlayAnimation("run_targeting_throw_run", false));
+        yield return new WaitForSeconds(0.3f);
         GameObject newArrow = Instantiate(_prefab, _firePosition.position, _firePosition.rotation);
         newArrow.GetComponent<Arrow>().IsPlayer = true;
         newArrow.GetComponent<Rigidbody2D>().velocity = _pointPosition.transform.right * _currentPower;
         ThrowOutPoints();
+        yield return new WaitForSeconds(0.667f);
+        StartCoroutine(_animControllerPlayer.PlayAnimation("run"));
     }
 
     private void ThrowOutPoints()
