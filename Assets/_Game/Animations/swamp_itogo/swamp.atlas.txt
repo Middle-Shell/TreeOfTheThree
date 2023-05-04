@@ -1,0 +1,48 @@
+
+swamp.png
+size: 1961,1961
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 14
+  rotate: false
+  xy: 538, 1736
+  size: 528, 225
+  orig: 528, 225
+  offset: 0, 0
+  index: -1
+dots
+  rotate: false
+  xy: 1068, 1736
+  size: 600, 148
+  orig: 600, 148
+  offset: 0, 0
+  index: -1
+steny
+  rotate: false
+  xy: 1, 1736
+  size: 535, 225
+  orig: 535, 225
+  offset: 0, 0
+  index: -1
+wave 1
+  rotate: false
+  xy: 1068, 1886
+  size: 893, 41
+  orig: 893, 41
+  offset: 0, 0
+  index: -1
+wave 2
+  rotate: false
+  xy: 1, 1696
+  size: 869, 38
+  orig: 869, 38
+  offset: 0, 0
+  index: -1
+wave 3
+  rotate: false
+  xy: 872, 1692
+  size: 684, 42
+  orig: 684, 42
+  offset: 0, 0
+  index: -1

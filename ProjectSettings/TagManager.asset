@@ -10,6 +10,7 @@ TagManager:
   - Waystone
   - Kite
   - FreeMove
+  - Totem
   layers:
   - Default
   - TransparentFX

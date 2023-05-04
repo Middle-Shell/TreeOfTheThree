@@ -45,11 +45,11 @@ public class UiManager : MonoBehaviour
 
     public void ShowMenu()
     {
-        if (Player.IsPlayerNotNull)
+        /*if (Player.IsPlayerNotNull)
         {
             ShowInGameMenu();
             return;
-        }
+        }*/
         _menu.SetActive(true);
 
         if (SaveManager.LoadCurrentLevel() != 0)

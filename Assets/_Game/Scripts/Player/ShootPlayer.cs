@@ -67,7 +67,8 @@ public class ShootPlayer : MonoBehaviour
             _isCharging = true;
             _currentPower = _powerMin;
             StartCoroutine(_animControllerPlayer.PlayAnimation("run_to_targeting_transition", false));
-            StartCoroutine(Charging());
+            StartCoroutine(_animControllerPlayer.PlayAnimation("run_with_targeting"));
+            //StartCoroutine(Charging());
         }
         else if (Input.GetMouseButtonUp(0) && _isCharging)
         {
@@ -86,9 +87,7 @@ public class ShootPlayer : MonoBehaviour
 
     private IEnumerator Charging()
     {
-        print("Enter");
         yield return new WaitForSeconds(0.667f);
-        print("Wait");
         StartCoroutine(_animControllerPlayer.PlayAnimation("run_with_targeting"));
     }
 
@@ -102,7 +101,7 @@ public class ShootPlayer : MonoBehaviour
         newArrow.GetComponent<Arrow>().IsPlayer = true;
         newArrow.GetComponent<Rigidbody2D>().velocity = _pointPosition.transform.right * _currentPower;
         ThrowOutPoints();
-        yield return new WaitForSeconds(0.667f);
+        yield return new WaitForSeconds(0.5f);
         StartCoroutine(_animControllerPlayer.PlayAnimation("run"));
     }
 

@@ -35,7 +35,7 @@ public class MovePlayer : MonoBehaviour
 	    _moveInput = _playerActions.Player_Map.Movement.ReadValue<Vector2>();
         
         //задаём скорорсть передвижения, при желании блокируем возможность пережвижения UP/DOWN и тем самым отключаем эффект "плаванья"
-        _rbody.velocity = new Vector2(_moveInput.x <0 ? 0: _moveInput.x * _speed, (_blockY ? 0 : _moveInput.y * _speed));
+        _rbody.velocity = new Vector2(_moveInput.x < 0 ? 0: _moveInput.x * _speed, (_blockY ? 0 : _moveInput.y * _speed));
         if (!_blockY)
         {
             _ascentForce = Vector2.up * _gravity * _fallWeight * Time.deltaTime;
