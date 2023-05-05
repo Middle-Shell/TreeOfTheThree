@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
 
     public static void FreeMove(bool isFree)
     {
-        if (SaveManager.LoadCurrentLevel() >= 3)
+        print(isFree);
+        if (SaveManager.LoadCurrentLevel() >= 4)
         {
             _player.GetComponent<RunPlayer>().enabled = !isFree;
             _player.GetComponent<MovePlayer>().enabled = isFree;

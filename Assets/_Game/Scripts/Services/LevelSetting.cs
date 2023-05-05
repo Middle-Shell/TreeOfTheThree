@@ -55,7 +55,7 @@ public class LevelSetting : MonoBehaviour
         _roof.transform.localScale = new Vector3(_levelDistance, 1, 1);
         _floor.transform.localScale = new Vector3(_levelDistance, 1, 1);
 
-        _background.size = new Vector2(_levelDistance, _background.size.y);
+        _background.size = new Vector2(_levelDistance+30f, _background.size.y);
         _background.transform.position = _startPoint + new Vector2(_levelDistance / 2, _background.transform.position.y);
 
         _waystone.transform.position = _startPoint +  new Vector2(_levelDistance, _floor.transform.position.y);

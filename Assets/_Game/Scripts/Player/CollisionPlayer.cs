@@ -27,6 +27,7 @@ public class CollisionPlayer : MonoBehaviour
     {
         if (collider2D.gameObject.CompareTag("FreeMove"))
         {
+            print("exit");
             Player.FreeMove(false);
         }
     }

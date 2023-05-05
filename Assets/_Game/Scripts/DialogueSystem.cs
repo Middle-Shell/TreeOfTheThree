@@ -18,18 +18,24 @@ public class DialogueSystem : MonoBehaviour
             // отобразить первую фразу диалога
             _currentDialogIndex = 0;
             _dialogWindow.SetActive(true);
-            _player.GetComponent<Rigidbody2D>().simulated = false;
-            _player.GetComponent<MovePlayer>().enabled = false;
+            
+            _player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             ShowCurrentDialog();
         }
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.E)) {
-            // отобразить следующую фразу диалога
-            _currentDialogIndex++;
-            ShowCurrentDialog();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            NextPhrase();
         }
+    }
+
+    public void NextPhrase()
+    {
+        // отобразить следующую фразу диалога
+        _currentDialogIndex++;
+        ShowCurrentDialog();
     }
 
     void ShowCurrentDialog() {
@@ -46,8 +52,7 @@ public class DialogueSystem : MonoBehaviour
         // скрыть окно диалога
         _dialogWindow.SetActive(false);
         // включить движение игрока
-        _player.GetComponent<Rigidbody2D>().simulated = true;
-        _player.GetComponent<MovePlayer>().enabled = true;
-        //playerMovement.enabled = true;
+        _player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        Destroy(this);
     }
 }

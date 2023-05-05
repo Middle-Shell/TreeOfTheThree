@@ -77,15 +77,22 @@ public class GameManager : MonoBehaviour
                 Destroy(_currentLevel);
             }
 
-            if (CurrentLevelIndex % 3 == 0 && CurrentLevelIndex != 0)
+            /*if (CurrentLevelIndex-1 % 3 == 0 && CurrentLevelIndex != 0)
             {
                 PlayerStateEvent.OnFinishMilestone();
                 Player.DeletePlayer(); 
                 startPositionX = 0;
-            }
-
-            if (CurrentLevelIndex < 3) //в билде не требуется т.к. игра начинается с 0 и RunOver по умолчанию true
+            }*/
+            
+            if (CurrentLevelIndex < 4) 
                 CameraController.Instance.RunOver = true;
+            if (CurrentLevelIndex % 4 == 0)
+            {
+                PlayerStateEvent.OnFinishMilestone();
+                CameraController.Instance.RunOver = false;
+                Player.DeletePlayer();
+                startPositionX = 0;
+            }
 
             LevelSetting.StartPoint = new Vector2(startPositionX, 0);
             var cam = Camera.main;
