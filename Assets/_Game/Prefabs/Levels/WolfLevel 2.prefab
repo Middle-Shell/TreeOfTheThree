@@ -71,12 +71,12 @@ MonoBehaviour:
   _floor: {fileID: 7279351702328903128}
   _blockBox: {fileID: 6816572129765620328}
   _background: {fileID: 7279351703384788309}
-  _levelDistance: 138
+  _levelDistance: 2500
   _safeSpawnDistance: 40
   _safeEndDistance: 10
   _safeWidthObstacle: 14000000
   _safeWidthEnemy: 0a000000
-  _enemyCount: 19000000
+  _enemyCount: 14000000
   _obstacleCount: 14000000
   _itemCount: 07000000070000000700000007000000
 --- !u!1 &7279351702328903128
@@ -803,6 +803,14 @@ PrefabInstance:
     - target: {fileID: 486588386517798137, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659411510900030032, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659411510900030034, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: timeScale
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: FallWeight
