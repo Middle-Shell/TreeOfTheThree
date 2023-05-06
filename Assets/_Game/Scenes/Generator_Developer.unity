@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 1959548370}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _startLevelNum
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6392060337548404650, guid: 85f84561689df4241befa07b56c23436, type: 3}
       propertyPath: _levels.Array.size
@@ -1304,7 +1304,7 @@ PrefabInstance:
       objectReference: {fileID: 196423004}
     - target: {fileID: 7968905879741937213, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseLevel
+      value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 7968905879802427041, guid: 959e30ee40e80a149b840d4db00ab9bb, type: 3}
       propertyPath: _deadText

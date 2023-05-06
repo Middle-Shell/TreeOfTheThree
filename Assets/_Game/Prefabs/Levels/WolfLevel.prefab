@@ -70,6 +70,7 @@ MonoBehaviour:
   - {fileID: 7893655768976656926}
   _roof: {fileID: 7279351702541949722}
   _floor: {fileID: 7279351702328903128}
+  _blockBox: {fileID: 1262464655752469505}
   _background: {fileID: 7279351703384788309}
   _levelDistance: 1500
   _safeSpawnDistance: 40
@@ -1131,6 +1132,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7279351702179790677}
     m_Modifications:
+    - target: {fileID: 1864622702165219148, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.83
+      objectReference: {fileID: 0}
     - target: {fileID: 2267113847181580680, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
       propertyPath: m_LocalPosition.y
       value: 12.48
@@ -1185,6 +1190,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
+--- !u!1 &1262464655752469505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7601135374075808002, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
+  m_PrefabInstance: {fileID: 8717144461423760643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1437176691824015662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712524476063771693, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}

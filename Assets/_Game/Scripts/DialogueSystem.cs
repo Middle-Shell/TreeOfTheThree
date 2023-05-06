@@ -25,7 +25,7 @@ public class DialogueSystem : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             NextPhrase();
         }

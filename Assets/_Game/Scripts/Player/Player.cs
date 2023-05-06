@@ -22,10 +22,12 @@ public class Player : MonoBehaviour
 
     public static void FreeMove(bool isFree)
     {
-        print(isFree);
         if (SaveManager.LoadCurrentLevel() >= 4)
         {
+            //TODO не останавливается на не рыбьих уровнях
+            print(_player.GetComponent<RunPlayer>().enabled);
             _player.GetComponent<RunPlayer>().enabled = !isFree;
+            print(_player.GetComponent<RunPlayer>().enabled);
             _player.GetComponent<MovePlayer>().enabled = isFree;
             _player.GetComponent<MovePlayer>().BlockY = isFree;
             CameraController.Instance.RunOver = false;

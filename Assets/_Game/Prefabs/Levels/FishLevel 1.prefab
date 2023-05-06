@@ -172,6 +172,7 @@ MonoBehaviour:
   - {fileID: 6567936876680605843}
   _roof: {fileID: 4489332279961718813}
   _floor: {fileID: 9141419529546640711}
+  _blockBox: {fileID: 9155850824658290170}
   _background: {fileID: 4489332280259987026}
   _levelDistance: 2000
   _safeSpawnDistance: 40
@@ -558,6 +559,11 @@ PrefabInstance:
 --- !u!4 &9035577292901916885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712524476063771693, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
+  m_PrefabInstance: {fileID: 1615865966624263416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9155850824658290170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7601135374075808002, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
   m_PrefabInstance: {fileID: 1615865966624263416}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1980898304613845317

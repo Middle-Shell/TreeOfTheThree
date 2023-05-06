@@ -165,6 +165,7 @@ MonoBehaviour:
   - {fileID: 4495778191618220724}
   _roof: {fileID: 6466857591102695439}
   _floor: {fileID: 6466857590383982285}
+  _blockBox: {fileID: 7710683435538095719}
   _background: {fileID: 6902666710993113742}
   _levelDistance: 2000
   _safeSpawnDistance: 40
@@ -437,6 +438,11 @@ PrefabInstance:
 --- !u!4 &7599003891212237640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712524476063771693, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
+  m_PrefabInstance: {fileID: 179424779597338469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7710683435538095719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7601135374075808002, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
   m_PrefabInstance: {fileID: 179424779597338469}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &952039628713434947
@@ -1574,6 +1580,22 @@ PrefabInstance:
     - target: {fileID: 1816650082969333940, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2722636194837044412, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898954073561625182, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554191125253805183, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594812944199564574, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4999591414416327068, guid: 0dbca430756b12f43bcffc926a9cba82, type: 3}
       propertyPath: m_Enabled

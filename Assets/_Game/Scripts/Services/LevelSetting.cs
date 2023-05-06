@@ -10,6 +10,7 @@ public class LevelSetting : MonoBehaviour
     [SerializeField] private List<GameObject> _obstacle = new List<GameObject>();
     [SerializeField] private GameObject _roof = null;
     [SerializeField] private GameObject _floor = null;
+    [SerializeField] private GameObject _blockBox = null;
     [SerializeField] private SpriteRenderer _background = null;
     [Space(30)]
     [Range(1, 10000)]
@@ -51,6 +52,7 @@ public class LevelSetting : MonoBehaviour
         }
         _roof.transform.position = _startPoint + new Vector2(_levelDistance / 2, _roof.transform.position.y);
         _floor.transform.position = _startPoint + new Vector2(_levelDistance / 2, _floor.transform.position.y);
+        _blockBox.transform.position = _startPoint + new Vector2( 0, _blockBox.transform.position.y);
 
         _roof.transform.localScale = new Vector3(_levelDistance, 1, 1);
         _floor.transform.localScale = new Vector3(_levelDistance, 1, 1);
@@ -61,6 +63,8 @@ public class LevelSetting : MonoBehaviour
         _waystone.transform.position = _startPoint +  new Vector2(_levelDistance, _floor.transform.position.y);
         if(Player.IsPlayerNotNull)
             _player.transform.position = Vector2.zero;
+        if(SaveManager.LoadCurrentLevel() % 4 == 0)
+            Player.FreeMove(true);
 
         GenerateObstacles();
         GenerateEnemys();

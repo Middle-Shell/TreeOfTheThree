@@ -58,6 +58,7 @@ MonoBehaviour:
   _obstacle: []
   _roof: {fileID: 6466857591102695439}
   _floor: {fileID: 6466857590383982285}
+  _blockBox: {fileID: 4510997872728399053}
   _background: {fileID: 6466857591341432384}
   _levelDistance: 100
   _safeSpawnDistance: 40
@@ -725,6 +726,11 @@ PrefabInstance:
 --- !u!4 &4390592743181416930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712524476063771693, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
+  m_PrefabInstance: {fileID: 6333997262908495311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4510997872728399053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7601135374075808002, guid: e28252b68a44d3c4aa12de81aa2fbc38, type: 3}
   m_PrefabInstance: {fileID: 6333997262908495311}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7907860057957571069
