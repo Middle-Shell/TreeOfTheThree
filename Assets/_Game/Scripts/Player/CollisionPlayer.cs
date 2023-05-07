@@ -21,13 +21,17 @@ public class CollisionPlayer : MonoBehaviour
         {
             Player.FreeMove(true);
         }
+        
+        if (collider2D.gameObject.CompareTag("Totem"))
+        {
+            StartCoroutine(GetComponent<AnimControllerPlayer>().PlayAnimation("Idle", true));
+        }
     }
 
     void OnTriggerExit2D(Collider2D collider2D)
     {
         if (collider2D.gameObject.CompareTag("FreeMove"))
         {
-            print("exit");
             Player.FreeMove(false);
         }
     }

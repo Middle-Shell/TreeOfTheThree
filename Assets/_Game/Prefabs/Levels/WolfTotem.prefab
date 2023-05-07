@@ -551,10 +551,22 @@ PrefabInstance:
       propertyPath: _dialogWindow
       value: 
       objectReference: {fileID: 6909385768648311182}
+    - target: {fileID: 2873612799803440745, guid: b527c09665ada3646acb5639bbd1f1ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5753605685768374915, guid: b527c09665ada3646acb5639bbd1f1ee, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 05adeb16d60e00041b490d02e3529a9b, type: 3}
+    - target: {fileID: 5964790706139474460, guid: b527c09665ada3646acb5639bbd1f1ee, type: 3}
+      propertyPath: m_Size.x
+      value: 51.113045
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964790706139474460, guid: b527c09665ada3646acb5639bbd1f1ee, type: 3}
+      propertyPath: m_Offset.x
+      value: 7.9752855
+      objectReference: {fileID: 0}
     - target: {fileID: 7839431680670714697, guid: b527c09665ada3646acb5639bbd1f1ee, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.93

@@ -14,7 +14,8 @@ public class MovePlayer : MonoBehaviour
     private Rigidbody2D _rbody;
     private Vector2 _moveInput;
     private float _gravity;
-    private bool _isRunning;
+    private bool _isRunning = true;
+    private AnimControllerPlayer _animControllerPlayer;
 
     public bool BlockY
     {
@@ -23,6 +24,7 @@ public class MovePlayer : MonoBehaviour
 
     void Awake()
     {
+        _animControllerPlayer = GetComponent<AnimControllerPlayer>();
         _gravity = Physics.gravity.y;
         _playerActions = new PlayerActions();
         _rbody = GetComponent<Rigidbody2D>();
@@ -52,17 +54,14 @@ public class MovePlayer : MonoBehaviour
         }
         else
         {
-            print("else");
             if (_moveInput.x > 0 && !_isRunning)
             {
-                print("run");
-                GetComponent<AnimControllerPlayer>().PlayAnimation("run", true);
+                StartCoroutine(_animControllerPlayer.PlayAnimation("run", true));
                 _isRunning = true;
             }
-            else
+            else if(_moveInput.x == 0 && _isRunning)
             {
-                print("idle");
-                GetComponent<AnimControllerPlayer>().PlayAnimation("Idle", true);//чинить
+                StartCoroutine(_animControllerPlayer.PlayAnimation("Idle", true));
                 _isRunning = false;
             }
         }
