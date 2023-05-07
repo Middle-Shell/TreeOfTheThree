@@ -10,7 +10,6 @@ public class AnimControllerPlayer : MonoBehaviour
     
     public IEnumerator PlayAnimation(string animationName, bool loop = true)
     {
-        print(animationName);
         if (animationName == "run" && _skeletonAnimation.AnimationName == "Jump_down")
         {
             yield return new WaitForSeconds(0.03f);

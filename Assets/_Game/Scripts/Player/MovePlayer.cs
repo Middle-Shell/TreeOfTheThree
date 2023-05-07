@@ -52,13 +52,16 @@ public class MovePlayer : MonoBehaviour
         }
         else
         {
+            print("else");
             if (_moveInput.x > 0 && !_isRunning)
             {
+                print("run");
                 GetComponent<AnimControllerPlayer>().PlayAnimation("run", true);
                 _isRunning = true;
             }
             else
             {
+                print("idle");
                 GetComponent<AnimControllerPlayer>().PlayAnimation("Idle", true);//чинить
                 _isRunning = false;
             }
